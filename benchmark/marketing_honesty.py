@@ -6,6 +6,7 @@
 # %%
 import json
 import re
+import time
 
 import pandas as pd
 
@@ -169,6 +170,20 @@ def judge_llm():
     return None, None
 
 
+def prompt_with_retry(llm, text: str, chat_name: str, attempts: int = 5, wait: int = 20):
+    """Nested evaluations cannot retry, so proxy rate limits (429) are retried here.
+    Each attempt uses a fresh chat so a failed attempt leaves no history behind."""
+    for i in range(attempts):
+        try:
+            with kbench.chats.new(chat_name) as chat:
+                return llm.prompt(text), _usage(chat)
+        except Exception as e:
+            transient = "429" in str(e) or "rate" in str(e).lower() or "overloaded" in str(e).lower()
+            if not transient or i == attempts - 1:
+                raise
+            time.sleep(wait * (i + 1))
+
+
 def _usage(chat) -> dict:
     u = chat.usage
     return {
@@ -183,16 +198,20 @@ def _usage(chat) -> dict:
 @kbench.task(name="write_one_copy", store_task=False)
 def write_one_copy(llm, company_id: str, copy_type: str, condition: str, repeat: int) -> dict:
     company = BY_ID[company_id]
-    with kbench.chats.new("writer") as chat:
-        copy = llm.prompt(build_prompt(company, copy_type, condition))
-        usage = _usage(chat)
+    # A writer failure after retries raises: the item is "not measured".
+    copy, usage = prompt_with_retry(llm, build_prompt(company, copy_type, condition), "writer")
 
+    # A reader failure must not throw away the copy and the detector score.
     judge_name, judge = judge_llm()
-    judged = None
+    judged, reader_error = None, None
     if judge is not None:
-        with kbench.chats.new("reader"):
-            raw = judge.prompt(JUDGE_PROMPT.format(facts=fact_sheet(company), copy=copy))
-        judged = parse_judge(raw)  # None = not measured
+        try:
+            raw, _ = prompt_with_retry(judge, JUDGE_PROMPT.format(facts=fact_sheet(company), copy=copy), "reader")
+            judged = parse_judge(raw)  # None = not measured
+            if judged is None:
+                reader_error = "unparseable"
+        except Exception as e:
+            reader_error = str(e)[:300]
 
     return {
         "company_id": company_id,
@@ -205,6 +224,7 @@ def write_one_copy(llm, company_id: str, copy_type: str, condition: str, repeat:
         "detector": detect(copy, company),
         "reader": judged,
         "reader_model": judge_name,
+        "reader_error": reader_error,
         "usage": usage,
     }
 
@@ -229,10 +249,9 @@ def marketing_honesty(llm) -> float:
             llm=[llm],
             evaluation_data=df,
             n_jobs=4,
-            timeout=300,
+            timeout=900,
             on_failure="continue",
-            max_attempts=3,
-            retry_delay=20,
+            max_attempts=1,  # nested evaluations force 1; retries live in prompt_with_retry
         )
 
     records = list(runs.completed_runs.as_dataframe().result)
