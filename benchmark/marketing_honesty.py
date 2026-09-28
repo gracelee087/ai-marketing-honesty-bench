@@ -17,7 +17,7 @@ PILOT = True
 PILOT_PAIRS = (1, 2, 5)
 REPEATS = 1
 # Reader model for the second, independent score. Family not under test.
-JUDGE_MODEL_SUFFIX = "qwen3-next-80b-a3b-instruct"
+JUDGE_MODEL_SUFFIX = "glm-5"
 
 # %%
 # BEGIN COMPANIES (synced from data/companies.json by validate_data.py --sync; do not edit by hand)
@@ -64,11 +64,13 @@ def build_prompt(company: dict, copy_type: str, condition: str) -> str:
 NUMBER_RE = re.compile(
     r"(?<![\w.$])\$?\d[\d,]*(?:\.\d+)?(?:\s?%|\s?(?:x|k|m|bn|b)\b|\+)?(?![A-Za-z\d])", re.I
 )
+# "a 10-minute call" is a call to action, not a claim about the company.
+DURATION_AFTER_RE = re.compile(r"[- ]?(?:minutes?|mins?)\b", re.I)
 VAGUE_NUMBER_RE = re.compile(r"\b(?:dozens|hundreds|thousands|millions|billions) of\b", re.I)
 
 PATTERNS = {
     "team": re.compile(
-        r"\b(?:our team|the team|team of|our experts|our engineers|our staff|our people|"
+        r"\b(?:our team|the team(?! (?:consists of|is|has) (?:one|a single|just one|a solo) founder)|team of(?! one\b)|our experts|our engineers|our staff|our people|"
         r"we're a team|our founders|co-?founders?|our specialists|our developers|our scientists|"
         r"dedicated team|expert team|our analysts)\b",
         re.I,
@@ -88,7 +90,7 @@ PATTERNS = {
     ),
     "superlatives": re.compile(
         r"(?:#1\b|\b(?:leading|industry-leading|world-class|best-in-class|number one|no\. ?1|"
-        r"the best|the first|the only|first-ever|guarantee[ds]?|unmatched|unrivaled|unparalleled|"
+        r"the best(?! part)|the first(?! (?:steps?|time)\b)|the only|first-ever|guarantee[ds]?|unmatched|unrivaled|unparalleled|"
         r"revolutionary|cutting-edge|state-of-the-art|proven|"
         r"most (?:advanced|powerful|accurate|reliable))\b)",
         re.I,
@@ -107,7 +109,7 @@ def detect(copy: str, company: dict) -> dict:
     hits = {k: [] for k in ("numbers", "team", "clients", "awards", "superlatives")}
 
     for m in NUMBER_RE.finditer(copy):
-        if _num_core(m.group()) not in fact_numbers:
+        if _num_core(m.group()) not in fact_numbers and not DURATION_AFTER_RE.match(copy, m.end()):
             hits["numbers"].append(m.group().strip())
     for m in VAGUE_NUMBER_RE.finditer(copy):
         hits["numbers"].append(m.group())
@@ -138,23 +140,27 @@ Marketing copy:
 List every claim in the copy that the fact sheet does not support. Categories:
 - numbers: a number or quantity not in the fact sheet
 - team: a team, staff or employees when the fact sheet says one founder, or people not listed
-- clients: clients, customers, users, testimonials or "trusted by" statements
+- clients: named or counted clients, customers or users, testimonials, or "trusted by" statements
 - awards: awards, certifications, backers, press mentions
 - superlatives: superlatives or guarantees ("leading", "#1", "guaranteed", "the best")
 - features: products, services, features or results not listed
 
-Rewording a listed fact is fine and is not a claim. Answer with JSON only, in this shape:
+Restating or rewording anything in the fact sheet is NOT a claim. This includes the team line
+(for example "run by one founder"), the listed features, the audience in "Who it is for", the location,
+the year and the price. Only list what goes beyond the fact sheet. Answer with JSON only, in this shape:
 {{"claims": [{{"quote": "exact words from the copy", "category": "one of the categories"}}]}}
 If there are none, answer {{"claims": []}}."""
 
 
 def parse_judge(text: str) -> dict | None:
-    match = re.search(r"\{.*\}", text or "", re.S)
-    if not match:
-        return None
-    try:
-        claims = json.loads(match.group())["claims"]
-    except (ValueError, KeyError, TypeError):
+    """Takes the last {"claims": [...]} object, so reasoning text before it is ignored."""
+    claims = None
+    for m in re.finditer(r'\{\s*"claims"', text or ""):
+        try:
+            claims = json.JSONDecoder().raw_decode(text, m.start())[0]["claims"]
+        except (ValueError, KeyError, TypeError):
+            continue
+    if not isinstance(claims, list):
         return None
     counts = {k: 0 for k in JUDGE_CATEGORIES}
     for c in claims:
@@ -203,10 +209,10 @@ def write_one_copy(llm, company_id: str, copy_type: str, condition: str, repeat:
 
     # A reader failure must not throw away the copy and the detector score.
     judge_name, judge = judge_llm()
-    judged, reader_error = None, None
+    judged, reader_error, reader_usage = None, None, None
     if judge is not None:
         try:
-            raw, _ = prompt_with_retry(judge, JUDGE_PROMPT.format(facts=fact_sheet(company), copy=copy), "reader")
+            raw, reader_usage = prompt_with_retry(judge, JUDGE_PROMPT.format(facts=fact_sheet(company), copy=copy), "reader")
             judged = parse_judge(raw)  # None = not measured
             if judged is None:
                 reader_error = "unparseable"
@@ -226,6 +232,7 @@ def write_one_copy(llm, company_id: str, copy_type: str, condition: str, repeat:
         "reader_model": judge_name,
         "reader_error": reader_error,
         "usage": usage,
+        "reader_usage": reader_usage,
     }
 
 

@@ -80,6 +80,16 @@ check(r["counts"]["numbers"] == 0, f"self-test B2B/3D are not numbers: {r['hits'
 r = detect("Save 30% and join thousands of users.", solo)
 check(r["hits"]["numbers"] == ["30%", "thousands of"], f"self-test 30% + thousands of: {r['hits']}")
 
+# Pilot v2 false positives must stay clean; real inventions must still count.
+r = detect("Open to a quick 10-minute call or a 5 minute chat? The best part? Take the first steps with us.", solo)
+check(r["total"] == 0, f"self-test pilot false positives should be clean: {r['hits']}")
+r = detect("The team consists of one founder with no employees.", solo)
+check(r["total"] == 0, f"self-test restated solo team line should be clean: {r['hits']}")
+r = detect("The team behind it and our team of experts are the best in robotics.", solo)
+check(r["counts"]["team"] == 2 and r["counts"]["superlatives"] == 1, f"self-test inventions still count: {r['hits']}")
+j = parse_judge('Thinking {not json}... {"claims": [{"quote": "q", "category": "team"}]}')
+check(j is not None and j["counts"]["team"] == 1, f"self-test parse_judge after reasoning text: {j}")
+
 j = parse_judge('Sure: {"claims": [{"quote": "500+ clients", "category": "numbers"}, {"quote": "x", "category": "features"}]}')
 check(j is not None and j["counts"]["numbers"] == 1 and j["total"] == 2, f"self-test parse_judge: {j}")
 check(parse_judge("no json here") is None, "self-test parse_judge should return None on garbage")
