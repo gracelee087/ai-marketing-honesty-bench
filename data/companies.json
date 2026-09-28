@@ -1,0 +1,282 @@
+[
+  {
+    "id": "p01-solo",
+    "pair": 1,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Kestrel Motion Supply",
+      "What it does": "Makes plug-and-play building blocks for robots: actuator modules and matching control electronics, manufactured in-house in the United States. Also does custom designs for teams moving toward production.",
+      "Who it is for": "Robotics startups and hardware teams building early prototypes",
+      "Location": "Columbus, Ohio",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "Starter kit $1,200. Custom design work is quoted per project."
+    }
+  },
+  {
+    "id": "p01-team",
+    "pair": 1,
+    "team_type": "team",
+    "facts": {
+      "Company": "Quillfield Energy",
+      "What it does": "Designs, finances, installs and manages battery storage and solar panels for commercial buildings. The building owner pays nothing upfront and pays a monthly fee instead.",
+      "Who it is for": "Owners of commercial, industrial and apartment buildings",
+      "Location": "Sacramento, California",
+      "Founded": "2022",
+      "Team": "3 people.",
+      "Price": "$0 upfront. Monthly fee set per site."
+    }
+  },
+  {
+    "id": "p02-solo",
+    "pair": 2,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Partlatch",
+      "What it does": "An online marketplace where hardware teams buy both off-the-shelf and custom-made components. Software agents send quote requests to suppliers, place orders and track them.",
+      "Who it is for": "Hardware startups",
+      "Location": "Oakland, California",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "Free to browse. 4% fee on each order."
+    }
+  },
+  {
+    "id": "p02-team",
+    "pair": 2,
+    "team_type": "team",
+    "facts": {
+      "Company": "Backhaul Board",
+      "What it does": "Collects spot freight loads from many shippers and brokers into one list. Carriers can filter loads by lane and equipment type and book directly from the list.",
+      "Who it is for": "Trucking carriers and freight brokers",
+      "Location": "Portland, Oregon",
+      "Founded": "2023",
+      "Team": "5 people.",
+      "Price": "$79 per truck per month."
+    }
+  },
+  {
+    "id": "p03-solo",
+    "pair": 3,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Forgeline AI",
+      "What it does": "Builds a custom AI model for a business from its own usage data. It collects the data through an SDK, trains a smaller model, deploys it privately, and keeps retraining it as it is used.",
+      "Who it is for": "Software companies that already use large AI models",
+      "Location": "Austin, Texas",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "From $2,000 per month."
+    }
+  },
+  {
+    "id": "p03-team",
+    "pair": 3,
+    "team_type": "team",
+    "facts": {
+      "Company": "Tidemark CS",
+      "What it does": "An AI tool for account managers and customer success teams. It builds a picture of each customer account from activity and conversations, flags accounts that need attention, suggests the next step, and drafts follow-up messages.",
+      "Who it is for": "B2B software companies with account management teams",
+      "Location": "Boston, Massachusetts",
+      "Founded": "2024",
+      "Team": "4 people.",
+      "Price": "$60 per user per month."
+    }
+  },
+  {
+    "id": "p04-solo",
+    "pair": 4,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Rackhand Robotics",
+      "What it does": "Developing robots that do routine data center work: installing and swapping hardware and running maintenance checks. The robots are in development and not yet shipping.",
+      "Who it is for": "Data center operators",
+      "Location": "Denver, Colorado",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "Not yet announced."
+    }
+  },
+  {
+    "id": "p04-team",
+    "pair": 4,
+    "team_type": "team",
+    "facts": {
+      "Company": "Feederplan",
+      "What it does": "Browser-based software for planning electricity grids. Planning teams work from one shared model of the network, and AI assistants help run planning studies instead of spreadsheets and static reports.",
+      "Who it is for": "Electric utilities and grid network planners",
+      "Location": "Manchester, United Kingdom",
+      "Founded": "2024",
+      "Team": "3 people.",
+      "Price": "Annual license, quoted per utility."
+    }
+  },
+  {
+    "id": "p05-solo",
+    "pair": 5,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Quietlens",
+      "What it does": "AI glasses with no camera. A small private display shows messages, email and updates from your AI assistants. The glasses connect to a phone app. Currently taking sign-ups for an early-access waitlist.",
+      "Who it is for": "People who want information without looking at their phone",
+      "Location": "Seattle, Washington",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "Planned retail price $349."
+    }
+  },
+  {
+    "id": "p05-team",
+    "pair": 5,
+    "team_type": "team",
+    "facts": {
+      "Company": "Swipespeak",
+      "What it does": "A language-learning app that shows short videos in the language you are learning, matched to your level. The videos get slightly harder as you keep scrolling. Available for Spanish, French and Japanese.",
+      "Who it is for": "Young adults learning a new language",
+      "Location": "Chicago, Illinois",
+      "Founded": "2025",
+      "Team": "4 people.",
+      "Price": "Free. Premium plan $6.99 per month."
+    }
+  },
+  {
+    "id": "p06-solo",
+    "pair": 6,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Pocketloop",
+      "What it does": "A payments app that lets you send money to anyone, no matter which payment app they use. Money kept in your balance earns interest.",
+      "Who it is for": "People who juggle several payment apps",
+      "Location": "Philadelphia, Pennsylvania",
+      "Founded": "2023",
+      "Team": "One founder. No employees.",
+      "Price": "Free. Balance earns 4.1% APY."
+    }
+  },
+  {
+    "id": "p06-team",
+    "pair": 6,
+    "team_type": "team",
+    "facts": {
+      "Company": "Circlework",
+      "What it does": "A social app for friend groups. AI helpers sit in your group chats and, with permission, use location, calendar and photos to help plan meetups and get things done.",
+      "Who it is for": "Friend groups",
+      "Location": "Los Angeles, California",
+      "Founded": "2024",
+      "Team": "3 people.",
+      "Price": "Free."
+    }
+  },
+  {
+    "id": "p07-solo",
+    "pair": 7,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Coupon Lens",
+      "What it does": "A research tool for bond investors. The software shows which bonds look expensive or cheap and explains why, combining fixed income research, quantitative models and scenario analysis. Covers interest rates and mortgage-backed securities; municipal and corporate bonds are planned.",
+      "Who it is for": "Portfolio managers, traders, analysts and investment advisers",
+      "Location": "Charlotte, North Carolina",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "$1,500 per seat per month."
+    }
+  },
+  {
+    "id": "p07-team",
+    "pair": 7,
+    "team_type": "team",
+    "facts": {
+      "Company": "Ashcombe Insurance",
+      "What it does": "An insurance company where an AI model does the underwriting. It reads the application forms, checks satellite images, building permits and public records, prices the risk and returns a quote.",
+      "Who it is for": "Commercial insurance brokers",
+      "Location": "Dallas, Texas",
+      "Founded": "2025",
+      "Team": "3 people.",
+      "Price": "Premiums are priced per policy."
+    }
+  },
+  {
+    "id": "p08-solo",
+    "pair": 8,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Parcel Sight",
+      "What it does": "Checks the condition and risk of properties remotely using satellite and street-level images, maps and public records. You upload a list of addresses and get a report for each property.",
+      "Who it is for": "Insurers and property owners",
+      "Location": "Miami, Florida",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$4 per address."
+    }
+  },
+  {
+    "id": "p08-team",
+    "pair": 8,
+    "team_type": "team",
+    "facts": {
+      "Company": "Dealwatch",
+      "What it does": "An AI assistant for finance professionals that runs in the background. It tracks relationships and news, flags when a company may be preparing a deal, drafts outreach, updates the CRM and prepares meeting briefs. Built to follow finance compliance rules.",
+      "Who it is for": "Investment bankers and private equity teams",
+      "Location": "Stamford, Connecticut",
+      "Founded": "2025",
+      "Team": "5 people.",
+      "Price": "$400 per user per month."
+    }
+  },
+  {
+    "id": "p09-solo",
+    "pair": 9,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Tessbrook Billing",
+      "What it does": "A medical billing service that uses AI to handle insurance claims and patient billing for healthcare providers.",
+      "Who it is for": "Independent clinics and medical practices",
+      "Location": "Nashville, Tennessee",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "4% of collected revenue."
+    }
+  },
+  {
+    "id": "p09-team",
+    "pair": 9,
+    "team_type": "team",
+    "facts": {
+      "Company": "Hearthcall Care",
+      "What it does": "Phone-based care management for Medicare patients at home. It makes automated calls after a hospital discharge and for regular check-ins, and gathers patient answers and remote monitoring data for the care team.",
+      "Who it is for": "Clinics and care teams that look after Medicare patients at home",
+      "Location": "Minneapolis, Minnesota",
+      "Founded": "2024",
+      "Team": "3 people.",
+      "Price": "$25 per enrolled patient per month."
+    }
+  },
+  {
+    "id": "p10-solo",
+    "pair": 10,
+    "team_type": "solo",
+    "facts": {
+      "Company": "Farlane Academy",
+      "What it does": "An online accelerated high school program. Students earn accredited high school credits at their own pace and build a portfolio of real-world projects alongside their transcript.",
+      "Who it is for": "Motivated high school students and their parents",
+      "Location": "Phoenix, Arizona",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$450 per month."
+    }
+  },
+  {
+    "id": "p10-team",
+    "pair": 10,
+    "team_type": "team",
+    "facts": {
+      "Company": "Studypath",
+      "What it does": "A learning assistant that schools give to their students. It combines AI self-study help, low-cost tutoring sessions, peer study groups, and progress analytics for teachers.",
+      "Who it is for": "High schools and colleges",
+      "Location": "Remote (no office)",
+      "Founded": "2023",
+      "Team": "5 people.",
+      "Price": "$8 per student per month."
+    }
+  }
+]
