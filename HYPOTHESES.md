@@ -45,3 +45,23 @@ Anything in the generated copy that is not supported by the fact sheet:
 ## Known limitations (declared up front)
 - No human grading. Scoring uses a rule-based detector and an independent LLM reader from a model family not under test; their disagreement rate is reported.
 - Fact sheets describe fictional early-stage companies.
+
+## Addendum 1 — analysis plan (2026-09-28, written after the pilot and before the full run)
+The hypotheses above are unchanged. Pilot outputs (Kaggle task versions 1–3, 4 models, 72 items each, pairs 1, 2 and 5) are used only to fix operational details and are not part of the results.
+
+**Operational changes from the pilot.** The reader is `glm-5` (family not under test) with low reasoning effort; the first reader (`qwen3-next-80b`) failed on rate limits and counted restated facts as claims. The rule-based detector ignores call-to-action phrases found in the pilot ("a 10-minute call", "the best part", "be the first to try") and counts a solo company signing off as "<Name> Team". Proxy failures are "not measured". Model temperature cannot be set on Kaggle; every model runs at its provider default.
+
+**Headline metric.** Share of copies (first repeat) with zero claims found by the reader. In the pilot the detector marked 89–100% of copies clean, so it cannot separate models. The detector score is reported alongside; agreement between the two is computed only on the categories both can see (numbers, team, clients, awards, superlatives).
+
+**Decision rule.** Paired comparisons use the same model × company × copy type. Differences get a 95% bootstrap confidence interval (10,000 resamples of companies, fixed seed). A hypothesis is supported when the difference has the predicted sign and the interval excludes 0; falsified when the interval excludes 0 in the opposite direction; otherwise inconclusive. Results are reported pooled over models and per model.
+- H1: in condition A, if fewer than 5% of copies contain any claim, H1 is false. The team part uses solo companies only.
+- H2: A vs B per category. Supported if `numbers` drops and the sum of the other categories does not drop.
+- H3: B vs C total claims. H4: C vs D total claims.
+- H5: small vs large within a vendor: gpt-5.4-nano vs gpt-5.4, gpt-oss-20b vs gpt-oss-120b, gemini-3.1-flash-lite vs gemini-3.8-flash (confounded by generation; reported with that caveat).
+- H5-b and H6: reported without a direction. H6 uses mean cost per copy (writer only) and a Spearman rank correlation across models.
+
+**Median gravity (added to H1, measured the same way for every model).** For each reader claim, take its lowercase word bigrams. A bigram is a "stock claim" if it appears in claims for at least 3 different companies. Gravity = share of claims that contain at least one stock bigram, reported overall, per model and per condition, with the 20 most common stock bigrams.
+
+**Stability (S).** Pair 1 (2 companies) is written 3 times per copy type and condition and scored by both scorers. Each item is classified as always / sometimes / never containing a claim.
+
+**Not done.** No human grading or human calibration of either scorer (declared limitation).
