@@ -5,3 +5,4 @@ __pycache__/
 private/
 *.task.json
 runs/
+analysis/out/
