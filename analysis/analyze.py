@@ -56,12 +56,15 @@ def load(version: str = VERSION):
                 missing[model] += 1
                 continue
             reader = r.get("reader")
+            wu, ru = r.get("usage") or {}, r.get("reader_usage") or {}
             row = {
                 "model": model, "company": r["company_id"], "pair": r["pair"], "team_type": r["team_type"],
                 "copy_type": r["copy_type"], "condition": r["condition"], "repeat": r["repeat"],
                 "read": bool(reader), "det_total": r["detector"]["total"],
-                "writer_cost": ((r.get("usage") or {}).get("cost_nanodollars") or 0) / 1e9,
-                "reader_cost": ((r.get("reader_usage") or {}).get("cost_nanodollars") or 0) / 1e9,
+                "writer_cost": (wu.get("cost_nanodollars") or 0) / 1e9,
+                "reader_cost": (ru.get("cost_nanodollars") or 0) / 1e9,
+                "writer_in": wu.get("input_tokens") or 0, "writer_out": wu.get("output_tokens") or 0,
+                "reader_in": ru.get("input_tokens") or 0, "reader_out": ru.get("output_tokens") or 0,
                 "claims": [c.get("quote", "") for c in reader["claims"]] if reader else [],
             }
             for c in SHARED:
@@ -229,6 +232,15 @@ def h6(df):
     rho = {k: (t.writer_cost_per_copy.corr(t[k], method="spearman") if len(t) >= 3 else np.nan)
            for k in ["reader_mean_claims", "reader_clean"]}
     return t.sort_values("writer_cost_per_copy"), rho
+
+
+def spend(df):
+    """Tokens and USD per model, all items and repeats (failed writer calls record no usage)."""
+    cols = ["writer_in", "writer_out", "writer_cost", "reader_in", "reader_out", "reader_cost"]
+    t = df.groupby("model")[cols].sum()
+    t.loc["total"] = t.sum()
+    t["total_cost"] = t.writer_cost + t.reader_cost
+    return t.reset_index()
 
 
 WORD = re.compile(r"[a-z0-9']+")
@@ -418,7 +430,8 @@ def main():
     t6, rho = h6(df)
     g_all, g_model, g_cond, top, n_claims = gravity(df)
     stab = stability(df)
-    core = df[df.pair <= CORE_PAIRS]
+    money = spend(df)
+    core =df[df.pair <= CORE_PAIRS]
     rank_c = headline(core)[1]
     t5_c = h5(core)
     t6_c, rho_c = h6(core)
@@ -433,6 +446,7 @@ def main():
     t1.to_csv(OUT / "h1.csv", index=False); t5.to_csv(OUT / "h5.csv", index=False)
     t6.to_csv(OUT / "h6_cost.csv"); top.to_csv(OUT / "stock_bigrams.csv", index=False)
     stab.to_csv(OUT / "stability.csv", index=False)
+    money.to_csv(OUT / "spend.csv", index=False)
 
     counts = df.groupby("model").agg(measured=("read", "size"), read=("read", "sum"))
     counts["not_measured"] = [missing.get(m, 0) for m in counts.index]
@@ -451,6 +465,8 @@ def main():
          "copies the reader could not read are excluded.\n"]
     s += [f"- note: {n}\n" for n in notes]
     s += ["\n## Coverage\n", md_table(counts)]
+    s += ["\n## Spend — tokens and USD per model (all items and repeats; failed writer calls record no usage)\n",
+          md_table(money, num_cols=["writer_cost", "reader_cost", "total_cost"])]
     s += [f"\n## Headline — share of clean copies (reader), per model, pairs 1–{CORE_PAIRS} (Addendum 2, primary)\n",
           md_table(rank_c, P, N)]
     s += ["\n## Headline — per model, all 20 companies (secondary)\n", md_table(rank, P, N)]
