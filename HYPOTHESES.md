@@ -65,3 +65,10 @@ The hypotheses above are unchanged. Pilot outputs (Kaggle task versions 1–3, 4
 **Stability (S).** Pair 1 (2 companies) is written 3 times per copy type and condition and scored by both scorers. Each item is classified as always / sometimes / never containing a claim.
 
 **Not done.** No human grading or human calibration of either scorer (declared limitation).
+
+## Addendum 2 — cross-model comparisons use pairs 1–6 (2026-09-30, after 4 models, before the remaining models)
+The hypotheses and Addendum 1 are unchanged; this is a declared deviation.
+
+**Why.** The Model Proxy has a daily quota and reserves each call's worst-case cost before running it. When two models run on the same day, the quota runs out near the end of the run, and the items run last (mostly pairs 7–10) are not scored. So different models end up measured on different sets of companies (e.g. gpt-oss-20b lost almost all of pairs 7–10). The decision was made from this missing-data pattern, not from scores by company.
+
+**What changes.** Every comparison *between* models — the per-model ranking (headline), H5 and H6 — is reported primarily on pairs 1–6 (12 companies). Within-model tests (H1–H4), agreement, median gravity and stability keep all 20 companies. All-20 versions of the ranking, H5 and H6 are still reported as secondary. Every model still runs on all 20 companies; the Kaggle task is unchanged.
