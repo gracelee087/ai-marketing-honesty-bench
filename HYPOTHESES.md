@@ -72,3 +72,10 @@ The hypotheses and Addendum 1 are unchanged; this is a declared deviation.
 **Why.** The Model Proxy has a daily quota and reserves each call's worst-case cost before running it. When two models run on the same day, the quota runs out near the end of the run, and the items run last (mostly pairs 7–10) are not scored. So different models end up measured on different sets of companies (e.g. gpt-oss-20b lost almost all of pairs 7–10). The decision was made from this missing-data pattern, not from scores by company.
 
 **What changes.** Every comparison *between* models — the per-model ranking (headline), H5 and H6 — is reported primarily on pairs 1–6 (12 companies). Within-model tests (H1–H4), agreement, median gravity and stability keep all 20 companies. All-20 versions of the ranking, H5 and H6 are still reported as secondary. Every model still runs on all 20 companies; the Kaggle task is unchanged.
+
+## Addendum 3 — which gpt-oss-120b run is reported (2026-10-04, before the 2026-10-05 re-run, before any of its results)
+The hypotheses and Addenda 1–2 are unchanged.
+
+**Why.** gpt-oss-120b has two partial runs: run 3866186 (2026-10-01, provider rate limits, 77 of 288 copies read) and run 4046443 (2026-10-04, started on the leftover daily quota). A third run starts 2026-10-05 alone on a full daily quota. Kaggle can only re-run the whole task, not the missing items.
+
+**Rule.** Exactly one gpt-oss-120b run is reported: the one with the most copies read by the reader (all items and repeats). On a tie, the later run. Runs are never merged. The choice depends only on coverage, not on scores. The other runs and their coverage are listed in the post.
