@@ -79,3 +79,16 @@ The hypotheses and Addenda 1–2 are unchanged.
 **Why.** gpt-oss-120b has two partial runs: run 3866186 (2026-10-01, provider rate limits, 77 of 288 copies read) and run 4046443 (2026-10-04, started on the leftover daily quota). A third run starts 2026-10-05 alone on a full daily quota. Kaggle can only re-run the whole task, not the missing items.
 
 **Rule.** Exactly one gpt-oss-120b run is reported: the one with the most copies read by the reader (all items and repeats). On a tie, the later run. Runs are never merged. The choice depends only on coverage, not on scores. The other runs and their coverage are listed in the post.
+
+## Addendum 4 — gpt-5.4 re-run, one reported run per model, ranking threshold (2026-10-05, after all eleven models had run, before the gpt-5.4 re-run)
+The hypotheses and Addenda 1–3 are unchanged. Everything below was decided after seeing the data of the eleven runs, so these are declared reporting rules, not predictions.
+
+**Why.** gpt-5.4 has 22 of 288 copies read. It ran on 2026-10-04 after another model had used most of the daily quota, and the proxy refused 260 writer calls (it reserves each call's worst-case cost before running it). gpt-5.4 is the larger model in H5's first pair and the only model in the line-up above the cheap and mid-priced tier.
+
+**What is run.** gpt-5.4 is run once more, alone, on a fresh daily quota. The Kaggle task (version 4), the prompts, the reader and the analysis are unchanged. Items are attempted in company order, so if the quota still runs short the missing items will again be in the later pairs; comparisons between models stay on pairs 1–6 (Addendum 2).
+
+**One reported run per model.** Addendum 3's rule now applies to every model: when a model has more than one run of version 4, exactly one is reported, the run with the most copies read by the reader (all items and repeats); on a tie, the later run. Runs are never merged, and the choice never depends on scores. The runs already reported satisfy this rule: gemini-3.1-flash-lite and gpt-oss-20b each had a first attempt on 2026-09-30 that ran out of quota within minutes (23 and 0 copies read) and were run again the same day (239 and 194 copies read).
+
+**Ranking threshold.** A model is ranked against other models only if the reader read at least 30 of its first-repeat copies in pairs 1–6 (144 possible). A model below the threshold is listed with its coverage and is not ranked. The number 30 was chosen after seeing coverage: it keeps gpt-oss-120b (37 copies) and leaves out the first gpt-5.4 run (4 copies).
+
+**Not changed.** H5 is tested as in Addendum 1; the re-run only adds data to its gpt-5.4-nano vs gpt-5.4 pair.
