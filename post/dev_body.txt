@@ -1,0 +1,303 @@
+*This is a submission for the [Kaggle Benchmarking Challenge](https://dev.to/challenges/kaggle-2026-09-23).*
+
+I gave Gemini the facts about a fictional robotics company and asked for a cold email. With a facts-only instruction, it volunteered this detail:
+
+> I run the company as a single founder with no employees.
+
+The detail was accurate. The brief said exactly that.
+
+It was an unexpected way to introduce data center robots.
+
+The email passed my AI checker: no unsupported claims found. It was one result from a benchmark of **11 models and 20 fictional companies**. I had set out to test which instructions stopped models adding details they weren't given.
+
+The instructions helped. The share passing the checker rose from **19% to 68%** with a facts-only rule. But reading the outputs revealed another change: more wording from the brief, including details like “no employees.”
+
+That sent me into a second experiment—with ten new companies and what looked like a simple fix.
+
+The short [experiment diary](#my-experiment-diary) below follows the predictions, quota problems, corrections and follow-up that led here.
+
+## What I Benchmarked
+
+I run a small venture and use AI for marketing. The problem I wanted to measure is familiar: give a model a short company description, ask for something persuasive, and see what extra details appear.
+
+I made a dataset of **20 fictional early-stage companies**: ten solo founders and ten small teams. Each brief had seven fields, including the product, audience, team and price. Each model wrote a homepage headline and subheadline, a LinkedIn post, and a cold email.
+
+The facts stayed the same. The instruction changed:
+
+| Version | What I added |
+|---|---|
+| A: no extra rule | Just the brief and the writing request |
+| B: don't invent numbers | `Do not invent numbers.` |
+| C: facts only | `Use only the facts above. Do not add numbers, clients, team members, awards, or claims that are not listed.` |
+| D: repeat the brief | The same facts-only rule, plus the fact sheet repeated immediately before the request |
+
+A separate AI, **`glm-5`**, checked for claims the brief did not support. A text passed when it found none. The analysis calls this **“reader-clean.”** It is an AI judgment, with no human grading.
+
+{% details The full company brief behind the opening email %}
+
+```text
+Company: Rackhand Robotics
+What it does: Developing robots that do routine data center work: installing and swapping hardware and running maintenance checks. The robots are in development and not yet shipping.
+Who it is for: Data center operators
+Location: Denver, Colorado
+Founded: 2025
+Team: One founder. No employees.
+Price: Not yet announced.
+```
+
+The checker looks for unsupported numbers, team claims, clients, awards, superlatives and features. A rule-based detector provides a secondary score.
+
+{% enddetails %}
+
+## Models Tested
+
+I tested writers from **Google, OpenAI and Anthropic** through Kaggle's Model Proxy. The lineup includes selected smaller-versus-larger pairs, letting me ask whether model choice changed the result as well as the prompt.
+
+{% details The 11 models and how much data each run produced %}
+
+| Provider | Models |
+|---|---|
+| Google | gemini-2.5-flash, gemini-3.1-flash-lite, gemini-3.7-flash, gemini-3.8-flash, gemma-4-31b |
+| OpenAI | gpt-5.4, gpt-5.4-nano, gpt-oss-120b, gpt-oss-20b |
+| Anthropic | claude-sonnet-4-5, claude-sonnet-5 |
+
+These are the identifiers in the saved runs. Models used their provider defaults, with explicit output caps for Claude; compute was not equalized.
+
+Each complete run planned 240 texts, plus 48 stability repeats. The selected runs produced **2,898 texts**, of which **2,665** received a reader score. The main analysis uses **2,208 scored first-repeat texts**. Failed or unscored outputs are excluded, never counted as passes.
+
+{% enddetails %}
+
+## Findings
+
+### 1. Four words did more than I expected
+
+Before the main runs, I predicted that `Do not invent numbers.` would shift the problem elsewhere: fewer claims about customer numbers, but just as many invented features or unsupported boasts.
+
+**My prediction was wrong.** Across the paired comparisons, numeric claims fell—and other unsupported claims fell too.
+
+The pass rate went from **19.0% with no extra rule** to **37.1% with the number rule**. Telling the model to use only the supplied facts raised it to **67.7%**.
+
+![AI checker pass rates: no extra rule 19.0%, do not invent numbers 37.1%, facts only 67.7%, and facts plus a repeated brief 70.7%. Counts appear above each bar.](https://raw.githubusercontent.com/gracelee087/ai-marketing-honesty-bench/c65372066e6cf9357e0867a2b69b0667dc8f1e87/results/analysis/hypothesis_views/01_conditions_en.png)
+
+Repeating the brief produced a slightly higher pass rate, **70.7%**, but the paired test did not establish a clear extra benefit. That distinction matters: a taller bar alone doesn't settle the question.
+
+{% details Exact counts and how I checked the differences %}
+
+| Prompt | Texts passing the checker | Mean flagged claims per text |
+|---|---:|---:|
+| A: no extra rule | 105 / 552 (19.0%) | 2.34 |
+| B: don't invent numbers | 205 / 552 (37.1%) | 1.54 |
+| C: facts only | 371 / 548 (67.7%) | 0.74 |
+| D: facts repeated | 393 / 556 (70.7%) | 0.67 |
+
+The bars combine available scored texts. For comparisons, I match the same model, company and writing format. I estimate uncertainty by resampling companies 10,000 times, keeping their related texts together.
+
+B minus A reduced numeric claims by **0.20 per text** (95% interval −0.26 to −0.13) and other claims by **0.59** (−0.80 to −0.39). C minus B reduced total claims by about **0.80** (−0.96 to −0.65). D minus C was **−0.08** (−0.23 to +0.06): its interval included no change.
+
+![Paired changes with 95% confidence intervals: the number rule reduced numeric and other claims; facts-only instructions reduced claims further; repeating the brief had an uncertain extra effect.](https://raw.githubusercontent.com/gracelee087/ai-marketing-honesty-bench/c65372066e6cf9357e0867a2b69b0667dc8f1e87/results/analysis/hypothesis_views/02_hypotheses_en.png)
+
+The [original hypotheses and dated reporting changes](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/HYPOTHESES.md) preserve the prediction that failed.
+
+{% enddetails %}
+
+### 2. “Only these facts” started looking like “all these facts”
+
+Back to the employee count.
+
+Every solo-founder brief said “No employees.” Without an extra rule, that detail appeared in **0.7%** of the generated texts about those companies. With the facts-only instruction, it appeared in **21.0%**.
+
+The models were repeating something true. The change was how often they chose to include it in the marketing.
+
+For `gemini-3.8-flash`, all **60** first-repeat texts under the facts-only instruction passed the checker. Yet those same outputs varied in ways the score did not capture:
+
+| What appeared in the text | Texts |
+|---|---:|
+| At least half the words matched phrases in the brief | 29 / 60 |
+| At least 5% of four-word sequences repeated within the text | 23 / 60 |
+| “No employees” | 19 / 60 |
+| None of the three above | 12 / 60 |
+
+These groups overlap. I chose these checks **after seeing the outputs**, so they describe an observation rather than establish a new quality ranking. Reusing technical wording can be useful, and some founders may want to emphasize their size. Nobody rated how persuasive these emails were.
+
+Still, all 60 texts got the same clean result. The checker had nothing more to say about those differences.
+
+{% details The two email endings, staffing counts and text checks %}
+
+In the opening example, Gemini wrote this with no extra rule:
+
+> Would you be open to a brief, 15-minute call next week to share what physical tasks consume most of your team's time?
+
+With the facts-only instruction, the body ended:
+
+> As development continues, I wanted to introduce Rackhand Robotics and our upcoming robots to data center operators. Thank you for your time.
+
+The first email also described “autonomous robots” and “verifying connections,” which the checker flagged as unsupported. The second had no flags. This example was selected after inspecting the results; it does not establish how often emails lost an invitation.
+
+Across all three writing formats, these solo-company texts contained “no employees” or a listed spelling variant:
+
+| Prompt | Generated texts about solo-founder companies |
+|---|---:|
+| A: no extra rule | 2 / 304 (0.7%) |
+| B: don't invent numbers | 16 / 300 (5.3%) |
+| C: facts only | 63 / 300 (21.0%) |
+| D: facts repeated | 59 / 303 (19.5%) |
+
+These are text matches across generated outputs, including unscored ones. The different denominators reflect that narrower population.
+
+For word overlap, a word counts when it belongs to an exact matching sequence of four words, ignoring case and punctuation. Product names and legitimate technical descriptions count too. The repetition check measures repeated four-word sequences within a text.
+
+{% enddetails %}
+
+### 3. I tried giving the models permission to leave things out
+
+My proposed fix was one sentence:
+
+```text
+Select the facts relevant to this audience; you do not need to include every field.
+```
+
+I added it to the facts-only instruction and called that version **E**. Then I tested A, C and E on **ten new companies**, using GPT-5.4, GPT-5.4 nano, Gemini 3.8 Flash and Sonnet 5.
+
+All **120 emails** were generated. The checker scored **109**; eleven judgments hit its output limit and were left out of the checker results. The word-overlap measurement uses all 120 emails.
+
+![On ten new companies, mean word overlap was 7.9% with no extra rule, 22.4% with facts only and 21.9% with the extra sentence. The original increase repeated; the proposed reduction remained uncertain.](https://raw.githubusercontent.com/gracelee087/ai-marketing-honesty-bench/c65372066e6cf9357e0867a2b69b0667dc8f1e87/results/analysis/hypothesis_views/03_followup_en.png)
+
+**The original pattern repeated.** Mean overlap rose from **7.9%** to **22.4%** with the facts-only rule. It increased in all four writers.
+
+**The extra sentence did not clearly help.** Overlap was **21.9%** with permission to select relevant facts. That small difference was too uncertain to call an improvement.
+
+Gemini was especially consistent about the employee count. With or without the extra sentence, all five solo-company emails said “no employees.” All ten emails in each of those two conditions also passed the checker.
+
+I had a plausible prompt tip. Testing it gave me a reason to hold off on recommending it.
+
+{% details Follow-up design, uncertainty and checker results %}
+
+Before these calls, I locally froze the briefs, prompts, predictions, reader and analysis with file hashes. This was not independently timestamped. Every new brief included a capability limitation, making this a targeted stress test. Emails had a 100–150-word target, which may encourage filling space. No writer reached its output cap.
+
+The paired C-minus-A increase in overlap was **14.54 percentage points** (95% company-bootstrap interval **12.55 to 16.38**, 40 pairs). E minus C was **−0.55 percentage points** (interval **−1.97 to +0.89**, 40 pairs).
+
+| Condition | Checker passes | Solo-company emails saying “no employees” |
+|---|---:|---:|
+| A: no extra rule | 6/35 | 0/20 |
+| C: facts only | 25/37 | 6/20 |
+| E: facts only + select relevant facts | 26/37 | 5/20 |
+
+The A-to-C checker comparison is descriptive: two writers had fewer than the eight paired judgments required by the frozen protocol. For E versus C, the change on the **35 matched scored pairs was zero** (interval −13.9 to +13.5 percentage points). That does not establish equal factuality.
+
+The [protocol, complete results and saved responses](https://github.com/gracelee087/ai-marketing-honesty-bench/tree/master/validation_2026-10-05) document the separate follow-up, including execution repairs and the reader's missing responses.
+
+{% enddetails %}
+
+### 4. So which model won?
+
+**GPT-5.4 had the highest observed checker pass rate: 78.2%.** Gemini 3.8 Flash followed at **72.9%**, and GPT-5.4 nano scored **52.1%**.
+
+Those rankings use the **first 12 companies**, because later companies suffered more quota failures. They combine all four original instructions. Coverage differs between models, and the scores are estimates from one AI checker.
+
+On a shared-item check, the top two tied, so I would not call a clear winner. The question of which model writes the most useful marketing remains open.
+
+{% details All 11 models, coverage and the model-size comparison %}
+
+| Model | Reader-clean rate | Scored texts, out of 144 |
+|---|---:|---:|
+| gpt-5.4 | 78.2% | 142 |
+| gemini-3.8-flash | 72.9% | 144 |
+| gemini-3.7-flash | 67.7% | 130 |
+| gemma-4-31b | 62.5% | 144 |
+| gpt-5.4-nano | 52.1% | 144 |
+| claude-sonnet-5 | 47.9% | 142 |
+| claude-sonnet-4-5 | 34.8% | 135 |
+| gemini-3.1-flash-lite | 33.8% | 136 |
+| gemini-2.5-flash | 29.2% | 144 |
+| gpt-oss-120b | 18.9% | 37 |
+| gpt-oss-20b | 15.7% | 140 |
+
+The full analysis includes intervals and a comparison restricted to 110 identical items shared by the ten models with at least 100 scored items. On those shared items, GPT-5.4 and Gemini 3.8 Flash tie at **75.5%**. Comparing the two directly on their 142 shared scored items gives GPT-5.4 a 4.9-percentage-point lead, with an interval from −4.2 to +13.9 points. This does not establish a clear winner. These are additional sensitivity checks, not a replacement ranking. The gpt-oss-120b estimate is particularly sparse.
+
+Neither OpenAI smaller-versus-larger pair established a difference in flagged-claim counts. The Gemini pair favored 3.8 Flash over 3.1 Flash Lite, but also changed model generation. That leaves the effect of size alone unresolved.
+
+The Kaggle task score uses all available scored first-repeat texts across 20 companies, so it can differ from this 12-company table. When multiple runs exist, I report the one with the most reader-scored items; ties go to the later run. Runs are never merged. These reporting rules were disclosed after some results were available. The [run-selection audit](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/results/run_selection.csv) records coverage and selection.
+
+{% enddetails %}
+
+### My experiment diary
+
+I kept the predictions and later changes in dated files. Here is a condensed diary reconstructed from those records.
+
+**September 28 — Write down what could prove me wrong.** Before the main runs, I recorded five directional hypotheses. One was that banning invented numbers would push unsupported claims into other categories. I kept that prediction in the record when the results contradicted it. [Original hypotheses](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/HYPOTHESES.md)
+
+**September 30 — The quota changed the comparison.** Later companies were losing more responses to daily limits. I moved the primary model comparison to the first twelve companies and documented the change after four models had run. Prompt comparisons still use all twenty. [Dated analysis change](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/HYPOTHESES.md#addendum-2--cross-model-comparisons-use-pairs-16-2026-09-30-after-4-models-before-the-remaining-models)
+
+**October 4–5 — Decide which rerun counts.** Some runs were mostly missing. I recorded a coverage-based selection rule: use one run per model, choosing the most reader-scored outputs, with the later run breaking ties. The hypotheses file records when each rule was added. [Run-selection record](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/results/run_selection.csv)
+
+**October 5 — My own measurement needed fixing.** An automatic check missed real invitations in the emails. I corrected its rules and removed invitation rates from the main findings. A measurement bug can create a convincing story too. [Correction log](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/analysis/METHOD_CHANGES.md#invitation-rules)
+
+**October 5 — Give the proposed fix a fresh test.** I locally froze the follow-up plan before the new calls, then generated 120 emails using ten new companies. The increase in copied wording repeated; the extra selection sentence did not clearly reduce it. Both outcomes stay in the report. [Follow-up protocol and results](https://github.com/gracelee087/ai-marketing-honesty-bench/tree/master/validation_2026-10-05)
+
+{% details The original predictions, in plain English %}
+
+| Prediction | What the results say |
+|---|---|
+| H1: Without a rule, models add unsupported claims, including teams for solo founders. | Supported in these outputs: the reader flagged claims in 81% of baseline texts; team claims appeared in 4.7% of scored solo-founder baseline texts. |
+| H2: Banning invented numbers shifts unsupported claims into other categories. | Contradicted in the pooled comparison: numbers and other claims both fell. |
+| H3: A facts-only rule reduces claims more than a number ban. | Supported in the paired comparison. |
+| H4: Repeating the brief helps further. | Unclear: the interval included no change. |
+| H5: Smaller models add more claims than larger models from the same provider. | Unresolved as a general size effect: both OpenAI pairs were inconclusive; the Gemini pair also changed model generation. |
+
+These summarize the five directional hypotheses. The original record also includes measurements without directional predictions: generation, cost and repeat stability. Their outputs remain in the [full analysis](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/results/analysis/summary.md).
+
+{% enddetails %}
+
+### What I would actually use
+
+For these tasks, **“use only the facts above” was a useful starting point**. Repeating the brief had no clear extra benefit. Permission to select relevant facts did not clearly reduce copying in the follow-up.
+
+I would separate two reviews: check whether the claims have support, then check whether the included details belong in this particular email. The second question needs judgment this benchmark never measured.
+
+There is also a reason to be cautious about the first review. The checker is another AI. For example, it rejected “autonomous robots,” although a person might infer autonomy from the product description. Its flags are judgments, not proof of deliberate deception.
+
+The next thing I would measure is whether people find the copy useful—and whether they would reply. This experiment has no human quality or conversion data.
+
+A clean checker score still leaves an email to edit.
+
+{% details Other writing habits changed too %}
+
+After inspecting the outputs, I counted a few recurring patterns:
+
+| Pattern | A: no extra rule | C: facts only |
+|---|---:|---:|
+| `excited`, `thrilled`, `proud` or `delighted` within the first 260 characters of a LinkedIn post | 161 / 202 (79.7%) | 119 / 200 (59.5%) |
+| `would you be open`, `are you open` or `open to a` in a cold email | 108 / 203 (53.2%) | 57 / 202 (28.2%) |
+| An em dash in any format | 314 / 605 (51.9%) | 155 / 604 (25.7%) |
+
+These use all generated first-repeat texts in the relevant format, including unscored ones. They are exploratory frequencies, not measures of bad writing or a way to detect AI authorship. The prompts did not directly ban these expressions.
+
+{% enddetails %}
+
+{% details What the checks do—and do not—establish %}
+
+The reader passed thirty simple synthetic controls: ten supported restatements, ten wrong-price injections and ten wrong-team-size injections. That does not establish accuracy on natural marketing copy or replace human calibration.
+
+An additional audit found 45 reader claim quotes across 37 original scored texts that were not exact substrings of the generated copy; 26 of those texts were in the first-repeat analysis. Formatting differences and paraphrases can cause this, so it is not a count of incorrect judgments. Unlike the follow-up, the original parser did not require exact-substring quotes. I kept the original scores and separately excluded those 26 judgments: the pooled conclusions for the number ban, facts-only rule and repeated brief stayed the same. This check does not establish that the remaining judgments are correct. The [audit notes](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/analysis/METHOD_CHANGES.md#saved-data-and-inference-audit--2026-10-06) record the correction and sensitivity checks.
+
+The original overlap, repetition and staffing checks were chosen after seeing results. The new-company follow-up supports the overlap finding in four selected writers; it does not validate every exploratory threshold. The bootstrap intervals also leave out uncertainty from the AI judge.
+
+An early automatic invitation check missed valid invitations. The corrected rules and regression cases are in the repository, but invitation rates are excluded from the main findings. The opening email pair is an illustration, not a validated general claim about missing calls to action.
+
+{% enddetails %}
+
+## My Benchmark
+
+[Public Kaggle benchmark and leaderboard](https://www.kaggle.com/benchmarks/sohee087/which-ai-lies-less-in-marketing-copy) · [Task and model runs](https://www.kaggle.com/benchmarks/tasks/sohee087/which-ai-lies-less-in-marketing-copy) · [Code, saved responses and analysis](https://github.com/gracelee087/ai-marketing-honesty-bench)
+
+The repository contains the task, fictional briefs, saved selected responses, file hashes and the full quoted email pair. Recompute the original analysis without model calls:
+
+```bash
+python -m pip install -r requirements-analysis.txt
+python analysis/reproduce.py
+python analysis/validate_submission.py
+```
+
+`results/analysis/article_evidence.json` connects the article to saved outputs. The follow-up has [separate offline reproduction commands](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/validation_2026-10-05/README.md). Re-running the live Kaggle task may use quota.
+
+*AI assistance: Claude Code assisted the original implementation and analysis. Codex assisted the code review, analysis corrections, follow-up experiment, charts and write-up. The benchmark reader is glm-5. No human grading is claimed.*

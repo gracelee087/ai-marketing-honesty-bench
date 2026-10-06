@@ -1,0 +1,17 @@
+TITLE
+I asked 11 AI models to stick to the facts. One kept saying 'no employees'.
+
+TAGS
+devchallenge, kagglechallenge, ai, machinelearning
+
+BODY
+Copy the entire contents of dev_body.txt into the DEV article body.
+
+IMAGES
+All three figures use verified public image URLs. They are already embedded in the body.
+
+PUBLIC BENCHMARK
+https://www.kaggle.com/benchmarks/sohee087/which-ai-lies-less-in-marketing-copy
+
+RESEARCH REPOSITORY
+https://github.com/gracelee087/ai-marketing-honesty-bench

@@ -5,6 +5,7 @@ A Kaggle Benchmarking Challenge project comparing 11 writers across 20 fictional
 The project tests how specific prompt instructions change AI marketing copy: banning invented numbers, restricting claims to supplied facts, and repeating the brief. Recurring language patterns are exploratory text measurements. The DEV draft explains the questions, controlled comparisons, actual outcomes and practical limits.
 
 - [DEV article draft](post/draft.md)
+- [Paste-ready DEV body](post/dev_body.txt) and [title/tags](post/dev_fields.txt)
 - [Experiment diary: predictions, corrections and the follow-up](post/draft.md#my-experiment-diary)
 - [Public Kaggle benchmark and leaderboard](https://www.kaggle.com/benchmarks/sohee087/which-ai-lies-less-in-marketing-copy)
 - [Kaggle task](https://www.kaggle.com/benchmarks/tasks/sohee087/which-ai-lies-less-in-marketing-copy)
@@ -67,4 +68,6 @@ The live task depends on Kaggle's benchmark/model-proxy environment and may cons
 
 ## Publication status
 
-This checkout contains a local submission draft and reproduction materials. On October 6, 2026, the original version-4 Kaggle task and its backing notebook were published. The [public benchmark and leaderboard](https://www.kaggle.com/benchmarks/sohee087/which-ai-lies-less-in-marketing-copy) was then created and independently checked without authentication: its API returned HTTP 200 with all 11 models linked to the version-4 task. The user also reported saving the benchmark description; its full public rendering has not been independently verified. Earlier checks on October 6 found the GitHub repository private, with its last recorded push on September 30; those supporting evidence links still need publication and verification. A published DEV URL has not been verified. The article images must be uploaded to DEV and their local paths replaced with the resulting image URLs.
+On October 6, 2026, the original version-4 Kaggle task, its backing notebook, the [benchmark and leaderboard](https://www.kaggle.com/benchmarks/sohee087/which-ai-lies-less-in-marketing-copy), and this research repository were published. Anonymous checks confirmed all 11 Kaggle model results and ten GitHub endpoints, including all three English figures with matching file hashes. The benchmark description was saved by the author; its full public rendering has not been independently verified.
+
+The DEV article is still a draft. `post/dev_body.txt` contains the same article with public image URLs pinned to the verified research commit; `post/dev_fields.txt` provides its title and tags. Generate them with `python analysis/prepare_dev_article.py`. The local preview is `post/preview.html`. A published DEV URL has not yet been verified.
