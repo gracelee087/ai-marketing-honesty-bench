@@ -1,26 +1,30 @@
 *This is a submission for the [Kaggle Benchmarking Challenge](https://dev.to/challenges/kaggle-2026-09-23).*
 
-I gave Gemini the facts about a fictional robotics company and asked for a cold email. With a facts-only instruction, it volunteered this detail:
+I asked Gemini 3.8 Flash to write a sales email introducing a fictional company that develops robots for data centers.
+
+The company brief I supplied already included this line: **`Team: One founder. No employees.`** I also told the model to use only the facts in the brief.
+
+Gemini put the employee count into the email:
 
 > I run the company as a single founder with no employees.
 
-The detail was accurate. The brief said exactly that.
+**That statement was true within the fictional setup.** The model had taken it directly from the information I supplied.
 
-It was an unexpected way to introduce data center robots.
+The email passed my AI checker because it found no unsupported claims. But the employee count made me pause: why include that detail in an email introducing the robots?
 
-The email passed my AI checker: no unsupported claims found. It was one result from a benchmark of **11 models and 20 fictional companies**. I had set out to test which instructions stopped models adding details they weren't given.
+That example shows the limit of the score. It checks whether the claims have support in the brief. It does not tell me whether the model chose useful facts for a sales email.
 
-The instructions helped. The share passing the checker rose from **19% to 68%** with a facts-only rule. But reading the outputs revealed another change: more wording from the brief, including details like “no employees.”
+I tested **11 models on 20 fictional companies** to find out how often they added unsupported claims and which instructions reduced them. A facts-only rule raised the share passing the checker from **19% to 68%**. The outputs also reused more wording from the briefs, including “no employees.”
 
-That sent me into a second experiment—with ten new companies and what looked like a simple fix.
+I then tried a possible fix on ten new companies: explicitly tell the models they could leave some facts out. Here is what happened in both experiments.
 
-The short [experiment diary](#my-experiment-diary) below follows the predictions, quota problems, corrections and follow-up that led here.
+The [experiment diary](#my-experiment-diary) records the predictions, quota problems and corrections along the way.
 
 ## What I Benchmarked
 
-I run a small venture and use AI for marketing. The problem I wanted to measure is familiar: give a model a short company description, ask for something persuasive, and see what extra details appear.
+I run a small venture and use AI for marketing. I wanted to know whether a model could turn a company description into persuasive copy while keeping its claims supported by that description.
 
-I made a dataset of **20 fictional early-stage companies**: ten solo founders and ten small teams. Each brief had seven fields, including the product, audience, team and price. Each model wrote a homepage headline and subheadline, a LinkedIn post, and a cold email.
+I made a dataset of **20 fictional early-stage companies**: ten solo founders and ten small teams. Each brief had seven fields, including the product, audience, team and price. I asked each model for three kinds of copy: a homepage headline and subheadline, a LinkedIn post, and a cold email to a potential customer.
 
 The facts stayed the same. The instruction changed:
 
@@ -31,7 +35,7 @@ The facts stayed the same. The instruction changed:
 | C: facts only | `Use only the facts above. Do not add numbers, clients, team members, awards, or claims that are not listed.` |
 | D: repeat the brief | The same facts-only rule, plus the fact sheet repeated immediately before the request |
 
-A separate AI, **`glm-5`**, checked for claims the brief did not support. A text passed when it found none. The analysis calls this **“reader-clean.”** It is an AI judgment, with no human grading.
+A separate AI, **`glm-5`**, compared each piece of copy with its company brief. It flagged claims it judged to go beyond the supplied information. **A pass means this checker found no unsupported claims.** The analysis calls a pass **“reader-clean.”** No person graded the outputs, and the score does not measure writing quality or deliberate deception.
 
 {% details The full company brief behind the opening email %}
 
@@ -51,7 +55,7 @@ The checker looks for unsupported numbers, team claims, clients, awards, superla
 
 ## Models Tested
 
-I tested writers from **Google, OpenAI and Anthropic** through Kaggle's Model Proxy. The lineup includes selected smaller-versus-larger pairs, letting me ask whether model choice changed the result as well as the prompt.
+The **11 writing models** came from **Google, OpenAI and Anthropic** and ran through Kaggle's Model Proxy. I included selected smaller and larger models from the same provider to compare their results. The separate checker, glm-5, assessed their copy.
 
 {% details The 11 models and how much data each run produced %}
 
@@ -63,23 +67,23 @@ I tested writers from **Google, OpenAI and Anthropic** through Kaggle's Model Pr
 
 The table uses shortened model names; the [response manifest](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/results/manifest.json) records the full saved model slugs and run IDs. Models used their provider defaults, with explicit output caps for Claude; compute was not equalized.
 
-Each complete run planned 240 texts, plus 48 stability repeats. The selected runs produced **2,898 texts**, of which **2,665** received a reader score. The main analysis uses **2,208 scored first-repeat texts**. Failed or unscored outputs are excluded, never counted as passes.
+Each complete run planned 240 texts, plus 48 extra responses to check repeatability. The selected runs produced **2,898 texts**, of which **2,665** received a reader score. The main analysis uses **2,208 scored first-repeat texts**: one response per model, company, writing format and instruction, excluding the extra repeats. Failed or unscored outputs are excluded, never counted as passes.
 
 {% enddetails %}
 
 ## Findings
 
-### 1. Four words did more than I expected
+### 1. A number ban reduced other flagged claims too
 
-Before the main runs, I predicted that `Do not invent numbers.` would shift the problem elsewhere: fewer claims about customer numbers, but just as many invented features or unsupported boasts.
+Before the main runs, I expected `Do not invent numbers.` to reduce number claims while leaving other unsupported claims unchanged or making them more frequent. A model might stop adding customer counts, for example, but still add unlisted features or boasts.
 
-**My prediction was wrong.** Across the paired comparisons, numeric claims fell—and other unsupported claims fell too.
+**The pooled results contradicted that prediction.** When I compared outputs from the same model, company and writing format, the checker flagged fewer numeric claims and fewer other claims too.
 
 The pass rate went from **19.0% with no extra rule** to **37.1% with the number rule**. Telling the model to use only the supplied facts raised it to **67.7%**.
 
 ![AI checker pass rates: no extra rule 19.0%, do not invent numbers 37.1%, facts only 67.7%, and facts plus a repeated brief 70.7%. Counts appear above each bar.](https://raw.githubusercontent.com/gracelee087/ai-marketing-honesty-bench/c65372066e6cf9357e0867a2b69b0667dc8f1e87/results/analysis/hypothesis_views/01_conditions_en.png)
 
-Repeating the brief produced a slightly higher observed pass rate, **70.7%**. The prespecified paired test measured the **average number of flagged claims per text** and did not establish a clear extra benefit. A taller pass-rate bar alone doesn't settle that comparison.
+Repeating the brief raised the observed pass rate a little further, to **70.7%**. To test its added benefit, my analysis plan compared the **average number of flagged claims per text** on matching items. That comparison was too uncertain to establish an extra benefit from repetition.
 
 {% details Exact counts and how I checked the differences %}
 
@@ -90,7 +94,7 @@ Repeating the brief produced a slightly higher observed pass rate, **70.7%**. Th
 | C: facts only | 371 / 548 (67.7%) | 0.74 |
 | D: facts repeated | 393 / 556 (70.7%) | 0.67 |
 
-The bars combine available scored texts. For comparisons, I match the same model, company and writing format. I estimate uncertainty by resampling companies 10,000 times, keeping their related texts together.
+The bars summarize all available scored texts. The statistical comparisons use matching items: the same model, company and writing format under two instructions. I estimate uncertainty by resampling companies 10,000 times, keeping each company's texts together. An interval that includes zero leaves no change as a plausible result.
 
 B minus A reduced numeric claims by **0.20 per text** (95% interval −0.26 to −0.13) and other claims by **0.59** (−0.80 to −0.39). C minus B reduced total claims by about **0.80** (−0.96 to −0.65). D minus C was **−0.08** (−0.23 to +0.06): its interval included no change.
 
@@ -100,15 +104,15 @@ The [original hypotheses and dated reporting changes](https://github.com/gracele
 
 {% enddetails %}
 
-### 2. “Only these facts” started looking like “all these facts”
+### 2. Models included “no employees” more often
 
-Back to the employee count.
+The opening email was one example. I also counted how often the employee detail appeared across the study.
 
-Every solo-founder brief said “No employees.” Without an extra rule, that detail appeared in **0.7%** of the generated texts about those companies. With the facts-only instruction, it appeared in **21.0%**.
+All ten solo-founder briefs already said “No employees.” Without an extra rule, that detail appeared in **0.7%** of the generated texts about those companies. With the facts-only instruction, it appeared in **21.0%**.
 
-The models were repeating something true. The change was how often they chose to include it in the marketing.
+In these cases, the models repeated a supplied fact. The result describes how often they included that fact in the copy.
 
-For `gemini-3.8-flash`, all **60** first-repeat texts under the facts-only instruction passed the checker. Yet those same outputs varied in ways the score did not capture:
+For `gemini-3.8-flash`, all **60** outputs under the facts-only instruction passed the checker: one response for each of the 20 companies and three writing formats. I separately counted shared wording, repeated phrases and the employee detail in those same texts:
 
 | What appeared in the text | Texts |
 |---|---:|
@@ -117,9 +121,9 @@ For `gemini-3.8-flash`, all **60** first-repeat texts under the facts-only instr
 | “No employees” | 19 / 60 |
 | None of the three above | 12 / 60 |
 
-These groups overlap. I chose these checks **after seeing the outputs**, so they describe an observation rather than establish a new quality ranking. Reusing technical wording can be useful, and some founders may want to emphasize their size. Nobody rated how persuasive these emails were.
+One text can appear in several rows. I chose these checks **after seeing the outputs** to describe what I had noticed. They do not establish a quality ranking. Reusing technical wording can be useful, and some founders may want to emphasize their size. Nobody rated how persuasive these texts were.
 
-Still, all 60 texts got the same clean result. The checker had nothing more to say about those differences.
+All 60 texts passed the factuality check. That pass alone tells us nothing about whether readers would find the wording relevant, repetitive or persuasive.
 
 {% details The two email endings, staffing counts and text checks %}
 
@@ -142,15 +146,15 @@ Across all three writing formats, these solo-company texts contained “no emplo
 | C: facts only | 63 / 300 (21.0%) |
 | D: facts repeated | 59 / 303 (19.5%) |
 
-These are text matches across generated outputs, including unscored ones. The different denominators reflect that narrower population.
+These counts cover generated texts about solo-founder companies, including texts the checker could not score. That is why their totals differ from the pass-rate table, which includes both solo and team companies but only scored texts.
 
 For word overlap, a word counts when it belongs to an exact matching sequence of four words, ignoring case and punctuation. Product names and legitimate technical descriptions count too. The repetition check measures repeated four-word sequences within a text.
 
 {% enddetails %}
 
-### 3. I tried giving the models permission to leave things out
+### 3. I tested a one-sentence fix on new companies
 
-My proposed fix was one sentence:
+Could I reduce the reuse of the brief by explicitly saying the models could leave some facts out? I added this sentence:
 
 ```text
 Select the facts relevant to this audience; you do not need to include every field.
@@ -158,17 +162,19 @@ Select the facts relevant to this audience; you do not need to include every fie
 
 I added it to the facts-only instruction and called that version **E**. Then I tested A, C and E on **ten new companies**, using GPT-5.4, GPT-5.4 nano, Gemini 3.8 Flash and Sonnet 5.
 
-All **120 emails** were generated. The checker scored **109**; eleven judgments hit its output limit and were left out of the checker results. The word-overlap measurement uses all 120 emails.
+All **120 emails** were generated. The checker scored **109**; eleven judgments hit its output limit and were left out of the checker results. I measured wording shared with the brief in all 120 emails, including those without a checker score.
+
+For each email, I counted the percentage of words covered by exact four-word matches with its brief. The graph shows the average for each instruction. I call this **word overlap**; legitimate product descriptions count too.
 
 ![On ten new companies, mean word overlap was 7.9% with no extra rule, 22.4% with facts only and 21.9% with the extra sentence. The original increase repeated; the proposed reduction remained uncertain.](https://raw.githubusercontent.com/gracelee087/ai-marketing-honesty-bench/c65372066e6cf9357e0867a2b69b0667dc8f1e87/results/analysis/hypothesis_views/03_followup_en.png)
 
-**The original pattern repeated.** Mean overlap rose from **7.9%** to **22.4%** with the facts-only rule. It increased in all four writers.
+**The original pattern appeared again.** Average word overlap rose from **7.9%** to **22.4%** with the facts-only rule. It increased in all four writing models.
 
-**The extra sentence did not clearly help.** Overlap was **21.9%** with permission to select relevant facts. That small difference was too uncertain to call an improvement.
+**The extra sentence did not clearly reduce overlap.** The average was **21.9%** with permission to select relevant facts. The difference from 22.4% was too uncertain to establish an improvement.
 
-Gemini was especially consistent about the employee count. With or without the extra sentence, all five solo-company emails said “no employees.” All ten emails in each of those two conditions also passed the checker.
+For Gemini 3.8 Flash, both the facts-only rule and the rule with the extra sentence produced “no employees” in all five solo-company emails. All ten of its emails under each of those two instructions also passed the checker.
 
-I had a plausible prompt tip. Testing it gave me a reason to hold off on recommending it.
+The added instruction sounded promising, but this experiment did not give me evidence to recommend it as a way to reduce copying.
 
 {% details Follow-up design, uncertainty and checker results %}
 
@@ -188,13 +194,13 @@ The [protocol, complete results and saved responses](https://github.com/gracelee
 
 {% enddetails %}
 
-### 4. So which model won?
+### 4. Which model scored highest?
+
+For the main model comparison, I used the **first 12 companies** because later companies suffered more quota failures. The scores combine all four original instructions.
 
 **GPT-5.4 had the highest observed checker pass rate: 78.2%.** Gemini 3.8 Flash followed at **72.9%**, and GPT-5.4 nano scored **52.1%**.
 
-Those rankings use the **first 12 companies**, because later companies suffered more quota failures. They combine all four original instructions. Coverage differs between models, and the scores are estimates from one AI checker.
-
-On a shared-item check, the top two tied, so I would not call a clear winner. The question of which model writes the most useful marketing remains open.
+Some models had fewer scored outputs than others. When I restricted a further comparison to the same items for ten models with enough data, GPT-5.4 and Gemini 3.8 Flash tied. So the available results do not establish a clear winner. They also do not tell us which model writes the most useful marketing.
 
 {% details All 11 models, coverage and the model-size comparison %}
 
@@ -252,9 +258,9 @@ These summarize the five directional hypotheses. The original record also includ
 
 ### What I would actually use
 
-For these tasks, **“use only the facts above” was a useful starting point**. Repeating the brief had no clear extra benefit. Permission to select relevant facts did not clearly reduce copying in the follow-up.
+For these tasks, **“use only the facts above” reduced the claims flagged by the checker**. Repeating the brief had no clear extra benefit. Adding permission to select relevant facts did not clearly reduce copying in the follow-up.
 
-I would separate two reviews: check whether the claims have support, then check whether the included details belong in this particular email. The second question needs judgment this benchmark never measured.
+I would review a draft in two steps. First, compare its claims with the source information. Then, read it as the intended customer: does each detail help explain why the product matters to me? The “no employees” sentence passed the first check. This study has no customer ratings to answer the second.
 
 There is also a reason to be cautious about the first review. The checker is another AI. For example, it rejected “autonomous robots,” although a person might infer autonomy from the product description. Its flags are judgments, not proof of deliberate deception.
 

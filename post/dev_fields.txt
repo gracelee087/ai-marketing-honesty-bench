@@ -1,5 +1,5 @@
 TITLE
-I asked 11 AI models to stick to the facts. One kept saying 'no employees'.
+Which AI lies less in marketing copy?
 
 TAGS
 devchallenge, kagglechallenge, ai, machinelearning
