@@ -51,3 +51,11 @@ Additional post hoc sensitivity checks:
 - Clustering the original prompt contrasts by the ten company pairs instead of twenty individual companies leaves the same pooled H2–H4 conclusions. Removing any one writer leaves the direction of each pooled point estimate unchanged; that direction-only check is not an additional significance claim.
 
 Windows reproduction also exposed a console-encoding failure while the follow-up inspection script printed an example. Its output stream now uses UTF-8. This affects display only; the frozen analysis and response data are unchanged.
+
+## Final submission recheck — 2026-10-06
+
+A fresh offline reproduction and independent raw-record audit found no changes to the 19 primary CSV tables or the ten follow-up paired contrasts. The three published English figures match their source tables; their PNG/SVG files and provenance also match the downloadable ZIP. The article's three quotations match the saved example outputs. All seven primary and four follow-up regression tests passed.
+
+Three article clarifications were made without changing results: the displayed model names are shortened names, with full saved slugs available in the response manifest; the prespecified repeated-brief test concerns mean flagged-claim counts, distinct from the descriptive pass-rate bars; and the live GPT-OSS 120B run differs from the higher-coverage run selected for the analysis. The 20-company versus 12-company scope distinction remains explicit.
+
+Re-running the supplementary contract-phrase audit on Windows exposed another console-encoding error when printing a saved quotation containing Unicode punctuation. `analysis/contract_promises.py` now writes its diagnostic output as UTF-8. All five generated contract-audit artifacts remain byte-identical, and the source responses and scores are unchanged. This is an output-portability repair, not a new measurement rule.

@@ -8,6 +8,7 @@ import csv
 import hashlib
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,6 +44,10 @@ def load():
 
 
 def main():
+    # Saved copy includes Unicode punctuation that Windows' legacy pipe encoding
+    # cannot represent. Keep redirected diagnostic output reproducible as UTF-8.
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
     rows, evidence, summaries = [], [], collections.defaultdict(lambda: [0, 0])
     seen = set()
     for r in load():

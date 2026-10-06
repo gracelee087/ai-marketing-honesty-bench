@@ -61,7 +61,7 @@ I tested writers from **Google, OpenAI and Anthropic** through Kaggle's Model Pr
 | OpenAI | gpt-5.4, gpt-5.4-nano, gpt-oss-120b, gpt-oss-20b |
 | Anthropic | claude-sonnet-4-5, claude-sonnet-5 |
 
-These are the identifiers in the saved runs. Models used their provider defaults, with explicit output caps for Claude; compute was not equalized.
+The table uses shortened model names; the [response manifest](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/results/manifest.json) records the full saved model slugs and run IDs. Models used their provider defaults, with explicit output caps for Claude; compute was not equalized.
 
 Each complete run planned 240 texts, plus 48 stability repeats. The selected runs produced **2,898 texts**, of which **2,665** received a reader score. The main analysis uses **2,208 scored first-repeat texts**. Failed or unscored outputs are excluded, never counted as passes.
 
@@ -79,7 +79,7 @@ The pass rate went from **19.0% with no extra rule** to **37.1% with the number 
 
 ![AI checker pass rates: no extra rule 19.0%, do not invent numbers 37.1%, facts only 67.7%, and facts plus a repeated brief 70.7%. Counts appear above each bar.](https://raw.githubusercontent.com/gracelee087/ai-marketing-honesty-bench/c65372066e6cf9357e0867a2b69b0667dc8f1e87/results/analysis/hypothesis_views/01_conditions_en.png)
 
-Repeating the brief produced a slightly higher pass rate, **70.7%**, but the paired test did not establish a clear extra benefit. That distinction matters: a taller bar alone doesn't settle the question.
+Repeating the brief produced a slightly higher observed pass rate, **70.7%**. The prespecified paired test measured the **average number of flagged claims per text** and did not establish a clear extra benefit. A taller pass-rate bar alone doesn't settle that comparison.
 
 {% details Exact counts and how I checked the differences %}
 
@@ -217,6 +217,8 @@ The full analysis includes intervals and a comparison restricted to 110 identica
 Neither OpenAI smaller-versus-larger pair established a difference in flagged-claim counts. The Gemini pair favored 3.8 Flash over 3.1 Flash Lite, but also changed model generation. That leaves the effect of size alone unresolved.
 
 The Kaggle task score uses all available scored first-repeat texts across 20 companies, so it can differ from this 12-company table. When multiple runs exist, I report the one with the most reader-scored items; ties go to the later run. Runs are never merged. These reporting rules were disclosed after some results were available. The [run-selection audit](https://github.com/gracelee087/ai-marketing-honesty-bench/blob/master/results/run_selection.csv) records coverage and selection.
+
+One live score also comes from a different run: on October 6, Kaggle showed **18.18%** for gpt-oss-120b from run 4046443. The higher-coverage run selected here, 3866186, scored **20.0%** across all 20 companies and **18.9%** in the 12-company table above. The other ten live scores matched the corresponding all-company saved-run scores.
 
 {% enddetails %}
 
