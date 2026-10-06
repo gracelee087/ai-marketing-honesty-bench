@@ -6,7 +6,9 @@ tags: devchallenge, kagglechallenge, ai, machinelearning
 
 *This is a submission for the [Kaggle Benchmarking Challenge](https://dev.to/challenges/kaggle-2026-09-23).*
 
-I'm preparing to launch an AI venture, and I've been working with AI on company introductions and marketing copy. That experience has been frustrating. I wanted help telling people about the company, but I also needed to know whether I could trust what the models wrote.
+I'm exploring a venture I could run as a solo founder, with multiple AI agents working together as my staff.
+
+I've been working with AI on company introductions and marketing copy, and the experience has been frustrating. I wanted help explaining the venture, but I also needed to know whether I could trust what the models wrote.
 
 So I turned that frustration into a benchmark: **11 models, 20 fictional companies, and four different writing instructions.**
 
