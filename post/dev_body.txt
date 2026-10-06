@@ -259,7 +259,7 @@ One live score also comes from a different run: on October 6, Kaggle showed **18
 
 {% enddetails %}
 
-### My experiment diary
+### My experiment diary <a name="my-experiment-diary"></a>
 
 I kept the predictions and later changes in dated files. Here is a condensed diary reconstructed from those records.
 
