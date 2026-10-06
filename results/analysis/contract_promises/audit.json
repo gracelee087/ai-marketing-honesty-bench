@@ -1,0 +1,15 @@
+{
+  "status": "exploratory; lexicon chosen after reading both studies",
+  "human_validation": false,
+  "model_calls": 0,
+  "definition": "\\b(?:no|without(?:\\s+any)?)\\s+(?:long[\\s\\-\\u2010-\\u2015]+term\\s+)?(?:contracts?|commitments?)\\b|\\bcancel\\s+(?:any\\s*time|at\\s+any\\s+time)\\b|\\bno\\s+(?:(?:annual|long[\\s\\-\\u2010-\\u2015]+term)\\s+)?lock[\\s\\-\\u2010-\\u2015]*in\\b",
+  "counts": {
+    "original": 2427,
+    "followup": 120
+  },
+  "matches": {
+    "original": 20,
+    "followup": 12
+  },
+  "scope": "Explicit phrases only. Not all unsupported claims or all business terms. No causal claim about a prompt or general model ranking."
+}

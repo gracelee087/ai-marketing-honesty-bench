@@ -1,0 +1,20 @@
+{
+  "frozen_at_utc": "2026-10-05T19:34:33.872445+00:00",
+  "human_validation": false,
+  "writer_models": [
+    "gpt-5.4-2026-03-05",
+    "gpt-5.4-nano-2026-03-17",
+    "gemini-3.8-flash",
+    "claude-sonnet-5-default"
+  ],
+  "files": {
+    "PROTOCOL.md": "91fdfb3a0189b6001ce79d01a6178b7890b065cd8e4d33ae3f4926c3e9dc4693",
+    "companies.json": "9bf7dc8e07137cca6d09607bf5361eafcfd09ce2ea2a6fcd12bc203d4eab4c6e",
+    "engine.py": "42aa78fea3e60fcfde27812938e6b4685d0908db00f56570e0b7c4156fe4f7a7",
+    "task_runtime.py": "b150ece1b2c071c14e903f4737a2fda50e760258457eef5379896b925636a1cd",
+    "writer_task.py": "3291c01477788afa9d97a7dad808fefc40a32c217f14e93a9705fd4b4a8c7f0a",
+    "control_task.py": "8841bd83b05dd9ab82537d23ca4c69064857825466decc3f1fae5421270ebd24",
+    "analyze.py": "82dfa7a155cca77096951d29a57226f3f589e77195c6aa1eeb4b367e830a248d",
+    "test_study.py": "a9e267463a8f00508a928bf8f3e67023099f998bf1dbe225afc164c7710fa08f"
+  }
+}

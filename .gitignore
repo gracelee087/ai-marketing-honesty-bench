@@ -6,3 +6,30 @@ private/
 *.task.json
 runs/
 analysis/out/
+# Local audit downloads, pre-rebuild snapshots and unused run attempts.
+review_2026-10-05/
+runs_unused/
+# Retain follow-up response JSONL and provenance, not bulky platform execution traces.
+validation_2026-10-05/downloads/**
+!validation_2026-10-05/downloads/**/
+!validation_2026-10-05/downloads/**/results.jsonl
+!validation_2026-10-05/downloads/**/provenance.json
+# Local work notes, preparation UI and redundant platform downloads.
+HANDOFF.md
+example_task.py
+kaggle_benchmarks_reference.md
+kaggle_benchmark_fields.txt
+kaggle_benchmark_description.txt
+youtube.md
+which-ai-lies-less-in-marketing-copy/
+videos/
+post/old/
+post/REVIEW_NOTES.md
+post/submission_checklist.html
+analysis/check_publication_status.py
+analysis/render_submission_checklist.py
+# Superseded figure designs and translations are kept locally.
+results/analysis/hypothesis_views/archive_v1/
+results/analysis/hypothesis_views/*_ko.png
+results/analysis/hypothesis_views/*_ko.svg
+validation_2026-10-05/history/article_before_followup.md

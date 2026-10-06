@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-05T20:05:26.803640+00:00",
+  "task": "marketing-reader-synthetic-controls",
+  "version": 1,
+  "creation_state": "COMPLETED",
+  "creation_error": "",
+  "public": false,
+  "quota_remaining_usd": 4.3016812,
+  "runs": [
+    {
+      "id": 4198895,
+      "model": "glm-5",
+      "state": "COMPLETED",
+      "started": "2026-10-05 19:58:18.213000",
+      "ended": "2026-10-05 20:04:49.467000"
+    },
+    {
+      "id": 4198841,
+      "model": "gemini-3.7-flash",
+      "state": "COMPLETED",
+      "started": "2026-10-05 19:56:26.501000",
+      "ended": "2026-10-05 19:56:26.501000"
+    }
+  ]
+}

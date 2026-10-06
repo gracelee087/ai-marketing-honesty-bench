@@ -1,0 +1,10 @@
+{
+  "attempted_at": "2026-10-05T19:57:14.018353+00:00",
+  "models": [
+    "gpt-5.4-2026-03-05",
+    "gpt-5.4-nano-2026-03-17",
+    "gemini-3.8-flash",
+    "claude-sonnet-5-default"
+  ],
+  "remaining_before_usd": 5.2237975
+}

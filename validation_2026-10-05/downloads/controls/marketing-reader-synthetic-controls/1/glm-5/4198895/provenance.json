@@ -1,0 +1,9 @@
+{
+  "mode": "controls",
+  "data_sha256": "9bf7dc8e07137cca6d09607bf5361eafcfd09ce2ea2a6fcd12bc203d4eab4c6e",
+  "protocol_sha256": "b15068f97cfe842dc64aaebaacf3385e4e2a738eda587d856e1bd882a3dd870d",
+  "planned": 30,
+  "recorded": 30,
+  "recorded_cost_usd": 0.1346808,
+  "human_validation": false
+}

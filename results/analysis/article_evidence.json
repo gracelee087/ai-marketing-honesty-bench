@@ -1,0 +1,186 @@
+{
+  "generated_all_repeats": 2898,
+  "read_all_repeats": 2665,
+  "read_first": 2208,
+  "prompt": [
+    {
+      "condition": "A_none",
+      "read": 552,
+      "reader_clean": 105,
+      "clean_share": 0.19021739130434784,
+      "claims_mean": 2.338768115942029,
+      "generated": 605,
+      "mean_fact_overlap": 0.08134047813075047,
+      "solo_generated": 304,
+      "says_no_employees": 2,
+      "longform_mean_repeated_4grams_pct": 0.04237081191590985
+    },
+    {
+      "condition": "B_ban",
+      "read": 552,
+      "reader_clean": 205,
+      "clean_share": 0.3713768115942029,
+      "claims_mean": 1.5434782608695652,
+      "generated": 607,
+      "mean_fact_overlap": 0.1260898173752758,
+      "solo_generated": 300,
+      "says_no_employees": 16,
+      "longform_mean_repeated_4grams_pct": 0.10996217567636803
+    },
+    {
+      "condition": "C_whitelist",
+      "read": 548,
+      "reader_clean": 371,
+      "clean_share": 0.677007299270073,
+      "claims_mean": 0.7354014598540146,
+      "generated": 604,
+      "mean_fact_overlap": 0.2611300311644788,
+      "solo_generated": 300,
+      "says_no_employees": 63,
+      "longform_mean_repeated_4grams_pct": 1.769681640458988
+    },
+    {
+      "condition": "D_reinject",
+      "read": 556,
+      "reader_clean": 393,
+      "clean_share": 0.7068345323741008,
+      "claims_mean": 0.6672661870503597,
+      "generated": 611,
+      "mean_fact_overlap": 0.2668126437312086,
+      "solo_generated": 303,
+      "says_no_employees": 59,
+      "longform_mean_repeated_4grams_pct": 2.4479026972298312
+    }
+  ],
+  "gemini_case": {
+    "model": "gemini-3.8-flash",
+    "condition": "C_whitelist",
+    "n": 60,
+    "reader_clean": 60,
+    "at_least_half_fact_overlap": 29,
+    "at_least_5pct_repeated_4grams": 23,
+    "says_no_employees": 19,
+    "passes_three": 12
+  },
+  "common_items": 110,
+  "common_models": 10,
+  "invitation_rule": "invitation-cues-2",
+  "illustrative_pair": [
+    {
+      "model": "gemini-3.8-flash",
+      "run": "4040709",
+      "company_id": "p04-solo",
+      "pair": 4,
+      "team_type": "solo",
+      "copy_type": "cold_email",
+      "condition": "A_none",
+      "repeat": 0,
+      "copy": "Subject: Automating physical server maintenance at [Company]\n\nHi [Name],\n\nAre routine hardware swaps and manual rack checks eating into your team’s bandwidth? \n\nI’m the founder of Rackhand Robotics, based in Denver. We’re developing autonomous robots built specifically for data centers to handle repetitive physical tasks: installing and swapping hardware, verifying connections, and conducting routine maintenance rounds. \n\nThe technology is currently in development, and I’m reaching out to experienced data center operators to ensure our robots solve real, day-to-day operational bottlenecks before we begin shipping. \n\nWould you be open to a brief, 15-minute call next week to share what physical tasks consume most of your team's time? No sales pitch—just looking for direct feedback from the field to help guide our engineering.\n\nThanks for your time,\n\n[Your Name]  \nFounder, Rackhand Robotics",
+      "detector": {
+        "counts": {
+          "numbers": 0,
+          "team": 0,
+          "clients": 0,
+          "awards": 0,
+          "superlatives": 0
+        },
+        "total": 0,
+        "hits": {
+          "numbers": [],
+          "team": [],
+          "clients": [],
+          "awards": [],
+          "superlatives": []
+        }
+      },
+      "reader": {
+        "counts": {
+          "numbers": 0,
+          "team": 0,
+          "clients": 0,
+          "awards": 0,
+          "superlatives": 0,
+          "features": 2
+        },
+        "total": 2,
+        "claims": [
+          {
+            "quote": "autonomous robots",
+            "category": "features"
+          },
+          {
+            "quote": "verifying connections",
+            "category": "features"
+          }
+        ]
+      },
+      "reader_model": "zai/glm-5",
+      "usage": {
+        "input_tokens": 125,
+        "output_tokens": 1006,
+        "cost_nanodollars": 3866250,
+        "latency_ms": 4392
+      },
+      "reader_usage": {
+        "input_tokens": 503,
+        "output_tokens": 5082,
+        "cost_nanodollars": 16707800,
+        "latency_ms": 52491
+      }
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "run": "4040709",
+      "company_id": "p04-solo",
+      "pair": 4,
+      "team_type": "solo",
+      "copy_type": "cold_email",
+      "condition": "C_whitelist",
+      "repeat": 0,
+      "copy": "Subject: Data center robotics in development from Rackhand Robotics\n\nHello,\n\nI am the founder of Rackhand Robotics, a company founded in 2025 and based in Denver, Colorado. I run the company as a single founder with no employees.\n\nI am contacting you because you are a data center operator. Rackhand Robotics is developing robots designed for routine data center work. These robots are being created to install and swap hardware as well as run maintenance checks.\n\nOur robots are currently in development and are not yet shipping. Furthermore, our pricing is not yet announced. \n\nAs development continues, I wanted to introduce Rackhand Robotics and our upcoming robots to data center operators. Thank you for your time.\n\nBest regards,\n\nFounder\nRackhand Robotics",
+      "detector": {
+        "counts": {
+          "numbers": 0,
+          "team": 0,
+          "clients": 0,
+          "awards": 0,
+          "superlatives": 0
+        },
+        "total": 0,
+        "hits": {
+          "numbers": [],
+          "team": [],
+          "clients": [],
+          "awards": [],
+          "superlatives": []
+        }
+      },
+      "reader": {
+        "counts": {
+          "numbers": 0,
+          "team": 0,
+          "clients": 0,
+          "awards": 0,
+          "superlatives": 0,
+          "features": 0
+        },
+        "total": 0,
+        "claims": []
+      },
+      "reader_model": "zai/glm-5",
+      "usage": {
+        "input_tokens": 151,
+        "output_tokens": 1602,
+        "cost_nanodollars": 6120750,
+        "latency_ms": 6018
+      },
+      "reader_usage": {
+        "input_tokens": 479,
+        "output_tokens": 1218,
+        "cost_nanodollars": 4376600,
+        "latency_ms": 10754
+      }
+    }
+  ],
+  "scope": "Prompt summaries use all available first-repeat items; cross-model tables use pairs 1–6. Text-only measures include generated items even if the reader failed."
+}

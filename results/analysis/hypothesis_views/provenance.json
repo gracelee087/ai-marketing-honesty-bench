@@ -1,0 +1,48 @@
+{
+  "generator": "analysis/design_submission_figures.py",
+  "command": "python analysis/design_submission_figures.py",
+  "design": "editorial-v2",
+  "language": "en",
+  "new_model_calls": 0,
+  "sources": [
+    {
+      "path": "results/analysis/article_prompt_evidence.csv",
+      "sha256": "7391e378e769c20dcd8892bc7ed058ba2c1cd13429b764c823db69abed01d05b"
+    },
+    {
+      "path": "results/analysis/h1.csv",
+      "sha256": "5fa2fc9059ee40f58e492325b076c6c0ac13dae1fabacb02b5224daa4627f873"
+    },
+    {
+      "path": "results/analysis/hypotheses_h2_h4.csv",
+      "sha256": "36753c89ab0424314e072c17dda9ff7ac5784619ded1946fec5f3cfb5ecc0570"
+    },
+    {
+      "path": "results/analysis/h5_core.csv",
+      "sha256": "3cd857ed73fc048b7747b81d2f3ac6a03418c8b0dc8d5de6d094e04b22f5a457"
+    },
+    {
+      "path": "validation_2026-10-05/out/conditions.csv",
+      "sha256": "51ce253c12a3b44c3d1762b51e981857068e474e031c78966e8afdc33f63ab14"
+    },
+    {
+      "path": "validation_2026-10-05/out/contrasts.csv",
+      "sha256": "9dc43669cec4e61f0e874eb8223b8c299d271227f6a02c3c831d4892cd2f6d64"
+    }
+  ],
+  "figures": {
+    "01_conditions": "Pooled descriptive reader-clean rates, all available first-repeat items.",
+    "02_hypotheses": "Paired H2-H4 estimates and existing 95% intervals; H5 summarized in plain language.",
+    "03_followup": "Overlap across all 120 generated follow-up emails, with paired estimates and existing intervals."
+  },
+  "not_visualized": [
+    "H5-b generations",
+    "H6 cost",
+    "S stability"
+  ],
+  "formats": [
+    "220-dpi PNG",
+    "vector SVG with outlined fonts"
+  ],
+  "archive": "archive_v1 contains the preceding design and its generator."
+}

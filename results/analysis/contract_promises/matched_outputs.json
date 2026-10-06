@@ -1,0 +1,1354 @@
+[
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p02-team",
+    "condition": "A_none",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$79 per truck per month.",
+    "facts": {
+      "Company": "Backhaul Board",
+      "What it does": "Collects spot freight loads from many shippers and brokers into one list. Carriers can filter loads by lane and equipment type and book directly from the list.",
+      "Who it is for": "Trucking carriers and freight brokers",
+      "Location": "Portland, Oregon",
+      "Founded": "2023",
+      "Team": "5 people.",
+      "Price": "$79 per truck per month."
+    },
+    "copy": "Subject: Stop running empty on your backhauls\n\nHi [First Name],\n\nEmpty miles eat into margins on every return trip — and most carriers spend more time hunting for backhaul loads than they'd like.\n\nBackhaul Board pulls spot freight from shippers and brokers across the country into one simple list. Filter by lane and equipment type, find a match, and book directly — no phone tag, no juggling five different load boards.\n\nWe built this in Portland specifically for carriers and brokers who want fewer empty miles and less time spent searching. It's $79 per truck per month, flat rate, no contracts.\n\nWant to see how it works for your lanes? I can set you up with a free trial this week — just reply or grab a time here: [calendar link].\n\nWorth a quick look if backhauls are a pain point for your fleet.\n\nBest,\n[Your Name]\nBackhaul Board\n[Phone] | [Email]",
+    "excerpts": [
+      "It's $79 per truck per month, flat rate, no contracts."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 0,
+        "team": 0,
+        "clients": 0,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 3
+      },
+      "total": 3,
+      "claims": [
+        {
+          "quote": "across the country",
+          "category": "features"
+        },
+        {
+          "quote": "no contracts",
+          "category": "features"
+        },
+        {
+          "quote": "free trial",
+          "category": "features"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p02-team",
+    "condition": "B_ban",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contract",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$79 per truck per month.",
+    "facts": {
+      "Company": "Backhaul Board",
+      "What it does": "Collects spot freight loads from many shippers and brokers into one list. Carriers can filter loads by lane and equipment type and book directly from the list.",
+      "Who it is for": "Trucking carriers and freight brokers",
+      "Location": "Portland, Oregon",
+      "Founded": "2023",
+      "Team": "5 people.",
+      "Price": "$79 per truck per month."
+    },
+    "copy": "Subject: Stop deadheading — fill your backhauls faster\n\nHi [First Name],\n\nEmpty miles eat into margin on every run, especially on the backhaul leg when your trucks are far from home and options are thin.\n\nBackhaul Board pulls spot loads from shippers and brokers across the country into one list. You filter by lane and equipment type, find a match, and book directly — no waiting on calls or digging through multiple boards.\n\nWe're a small team based in Portland, Oregon, built specifically for carriers and brokers who need to keep trucks moving instead of sitting idle.\n\nIt's $79 per truck per month, flat — no hidden fees, no long-term contract.\n\nIf you've got trucks that end up running empty on return legs, I'd like to show you how Backhaul Board can help fill those gaps.\n\nWould you be open to a quick 15-minute call this week?\n\nBest,\n[Your Name]\nBackhaul Board\n[Phone] | [Email]",
+    "excerpts": [
+      "It's $79 per truck per month, flat — no hidden fees, no long-term contract."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 0,
+        "team": 0,
+        "clients": 0,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 3
+      },
+      "total": 3,
+      "claims": [
+        {
+          "quote": "across the country",
+          "category": "features"
+        },
+        {
+          "quote": "no hidden fees",
+          "category": "features"
+        },
+        {
+          "quote": "no long-term contract",
+          "category": "features"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p02-team",
+    "condition": "C_whitelist",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$79 per truck per month.",
+    "facts": {
+      "Company": "Backhaul Board",
+      "What it does": "Collects spot freight loads from many shippers and brokers into one list. Carriers can filter loads by lane and equipment type and book directly from the list.",
+      "Who it is for": "Trucking carriers and freight brokers",
+      "Location": "Portland, Oregon",
+      "Founded": "2023",
+      "Team": "5 people.",
+      "Price": "$79 per truck per month."
+    },
+    "copy": "Subject: Fill your empty backhauls without the phone tag\n\nHi [First Name],\n\nIf your trucks are running empty on the way back, that's money left on the table. Backhaul Board pulls spot freight loads from a wide range of shippers and brokers into a single, easy-to-scan list. Filter by lane and equipment type, find a match, and book it directly—no endless calls or bouncing between load boards.\n\nWe built Backhaul Board for carriers and brokers who want a faster way to cover backhauls and keep trucks moving in the right direction.\n\nIt's $79 per truck per month, no long-term contracts or hidden fees.\n\nWe're a small team based in Portland, Oregon, and we'd love to show you how it works. Want to grab 15 minutes this week for a quick walkthrough?\n\nBest,\n[Your Name]\nBackhaul Board",
+    "excerpts": [
+      "It's $79 per truck per month, no long-term contracts or hidden fees."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 0,
+        "team": 0,
+        "clients": 0,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 1
+      },
+      "total": 1,
+      "claims": [
+        {
+          "quote": "no long-term contracts or hidden fees",
+          "category": "features"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p02-team",
+    "condition": "D_reinject",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$79 per truck per month.",
+    "facts": {
+      "Company": "Backhaul Board",
+      "What it does": "Collects spot freight loads from many shippers and brokers into one list. Carriers can filter loads by lane and equipment type and book directly from the list.",
+      "Who it is for": "Trucking carriers and freight brokers",
+      "Location": "Portland, Oregon",
+      "Founded": "2023",
+      "Team": "5 people.",
+      "Price": "$79 per truck per month."
+    },
+    "copy": "Subject: Fewer empty miles on your backhauls\n\nHi [First Name],\n\nIf your trucks are deadheading on the way back from a delivery, it's costing you money. Backhaul Board pulls spot freight loads from many shippers and brokers into a single list, so you can filter by lane and equipment type and find a load heading your way without jumping between boards or waiting on calls.\n\nOnce you find a match, you book it directly from the list — no back-and-forth needed.\n\nWe built Backhaul Board for carriers and brokers who are tired of running empty miles between jobs. It's $79 per truck per month, with no long-term contracts.\n\nWe're a small team based in Portland, Oregon, and we'd love to show you how it works.\n\nWant a quick look? Happy to set up a short call this week.\n\nBest,\n[Your Name]\nBackhaul Board",
+    "excerpts": [
+      "It's $79 per truck per month, with no long-term contracts."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 0,
+        "team": 0,
+        "clients": 0,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 1
+      },
+      "total": 1,
+      "claims": [
+        {
+          "quote": "no long-term contracts",
+          "category": "features"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p08-solo",
+    "condition": "A_none",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "No contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$4 per address.",
+    "facts": {
+      "Company": "Parcel Sight",
+      "What it does": "Checks the condition and risk of properties remotely using satellite and street-level images, maps and public records. You upload a list of addresses and get a report for each property.",
+      "Who it is for": "Insurers and property owners",
+      "Location": "Miami, Florida",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$4 per address."
+    },
+    "copy": "Subject: Property risk reports without the site visits\n\nHi [First Name],\n\nQuick question: how much time does your team spend scheduling inspections or chasing down property condition data before underwriting or renewing a policy?\n\nI'm the founder of Parcel Sight, based in Miami. We help insurers and property owners assess property risk remotely — no site visits required. Upload a list of addresses, and we pull satellite imagery, street-level views, maps, and public records to flag roof condition, vegetation overgrowth, structural red flags, and other risk indicators.\n\nIt's $4 per address, with reports typically delivered within a day. No contracts, no software to install — just a spreadsheet in, a report out.\n\nIf you're evaluating a book of properties or doing pre-renewal checks, I'd love to run a free sample report on 5–10 addresses so you can see the output firsthand.\n\nWould you be open to a quick look?\n\nBest,\n[Your Name]\nFounder, Parcel Sight\n[email] | [phone]",
+    "excerpts": [
+      "No contracts, no software to install — just a spreadsheet in, a report out."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 2,
+        "team": 0,
+        "clients": 0,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 3
+      },
+      "total": 5,
+      "claims": [
+        {
+          "quote": "flag roof condition, vegetation overgrowth, structural red flags",
+          "category": "features"
+        },
+        {
+          "quote": "reports typically delivered within a day",
+          "category": "numbers"
+        },
+        {
+          "quote": "No contracts, no software to install",
+          "category": "features"
+        },
+        {
+          "quote": "free sample report",
+          "category": "features"
+        },
+        {
+          "quote": "5–10 addresses",
+          "category": "numbers"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p08-solo",
+    "condition": "B_ban",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no contracts",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$4 per address.",
+    "facts": {
+      "Company": "Parcel Sight",
+      "What it does": "Checks the condition and risk of properties remotely using satellite and street-level images, maps and public records. You upload a list of addresses and get a report for each property.",
+      "Who it is for": "Insurers and property owners",
+      "Location": "Miami, Florida",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$4 per address."
+    },
+    "copy": "Subject: Remote property condition reports, $4/address\n\nHi [First Name],\n\nI'm the founder of Parcel Sight, a Miami-based company that helps insurers and property owners assess property condition and risk without site visits.\n\nSend us a list of addresses, and we return a report for each one built from satellite imagery, street-level images, maps, and public records — covering things like roof condition, structural issues, and surrounding risk factors.\n\nIt's useful for underwriting, renewals, portfolio reviews, or just getting eyes on a property before you buy or insure it. No inspectors, no scheduling delays — just upload your list and get reports back.\n\nPricing is simple: $4 per address, no contracts or minimums.\n\nIf you're evaluating properties and want a faster way to get a first look at condition and risk, I'd be glad to send a sample report so you can see the format firsthand.\n\nWould that be useful?\n\nBest,\n[Your Name]\nFounder, Parcel Sight",
+    "excerpts": [
+      "Pricing is simple: $4 per address, no contracts or minimums."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p08-solo",
+    "condition": "C_whitelist",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no contracts",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$4 per address.",
+    "facts": {
+      "Company": "Parcel Sight",
+      "What it does": "Checks the condition and risk of properties remotely using satellite and street-level images, maps and public records. You upload a list of addresses and get a report for each property.",
+      "Who it is for": "Insurers and property owners",
+      "Location": "Miami, Florida",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$4 per address."
+    },
+    "copy": "Subject: Remote property condition reports — $4 per address\n\nHi [First Name],\n\nI'm the founder of Parcel Sight, a Miami-based company that checks property condition and risk remotely using satellite and street-level imagery, maps, and public records.\n\nIf you're underwriting policies or managing a property portfolio, you can send us a list of addresses and get a report back on each one — no site visits required. It's a simple way to screen properties before committing time or resources to them.\n\nPricing is straightforward: $4 per address, no contracts or minimums required to get started.\n\nIf this sounds useful, I'd be glad to send a sample report or run a small batch of addresses so you can see the output firsthand.\n\nHappy to answer any questions.\n\nBest,\n[Your Name]\nFounder, Parcel Sight\nMiami, FL",
+    "excerpts": [
+      "Pricing is straightforward: $4 per address, no contracts or minimums required to get started."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p08-solo",
+    "condition": "D_reinject",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$4 per address.",
+    "facts": {
+      "Company": "Parcel Sight",
+      "What it does": "Checks the condition and risk of properties remotely using satellite and street-level images, maps and public records. You upload a list of addresses and get a report for each property.",
+      "Who it is for": "Insurers and property owners",
+      "Location": "Miami, Florida",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$4 per address."
+    },
+    "copy": "Subject: Remote Property Condition Reports — $4 per Address\n\nHi [Name],\n\nI'm the founder of Parcel Sight, a Miami-based company that helps insurers and property owners assess property condition and risk without site visits.\n\nHere's how it works: you upload a list of addresses, and we generate a report for each property using satellite and street-level imagery, maps, and public records. This gives you a fast, remote way to review properties before underwriting, renewing, or managing a portfolio.\n\nEach report is $4 per address, with no long-term commitment required.\n\nIf you're evaluating multiple properties and want a quicker way to check condition and risk from your desk, I'd be glad to share a sample report or answer any questions.\n\nWould you be open to a short call this week?\n\nBest regards,\n[Your Name]\nFounder, Parcel Sight\nMiami, FL",
+    "excerpts": [
+      "Each report is $4 per address, with no long-term commitment required."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 0,
+        "team": 0,
+        "clients": 0,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 4
+      },
+      "total": 4,
+      "claims": [
+        {
+          "quote": "fast",
+          "category": "features"
+        },
+        {
+          "quote": "no long-term commitment required",
+          "category": "features"
+        },
+        {
+          "quote": "quicker",
+          "category": "features"
+        },
+        {
+          "quote": "share a sample report",
+          "category": "features"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p09-solo",
+    "condition": "A_none",
+    "copy_type": "hero",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "4% of collected revenue.",
+    "facts": {
+      "Company": "Tessbrook Billing",
+      "What it does": "A medical billing service that uses AI to handle insurance claims and patient billing for healthcare providers.",
+      "Who it is for": "Independent clinics and medical practices",
+      "Location": "Nashville, Tennessee",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "4% of collected revenue."
+    },
+    "copy": "**Medical Billing, Handled. Finally.**\n\nTessbrook Billing uses AI to manage your insurance claims and patient billing—so your clinic gets paid faster. Pay only 4% of what we collect. No upfront costs, no long-term contracts.",
+    "excerpts": [
+      "No upfront costs, no long-term contracts."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p09-solo",
+    "condition": "A_none",
+    "copy_type": "linkedin",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "4% of collected revenue.",
+    "facts": {
+      "Company": "Tessbrook Billing",
+      "What it does": "A medical billing service that uses AI to handle insurance claims and patient billing for healthcare providers.",
+      "Who it is for": "Independent clinics and medical practices",
+      "Location": "Nashville, Tennessee",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "4% of collected revenue."
+    },
+    "copy": "Excited to announce the launch of Tessbrook Billing.\n\nAfter seeing how much time independent clinics and medical practices lose to insurance claims and patient billing, I built Tessbrook to fix it.\n\nWe use AI to handle the entire billing cycle — submitting claims, chasing denials, managing patient statements — so physicians and their staff can focus on patient care instead of paperwork. No bloated software to learn, no new hires to train. Just cleaner claims, faster reimbursements, and fewer headaches.\n\nTessbrook is built for independent practices that don't have the resources of a hospital system but deserve the same billing efficiency. Pricing is simple: 4% of collected revenue. No flat fees, no long-term contracts. We only do well when you get paid.\n\nWe're based in Nashville and currently onboarding our first clinic partners. If you're a provider tired of billing eating into your time (and your margins), I'd love to talk.\n\nHere's to making medical billing simpler, for everyone involved.\n\n#MedicalBilling #HealthcareAI #Nashville #IndependentPractices #RevenueCycleManagement",
+    "excerpts": [
+      "No flat fees, no long-term contracts."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p09-solo",
+    "condition": "A_none",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "4% of collected revenue.",
+    "facts": {
+      "Company": "Tessbrook Billing",
+      "What it does": "A medical billing service that uses AI to handle insurance claims and patient billing for healthcare providers.",
+      "Who it is for": "Independent clinics and medical practices",
+      "Location": "Nashville, Tennessee",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "4% of collected revenue."
+    },
+    "copy": "Subject: Cut your billing overhead, not your collections\n\nHi [First Name],\n\nI'm reaching out from Tessbrook Billing, a Nashville-based medical billing service built for independent clinics like yours.\n\nWe use AI to manage insurance claims and patient billing end-to-end — submitting claims faster, catching errors before they cause denials, and following up on unpaid balances automatically. The result: fewer headaches for your staff and faster, more consistent cash flow.\n\nUnlike traditional billing companies, we charge a simple 4% of collected revenue — no flat fees, no long-term contracts. We only do well when you get paid.\n\nAs a lean, founder-led operation, we move quickly and work directly with you, not a call center.\n\nIf you're open to it, I'd love to grab 15 minutes to see if this could be a fit for [Practice Name].\n\nBest,\n[Your Name]\nFounder, Tessbrook Billing\n[Phone] | [Email]",
+    "excerpts": [
+      "Unlike traditional billing companies, we charge a simple 4% of collected revenue — no flat fees, no long-term contracts."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p09-solo",
+    "condition": "B_ban",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "4% of collected revenue.",
+    "facts": {
+      "Company": "Tessbrook Billing",
+      "What it does": "A medical billing service that uses AI to handle insurance claims and patient billing for healthcare providers.",
+      "Who it is for": "Independent clinics and medical practices",
+      "Location": "Nashville, Tennessee",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "4% of collected revenue."
+    },
+    "copy": "Subject: Cut billing headaches, not revenue\n\nHi [First Name],\n\nI'm reaching out from Tessbrook Billing, a Nashville-based medical billing service built for independent clinics like yours.\n\nWe use AI to handle insurance claims and patient billing end-to-end — submitting claims, tracking denials, following up on unpaid balances, and keeping your revenue cycle moving without adding staff or software headaches to your plate.\n\nOur pricing is simple: 4% of what we collect. No flat fees, no long-term contracts — we only do well when you get paid.\n\nAs a small, founder-led operation, we work closely with each practice we serve, so you're never just a ticket in a queue.\n\nIf reducing time spent on billing and claims sounds useful, I'd love to find 15 minutes to walk through how it could work for your practice.\n\nWould you be open to a quick call this week?\n\nBest,\n[Your Name]\nFounder, Tessbrook Billing\nNashville, TN",
+    "excerpts": [
+      "No flat fees, no long-term contracts — we only do well when you get paid."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p09-solo",
+    "condition": "D_reinject",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "4% of collected revenue.",
+    "facts": {
+      "Company": "Tessbrook Billing",
+      "What it does": "A medical billing service that uses AI to handle insurance claims and patient billing for healthcare providers.",
+      "Who it is for": "Independent clinics and medical practices",
+      "Location": "Nashville, Tennessee",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "4% of collected revenue."
+    },
+    "copy": "Subject: Cut Billing Overhead, Not Revenue\n\nHi [First Name],\n\nI'm the founder of Tessbrook Billing, based in Nashville. We help independent clinics and medical practices handle insurance claims and patient billing using AI, so your staff can spend less time chasing payments and more time with patients.\n\nUnlike traditional billing services with layers of staff and overhead, Tessbrook is lean by design — just one founder, directly involved in every account. That means faster responses and no bureaucracy.\n\nOur pricing is simple: 4% of what we collect for you. No flat fees, no long-term contracts, no surprises.\n\nIf your practice is looking for a more efficient way to manage billing without adding headcount, I'd love to show you how it works.\n\nWould you be open to a quick call this week?\n\nBest,\n[Your Name]\nFounder, Tessbrook Billing\nNashville, TN",
+    "excerpts": [
+      "No flat fees, no long-term contracts, no surprises."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "claude-sonnet-5",
+    "company_id": "p10-solo",
+    "condition": "B_ban",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contract",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+    "price": "$450 per month.",
+    "facts": {
+      "Company": "Farlane Academy",
+      "What it does": "An online accelerated high school program. Students earn accredited high school credits at their own pace and build a portfolio of real-world projects alongside their transcript.",
+      "Who it is for": "Motivated high school students and their parents",
+      "Location": "Phoenix, Arizona",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$450 per month."
+    },
+    "copy": "Subject: A faster path to a high school diploma for [Student's Name]\n\nHi [Parent's Name],\n\nI'm reaching out because Farlane Academy might be a great fit for [Student's Name].\n\nFarlane is an online accelerated high school program based here in Phoenix. Students earn fully accredited high school credits at their own pace—no waiting on a traditional semester schedule—while also building a portfolio of real-world projects alongside their transcript. It's designed for motivated students who want more flexibility and something tangible to show colleges or employers beyond just grades.\n\nI founded Farlane in 2024 and run it personally, so every student gets direct attention rather than being lost in a big system.\n\nTuition is $450/month, with no long-term contract required.\n\nIf you'd like to learn more or see a sample project portfolio, I'd be happy to set up a quick call.\n\nBest,\n[Your Name]\nFounder, Farlane Academy",
+    "excerpts": [
+      "Tuition is $450/month, with no long-term contract required."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "gemini-2.5-flash",
+    "company_id": "p02-solo",
+    "condition": "D_reinject",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "without commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/gemini-2.5-flash/3931893/results.jsonl",
+    "price": "Free to browse. 4% fee on each order.",
+    "facts": {
+      "Company": "Partlatch",
+      "What it does": "An online marketplace where hardware teams buy both off-the-shelf and custom-made components. Software agents send quote requests to suppliers, place orders and track them.",
+      "Who it is for": "Hardware startups",
+      "Location": "Oakland, California",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "Free to browse. 4% fee on each order."
+    },
+    "copy": "Subject: Streamline Component Sourcing for Your Hardware Startup\n\nDear Hardware Founder,\n\nAs a hardware startup, efficiently sourcing components can be a significant challenge. We understand the need for reliable access to both off-the-shelf and custom-made parts.\n\nIntroducing Partlatch, an online marketplace specifically designed for hardware teams like yours. Founded in Oakland, California in 2025, Partlatch simplifies your procurement process. Our platform features software agents that manage the entire workflow: sending quote requests to suppliers, placing orders, and tracking them until delivery.\n\nYou can browse for components entirely free, exploring a wide range of options without commitment. When you find what you need, Partlatch takes a transparent 4% fee on each order placed through our system.\n\nPartlatch is built to help hardware startups secure the essential components for their innovative projects with greater ease.\n\nWe invite you to explore how Partlatch can support your team.\n\nSincerely,\n\nThe Partlatch Team",
+    "excerpts": [
+      "You can browse for components entirely free, exploring a wide range of options without commitment."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 0,
+        "team": 1,
+        "clients": 0,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 1
+      },
+      "total": 2,
+      "claims": [
+        {
+          "quote": "exploring a wide range of options",
+          "category": "features"
+        },
+        {
+          "quote": "The Partlatch Team",
+          "category": "team"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "gemini-3.8-flash",
+    "company_id": "p10-solo",
+    "condition": "A_none",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/gemini-3.8-flash/4040709/results.jsonl",
+    "price": "$450 per month.",
+    "facts": {
+      "Company": "Farlane Academy",
+      "What it does": "An online accelerated high school program. Students earn accredited high school credits at their own pace and build a portfolio of real-world projects alongside their transcript.",
+      "Who it is for": "Motivated high school students and their parents",
+      "Location": "Phoenix, Arizona",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$450 per month."
+    },
+    "copy": "Subject: A faster, project-driven high school for [Student Name]\n\nHi [Parent Name],\n\nIs [Student Name] feeling held back by the one-size-fits-all pace of standard high school?\n\nI founded Farlane Academy to give ambitious, self-motivated students a better option. We are a fully accredited, online high school program where students master coursework at their own speed—enabling them to graduate early or pursue passions outside the classroom.\n\nInstead of just memorizing tests, our students:\n- Earn accredited high school credits on their own schedule.\n- Build a portfolio of real-world projects that makes college applications stand out.\n- Learn entirely remotely with complete flexibility.\n\nTuition is a flat $450 per month, with no long-term contracts. \n\nIf you are looking for an educational path that matches [Student Name]’s drive, would you be open to a quick 10-minute call this week?\n\nBest regards,\n\n[Founder Name]  \nFounder, Farlane Academy",
+    "excerpts": [
+      "Tuition is a flat $450 per month, with no long-term contracts."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 0,
+        "team": 0,
+        "clients": 0,
+        "awards": 1,
+        "superlatives": 1,
+        "features": 3
+      },
+      "total": 5,
+      "claims": [
+        {
+          "quote": "fully accredited",
+          "category": "awards"
+        },
+        {
+          "quote": "pursue passions outside the classroom",
+          "category": "features"
+        },
+        {
+          "quote": "makes college applications stand out",
+          "category": "features"
+        },
+        {
+          "quote": "complete flexibility",
+          "category": "superlatives"
+        },
+        {
+          "quote": "no long-term contracts",
+          "category": "features"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "gpt-oss-120b",
+    "company_id": "p03-team",
+    "condition": "B_ban",
+    "copy_type": "linkedin",
+    "match": true,
+    "phrases": "no long‑term contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/gpt-oss-120b/3866186/results.jsonl",
+    "price": "$60 per user per month.",
+    "facts": {
+      "Company": "Tidemark CS",
+      "What it does": "An AI tool for account managers and customer success teams. It builds a picture of each customer account from activity and conversations, flags accounts that need attention, suggests the next step, and drafts follow-up messages.",
+      "Who it is for": "B2B software companies with account management teams",
+      "Location": "Boston, Massachusetts",
+      "Founded": "2024",
+      "Team": "4 people.",
+      "Price": "$60 per user per month."
+    },
+    "copy": "🚀 Exciting news from Boston! Today we officially launch Tidemark CS, the AI‑powered sidekick for account managers and customer‑success teams at B2B software companies. Built by a tight‑knit team of four founders, Tidemark CS pulls together every activity, email, call and note to create a single, up‑to‑date view of each account. Our engine then flags accounts that need attention, suggests the next best action, and even drafts follow‑up messages so you can spend more time building relationships and less time digging for data.  \n\nAll of this is available at a transparent $60 per user per month—no hidden fees, no long‑term contracts. We’re thrilled to help you turn data into insight, insight into action, and action into growth.  \n\nJoin us on this journey. Follow our page for product updates, early‑access invites, and stories from customers who are already seeing the difference.",
+    "excerpts": [
+      "All of this is available at a transparent $60 per user per month—no hidden fees, no long‑term contracts."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 0,
+        "team": 0,
+        "clients": 1,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 1
+      },
+      "total": 2,
+      "claims": [
+        {
+          "quote": "no hidden fees, no long‑term contracts",
+          "category": "features"
+        },
+        {
+          "quote": "stories from customers who are already seeing the difference",
+          "category": "clients"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "gpt-oss-20b",
+    "company_id": "p04-team",
+    "condition": "A_none",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "results/selected_runs/4/gpt-oss-20b/3695366/results.jsonl",
+    "price": "Annual license, quoted per utility.",
+    "facts": {
+      "Company": "Feederplan",
+      "What it does": "Browser-based software for planning electricity grids. Planning teams work from one shared model of the network, and AI assistants help run planning studies instead of spreadsheets and static reports.",
+      "Who it is for": "Electric utilities and grid network planners",
+      "Location": "Manchester, United Kingdom",
+      "Founded": "2024",
+      "Team": "3 people.",
+      "Price": "Annual license, quoted per utility."
+    },
+    "copy": "**Subject:** Unify Your Grid Planning – No More Spreadsheets  \n\nHi [Name],\n\nI’m reaching out from Feederplan, a Manchester‑based start‑up that helped a regional utility cut its grid‑planning cycle from weeks to days. We’ve built a browser‑based platform where planners work from a single, live network model, and AI assistants automatically run studies and generate dynamic reports.\n\nWith just a couple of clicks, your team can:\n\n- Simulate millions of configurations in minutes  \n- Spot line‑overloads before they happen  \n- Publish real‑time dashboards for regulators\n\nOur annual license is quoted per utility and scales with your team size. If you’re free next week, I’d love to give you a 15‑minute demo – no commitment required.\n\nBest regards,  \n[Your Name]  \nFeederplan | 1‑800‑123‑4567 | ⌛ 2024‑01‑01\\differential or free consultation?",
+    "excerpts": [
+      "If you’re free next week, I’d love to give you a 15‑minute demo – no commitment required."
+    ],
+    "reader": {
+      "counts": {
+        "numbers": 2,
+        "team": 0,
+        "clients": 1,
+        "awards": 0,
+        "superlatives": 0,
+        "features": 2
+      },
+      "total": 5,
+      "claims": [
+        {
+          "quote": "helped a regional utility",
+          "category": "clients"
+        },
+        {
+          "quote": "cut its grid‑planning cycle from weeks to days",
+          "category": "numbers"
+        },
+        {
+          "quote": "Simulate millions of configurations in minutes",
+          "category": "numbers"
+        },
+        {
+          "quote": "Publish real‑time dashboards for regulators",
+          "category": "features"
+        },
+        {
+          "quote": "scales with your team size",
+          "category": "features"
+        }
+      ]
+    }
+  },
+  {
+    "study": "original",
+    "model": "gpt-oss-20b",
+    "company_id": "p06-team",
+    "condition": "D_reinject",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no commitment",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/gpt-oss-20b/3695366/results.jsonl",
+    "price": "Free.",
+    "facts": {
+      "Company": "Circlework",
+      "What it does": "A social app for friend groups. AI helpers sit in your group chats and, with permission, use location, calendar and photos to help plan meetups and get things done.",
+      "Who it is for": "Friend groups",
+      "Location": "Los Angeles, California",
+      "Founded": "2024",
+      "Team": "3 people.",
+      "Price": "Free."
+    },
+    "copy": "**Subject:** Circlework helps your group stay organized with AI  \n\nHi [Name],\n\nI thought you might like a new, free way to coordinate with friends. Circlework is a social app that lets you talk in one place and automatically brings in your location, calendar and photos— with permission—to suggest meetups and help you get things done. Our AI helpers sit in your group chats, using shared data to propose times and spots that fit everyone. Built by a small team in Los Angeles and launched in 2024, it’s designed for friend groups just like yours. It’s completely free, so you can try it out with no commitment. If you’re interested in making group planning feel effortless, I’d love to show you how it works.\n\nBest,  \n[Your Name]",
+    "excerpts": [
+      "It’s completely free, so you can try it out with no commitment."
+    ],
+    "reader": null
+  },
+  {
+    "study": "original",
+    "model": "gpt-oss-20b",
+    "company_id": "p08-solo",
+    "condition": "A_none",
+    "copy_type": "linkedin",
+    "match": true,
+    "phrases": "No long‑term contracts",
+    "reader_scored": false,
+    "reader_clean": null,
+    "source": "results/selected_runs/4/gpt-oss-20b/3695366/results.jsonl",
+    "price": "$4 per address.",
+    "facts": {
+      "Company": "Parcel Sight",
+      "What it does": "Checks the condition and risk of properties remotely using satellite and street-level images, maps and public records. You upload a list of addresses and get a report for each property.",
+      "Who it is for": "Insurers and property owners",
+      "Location": "Miami, Florida",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$4 per address."
+    },
+    "copy": "🚀 **Introducing Parcel Sight – Smart Property Insight, From the Sky to the Street**🚀  \n\nMiami, FL – 2024 – One founder, zero employees, but a full‑fledged solution for insurers and property owners alike. Parcel Sight uses satellite imagery, street‑level photos, updated maps and public records to deliver a detailed condition & risk report for every address you upload.  \n\n🔍 **Why Parcel Sight?**  \n- **Instant Insight** – Upload a list of properties and receive a comprehensive assessment in minutes.  \n- **Precise Risk Analysis** – Our AI scans every pixel to highlight wear, damage, or potential hazards.  \n- **Cost‑Effective** – Just **$4 per address**. No long‑term contracts, no hidden fees.  \n\nWhether you’re underwriting a policy or managing a portfolio, Parcel Sight gives you a reliable, data‑driven view of each property’s health without ever leaving your desk.  \n\n👀 Curious? Let’s connect – I’d love to show you a demo!  \n\n#ParcelSight #RealEstateTech #InsurTech #PropertyRisk #AI #MiamiStartups #2024Launch 🌍✨",
+    "excerpts": [
+      "No long‑term contracts, no hidden fees."
+    ],
+    "reader": null
+  },
+  {
+    "study": "followup",
+    "model": "gemini-3.8-flash",
+    "company_id": "v07",
+    "condition": "A",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation/2/gemini-3.8-flash/4198879/results.jsonl",
+    "price": "$24 per shop per month.",
+    "facts": {
+      "Company": "Mendbrief",
+      "What it does": "A web form for repair shops to send a written estimate and item photographs to a customer. The customer can approve or decline the estimate through a link. Shop staff prepare the estimate; the software does not diagnose faults.",
+      "Who it is for": "Independent furniture repair shops",
+      "Location": "Leeds, United Kingdom",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "$24 per shop per month."
+    },
+    "copy": "Subject: A faster way to send furniture repair estimates\n\nHi [Name],\n\nChasing clients to approve repair quotes often takes more time than assessing the piece itself. \n\nI built Mendbrief to help independent furniture repair shops speed up that process. It is a simple tool that lets you send a clear, written estimate alongside photos of the item directly to the customer. They can review the work and approve or decline with a single click—eliminating phone tag and messy email threads.\n\nYour team keeps total control over the pricing and diagnosis; Mendbrief simply handles the customer sign-off cleanly. \n\nIt is $24 a month per shop, with no long-term commitment. Would you be open to a quick link showing how an estimate looks to a customer?\n\nBest,\n\n[Your Name]  \nFounder, Mendbrief",
+    "excerpts": [
+      "It is $24 a month per shop, with no long-term commitment."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "A faster way",
+          "category": "features"
+        },
+        {
+          "quote": "eliminating phone tag and messy email threads",
+          "category": "features"
+        },
+        {
+          "quote": "approve or decline with a single click",
+          "category": "features"
+        },
+        {
+          "quote": "with no long-term commitment",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 4,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 4
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v06",
+    "condition": "E",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$75 per warehouse per month.",
+    "facts": {
+      "Company": "Cratefolio",
+      "What it does": "A web application for wholesalers to record reusable shipping crates sent to and returned by shops. Workers scan printed QR labels using a phone camera. The application reports recorded balances; it does not locate crates in transit.",
+      "Who it is for": "Regional food wholesalers",
+      "Location": "Ghent, Belgium",
+      "Founded": "2024",
+      "Team": "5 people.",
+      "Price": "$75 per warehouse per month."
+    },
+    "copy": "Subject: Track crate balances without the warehouse guesswork\n\nHi [First Name],\n\nIf your crews are juggling spreadsheets or sticky notes to track reusable shipping crates sent to shops and returned, there's a simpler way.\n\nCratefolio is a web application built for regional food wholesalers like yours. Workers scan printed QR labels with a phone camera when crates go out or come back, and the app keeps a clear, up-to-date record of crate balances for every shop you supply.\n\nWe're not a GPS tracking tool — we won't tell you where a crate is mid-transit — but we will give you a reliable, accurate count of what's out and what's owed, so disputes over missing crates become a thing of the past.\n\nCratefolio is $75 per warehouse per month, with no long-term contracts.\n\nWould you be open to a short call this week to see if it fits your operation?\n\nBest regards,\n[Your Name]\nCratefolio, Ghent",
+    "excerpts": [
+      "Cratefolio is $75 per warehouse per month, with no long-term contracts."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "with no long-term contracts",
+          "category": "features"
+        },
+        {
+          "quote": "disputes over missing crates become a thing of the past",
+          "category": "superlatives"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 1,
+        "numbers": 0,
+        "superlatives": 1,
+        "team": 0
+      },
+      "total": 2
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v03",
+    "condition": "A",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$18 per property per month.",
+    "facts": {
+      "Company": "Linenroute",
+      "What it does": "A shared calendar for guesthouse owners to record linen pickups and deliveries with their existing laundry provider. Owners enter collection dates and quantities. The service does not wash or transport linen.",
+      "Who it is for": "Independent guesthouse owners",
+      "Location": "Dundee, United Kingdom",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "$18 per property per month."
+    },
+    "copy": "Subject: A simpler way to track linen pickups for your guesthouse\n\nHi [Name],\n\nI'm reaching out from Linenroute, a small tool built for independent guesthouse owners who want a clearer way to track linen pickups and deliveries with their existing laundry provider.\n\nInstead of relying on texts, memory, or scattered notes, you log collection dates and quantities on a shared calendar — so you and your laundry provider always know what's been picked up, what's due back, and when. We don't wash or transport linen ourselves; we simply make the scheduling side easier to manage.\n\nIt's $18 per property per month, no contracts, and takes a few minutes to set up.\n\nIf missed pickups or mismatched linen counts have ever been a headache, I'd love to show you how it works. Happy to send a quick walkthrough or hop on a short call.\n\nBest,\n[Your Name]\nFounder, Linenroute\nDundee, UK",
+    "excerpts": [
+      "It's $18 per property per month, no contracts, and takes a few minutes to set up."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "no contracts",
+          "category": "features"
+        },
+        {
+          "quote": "takes a few minutes to set up",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 2,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 2
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v03",
+    "condition": "E",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$18 per property per month.",
+    "facts": {
+      "Company": "Linenroute",
+      "What it does": "A shared calendar for guesthouse owners to record linen pickups and deliveries with their existing laundry provider. Owners enter collection dates and quantities. The service does not wash or transport linen.",
+      "Who it is for": "Independent guesthouse owners",
+      "Location": "Dundee, United Kingdom",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "$18 per property per month."
+    },
+    "copy": "Subject: A simpler way to track your linen pickups\n\nHi [Name],\n\nI'm reaching out from Linenroute, based here in Dundee. We've built a shared calendar made specifically for guesthouse owners to keep track of linen pickups and deliveries with your existing laundry provider.\n\nInstead of texts, phone calls, or sticky notes to remember when linen is due for collection, you and your laundry provider can both see the same calendar — logging collection dates and quantities in one place. We don't wash or transport linen ourselves; we simply make the scheduling side easier to manage.\n\nIt's $18 per property per month, with no long-term commitment.\n\nIf missed pickups or mixed-up schedules have ever been a headache, I'd love to show you how it works. Would you be open to a quick chat this week?\n\nBest regards,\n[Your Name]\nFounder, Linenroute",
+    "excerpts": [
+      "It's $18 per property per month, with no long-term commitment."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "with no long-term commitment",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 1,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 1
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v07",
+    "condition": "E",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$24 per shop per month.",
+    "facts": {
+      "Company": "Mendbrief",
+      "What it does": "A web form for repair shops to send a written estimate and item photographs to a customer. The customer can approve or decline the estimate through a link. Shop staff prepare the estimate; the software does not diagnose faults.",
+      "Who it is for": "Independent furniture repair shops",
+      "Location": "Leeds, United Kingdom",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "$24 per shop per month."
+    },
+    "copy": "Subject: A simpler way to send repair estimates to your customers\n\nHi [Name],\n\nI'm reaching out from Mendbrief, a small tool built for independent furniture repair shops.\n\nInstead of calling customers to describe damage and costs, you fill out a short web form with your written estimate and photos of the item. Your customer gets a link where they can review everything and approve or decline the estimate right there.\n\nYou and your team still do all the assessment and pricing — Mendbrief just handles sending it and collecting the yes or no, so you're not stuck playing phone tag.\n\nIt's $24 per month per shop, no contracts or extra setup.\n\nI'm the founder, based in Leeds, and happy to answer any questions or show you how it works if you're interested.\n\nWould it be worth a quick look?\n\nBest,\n[Your name]\nMendbrief",
+    "excerpts": [
+      "It's $24 per month per shop, no contracts or extra setup."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "no contracts",
+          "category": "features"
+        },
+        {
+          "quote": "extra setup",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 2,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 2
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v08",
+    "condition": "A",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term contract",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$32 per studio per month.",
+    "facts": {
+      "Company": "Kilnslot",
+      "What it does": "A booking page for shared pottery studios to list kiln sessions, reserve shelf space, and record the firing programme selected by the studio. Studio staff operate the kiln. The page does not control equipment.",
+      "Who it is for": "Shared pottery studio coordinators",
+      "Location": "Porto, Portugal",
+      "Founded": "2023",
+      "Team": "3 people.",
+      "Price": "$32 per studio per month."
+    },
+    "copy": "Subject: A simpler way to manage kiln bookings at your studio\n\nHi [First Name],\n\nI'm reaching out from Kilnslot, a small team based in Porto building a booking page specifically for shared pottery studios.\n\nIf your kiln schedule, shelf space, and firing programmes are currently tracked across spreadsheets, group chats, or sign-up sheets, Kilnslot gives members one place to reserve a kiln session, claim shelf space, and note which firing programme they need — so your staff can see at a glance what's loaded and what's scheduled, without chasing people for details.\n\nWe're not a kiln controller — your team still operates the equipment — we just handle the coordination side so there's less back-and-forth.\n\nIt's $32/month per studio, no long-term contract.\n\nWould you be open to a quick 15-minute call to see if it fits how your studio runs?\n\nBest,\n[Your Name]\nKilnslot, Porto",
+    "excerpts": [
+      "It's $32/month per studio, no long-term contract."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "no long-term contract",
+          "category": "features"
+        },
+        {
+          "quote": "gives members one place to reserve a kiln session, claim shelf space, and note which firing programme they need",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 2,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 2
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v01",
+    "condition": "A",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$29 per bakery per month.",
+    "facts": {
+      "Company": "Batchnest",
+      "What it does": "A browser tool for independent bakeries to enter tomorrow's orders, group items by baking temperature, and print a preparation list. Staff enter the orders themselves; the tool does not connect to checkout systems.",
+      "Who it is for": "Independent bakery owners",
+      "Location": "Madison, Wisconsin",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "$29 per bakery per month."
+    },
+    "copy": "Subject: A simpler way to organize tomorrow's baking list\n\nHi [Name],\n\nI'm reaching out from Batchnest, a small tool built for independent bakeries here in Madison.\n\nHere's the idea: each evening, you or your staff type in tomorrow's orders. Batchnest sorts everything by baking temperature and gives you a clean, printable prep list for the morning — no more flipping through order slips or guessing what goes in which oven first.\n\nIt doesn't connect to your checkout system or POS. It's just a straightforward way to turn a messy list of orders into an organized bake plan, in a few minutes each night.\n\nIt's $29/month, no contracts, and I built it myself after hearing how much time bakers lose sorting orders by hand.\n\nWould you be open to a quick 10-minute call this week to see if it'd be useful for your bakery?\n\nBest,\n[Your Name]\nFounder, Batchnest",
+    "excerpts": [
+      "It's $29/month, no contracts, and I built it myself after hearing how much time bakers lose sorting orders by hand."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "in a few minutes each night",
+          "category": "numbers"
+        },
+        {
+          "quote": "no contracts",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 1,
+        "numbers": 1,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 2
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v01",
+    "condition": "C",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$29 per bakery per month.",
+    "facts": {
+      "Company": "Batchnest",
+      "What it does": "A browser tool for independent bakeries to enter tomorrow's orders, group items by baking temperature, and print a preparation list. Staff enter the orders themselves; the tool does not connect to checkout systems.",
+      "Who it is for": "Independent bakery owners",
+      "Location": "Madison, Wisconsin",
+      "Founded": "2025",
+      "Team": "One founder. No employees.",
+      "Price": "$29 per bakery per month."
+    },
+    "copy": "Subject: Group tomorrow's orders by oven temp in seconds\n\nHi [First Name],\n\nI'm the founder of Batchnest, a simple browser tool built for independent bakeries like yours.\n\nHere's how it works: each evening, you or your staff enter tomorrow's orders directly into Batchnest. The tool then groups everything by baking temperature and generates a clean preparation list you can print and hand to your team the next morning. No connection to your checkout system required—just a straightforward way to organize what needs to go in the oven and when.\n\nI started Batchnest in Madison, Wisconsin, because I wanted bakery owners to spend less time sorting through order slips and more time baking.\n\nIt's $29 per month per bakery, no long-term commitment.\n\nWould you be open to a quick look? I'm happy to show you how it works.\n\nBest,\n[Your Name]\nFounder, Batchnest",
+    "excerpts": [
+      "It's $29 per month per bakery, no long-term commitment."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "in seconds",
+          "category": "numbers"
+        },
+        {
+          "quote": "no long-term commitment",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 1,
+        "numbers": 1,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 2
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v09",
+    "condition": "E",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$38 per marina per month.",
+    "facts": {
+      "Company": "Berthnote",
+      "What it does": "A tablet checklist for marina staff to record inspections of pontoons, lighting, and water taps. Staff can attach photographs and export completed checklists as PDF files. It records observations and does not certify safety.",
+      "Who it is for": "Small marina operations managers",
+      "Location": "Aarhus, Denmark",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$38 per marina per month."
+    },
+    "copy": "Subject: A simpler way to log pontoon and dock inspections\n\nHi [Name],\n\nI'm reaching out from Berthnote, a tablet checklist built for marina staff who inspect pontoons, lighting, and water taps.\n\nInstead of paper logs or scattered notes, your team can walk the docks with a tablet, check off each item, attach a photo if something needs attention, and export the completed checklist as a PDF for your records.\n\nIt's meant to make routine inspections faster to complete and easier to document — it records what staff observe, not a certification of safety.\n\nI'm the founder, based in Aarhus, and built Berthnote specifically for small marina operations like yours. It's $38 per marina per month, no long-term commitment.\n\nIf you'd like, I can show you how it works in a quick call, or just send over a short walkthrough.\n\nBest regards,\n[Your Name]\nFounder, Berthnote",
+    "excerpts": [
+      "It's $38 per marina per month, no long-term commitment."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "A simpler way",
+          "category": "features"
+        },
+        {
+          "quote": "faster to complete",
+          "category": "features"
+        },
+        {
+          "quote": "easier to document",
+          "category": "features"
+        },
+        {
+          "quote": "no long-term commitment",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 4,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 4
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v05",
+    "condition": "A",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no contracts",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$16 per theatre per month.",
+    "facts": {
+      "Company": "Propwicket",
+      "What it does": "An online catalogue for community theatres to photograph props, assign storage locations, and mark items as checked out for a production. Users add and update every record. It does not buy or rent props.",
+      "Who it is for": "Community theatre production managers",
+      "Location": "Bristol, United Kingdom",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$16 per theatre per month."
+    },
+    "copy": "Subject: A simpler way to track your theatre's props\n\nHi [Name],\n\nI imagine your props storage looks something like this: a mix of spreadsheets, sticky notes, and someone's memory of \"it's in the blue bin, I think.\" When a show's in tech week, that's the last thing you need to be chasing down.\n\nI built Propwicket, an online catalogue made specifically for community theatres. Photograph each prop, assign it a storage location, and mark it checked out when it's in use for a production. Everything lives in one place, and your whole team can add or update records as things move.\n\nIt's $16 per month per theatre, no contracts, and I built it myself after hearing how much time prop managers lose to disorganization.\n\nWould you be open to a quick look? Happy to set up a free trial so you can test it on your next production.\n\nBest,\n[Your name]\nFounder, Propwicket\nBristol, UK",
+    "excerpts": [
+      "It's $16 per month per theatre, no contracts, and I built it myself after hearing how much time prop managers lose to disorganization."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "no contracts",
+          "category": "features"
+        },
+        {
+          "quote": "free trial",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 2,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 2
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v05",
+    "condition": "E",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$16 per theatre per month.",
+    "facts": {
+      "Company": "Propwicket",
+      "What it does": "An online catalogue for community theatres to photograph props, assign storage locations, and mark items as checked out for a production. Users add and update every record. It does not buy or rent props.",
+      "Who it is for": "Community theatre production managers",
+      "Location": "Bristol, United Kingdom",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$16 per theatre per month."
+    },
+    "copy": "Subject: A simple way to track your theatre's props\n\nHi [Name],\n\nIf your production team is still juggling spreadsheets or sticky notes to track props, I wanted to introduce Propwicket.\n\nPropwicket is an online catalogue built specifically for community theatres. You can photograph each prop, assign it a storage location, and mark it as checked out when it's in use for a production. Everyone on your team can add and update records, so you always know what you have and where it is.\n\nWe're not a rental or purchasing service — just a straightforward tool to help you keep your existing props organized and easy to find.\n\nPropwicket costs $16 per theatre per month, with no long-term commitment.\n\nIf this sounds useful for your next production, I'd be happy to show you how it works.\n\nBest,\n[Your Name]\nFounder, Propwicket\nBristol, UK",
+    "excerpts": [
+      "Propwicket costs $16 per theatre per month, with no long-term commitment."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "with no long-term commitment",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 1,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 1
+    }
+  },
+  {
+    "study": "followup",
+    "model": "claude-sonnet-5-default",
+    "company_id": "v05",
+    "condition": "C",
+    "copy_type": "cold_email",
+    "match": true,
+    "phrases": "no long-term commitment",
+    "reader_scored": true,
+    "reader_clean": false,
+    "source": "validation_2026-10-05/downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "price": "$16 per theatre per month.",
+    "facts": {
+      "Company": "Propwicket",
+      "What it does": "An online catalogue for community theatres to photograph props, assign storage locations, and mark items as checked out for a production. Users add and update every record. It does not buy or rent props.",
+      "Who it is for": "Community theatre production managers",
+      "Location": "Bristol, United Kingdom",
+      "Founded": "2024",
+      "Team": "One founder. No employees.",
+      "Price": "$16 per theatre per month."
+    },
+    "copy": "Subject: A simpler way to track your theatre's props\n\nHi [Name],\n\nIf your production team is still tracking props with spreadsheets or sticky notes, I wanted to introduce Propwicket.\n\nPropwicket is an online catalogue built specifically for community theatres. You can photograph each prop, assign it a storage location, and mark it as checked out when it's in use for a production. Your whole team can add and update records, so everyone knows what you have, where it lives, and whether it's available.\n\nWe don't buy or rent props — Propwicket is simply the system for keeping track of the ones your theatre already owns.\n\nIt's $16 per theatre per month, with no long-term commitment.\n\nI'm the founder, based in Bristol, and happy to answer any questions or walk you through it if you're curious.\n\nWould you be open to a quick look?\n\nBest,\n[Your name]\nPropwicket",
+    "excerpts": [
+      "It's $16 per theatre per month, with no long-term commitment."
+    ],
+    "reader": {
+      "claims": [
+        {
+          "quote": "with no long-term commitment",
+          "category": "features"
+        }
+      ],
+      "counts": {
+        "awards": 0,
+        "clients": 0,
+        "features": 1,
+        "numbers": 0,
+        "superlatives": 0,
+        "team": 0
+      },
+      "total": 1
+    }
+  }
+]

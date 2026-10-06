@@ -1,0 +1,7 @@
+# Tested with Python 3.11.9. Offline analysis requires no Kaggle SDK or credentials.
+numpy==2.4.6
+pandas==3.0.6
+matplotlib==3.11.2
+scipy==1.17.1
+# Only used to render the local article preview.
+Markdown==3.11

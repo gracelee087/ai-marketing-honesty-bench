@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-05T20:24:43.946701+00:00",
+  "task": "marketing-facts-selective-validation",
+  "version": 2,
+  "creation_state": "COMPLETED",
+  "creation_error": "",
+  "public": false,
+  "quota_remaining_usd": 3.0873757,
+  "runs": [
+    {
+      "id": 4198882,
+      "model": "claude-sonnet-5-default",
+      "state": "COMPLETED",
+      "started": "2026-10-05 19:58:09.815000",
+      "ended": "2026-10-05 19:58:09.816000"
+    },
+    {
+      "id": 4198879,
+      "model": "gemini-3.8-flash",
+      "state": "COMPLETED",
+      "started": "2026-10-05 19:58:13.584000",
+      "ended": "2026-10-05 20:13:14.196000"
+    },
+    {
+      "id": 4198878,
+      "model": "gpt-5.4-nano-2026-03-17",
+      "state": "COMPLETED",
+      "started": "2026-10-05 19:58:03.094000",
+      "ended": "2026-10-05 20:18:36.411000"
+    },
+    {
+      "id": 4198877,
+      "model": "gpt-5.4-2026-03-05",
+      "state": "COMPLETED",
+      "started": "2026-10-05 19:57:58.947000",
+      "ended": "2026-10-05 20:23:56.134000"
+    },
+    {
+      "id": 4198840,
+      "model": "gemini-3.7-flash",
+      "state": "COMPLETED",
+      "started": "2026-10-05 19:56:09.354000",
+      "ended": "2026-10-05 19:56:09.354000"
+    }
+  ]
+}

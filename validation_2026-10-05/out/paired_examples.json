@@ -1,0 +1,3831 @@
+[
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v10",
+    "overlap_change": -0.10418305795961186,
+    "C": {
+      "company_id": "v10",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Simplify school club equipment tracking with Clubcubby\n\nKia ora [Name],  \n\nIf you’re an after-school club coordinator, you know how quickly equipment logs can get messy—items go missing, return dates get forgotten, and tracking who borrowed what turns into a manual hassle.  \n\nClubcubby is a browser-based register for school clubs to list equipment and record which member borrowed each item. Coordinators create accounts, enter equipment details, and record return dates. The service helps organise club equipment without collecting payments or tracking items automatically.  \n\nBased in Wellington, New Zealand, Clubcubby was founded in 2025 and is available at $12 per club per month.  \n\nWould you like to see how it could fit your club’s routine?  \n\nNgā mihi,  \n[Your Name]  \nClubcubby",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 170,
+        "cost_nanodollars": 244300,
+        "latency_ms": 1564
+      },
+      "overlap": 0.18548387096774194,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 119,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 514,
+        "output_tokens": 1347,
+        "cost_nanodollars": 4766800,
+        "latency_ms": 27813
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v10",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Simplify club equipment tracking with Clubcubby (Wellington)\n\nKia ora,\n\nI’m reaching out from Clubcubby. We’re a browser-based register for after-school school clubs that want a simple way to list equipment and record which member borrowed each item.\n\nClub coordinators create accounts, enter equipment details, and record return dates. Clubcubby is designed specifically for coordinators—there’s no payment collection and the service doesn’t automatically track items, so your process stays in your hands.\n\nIf you’re looking for an easier way to keep club equipment organised and borrowing clearly recorded, Clubcubby could be a good fit.\n\nWould you be open to a quick conversation about whether it matches how your club runs?\n\nNgā mihi,  \n[Your Name]  \nClubcubby",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 176,
+        "output_tokens": 162,
+        "cost_nanodollars": 237700,
+        "latency_ms": 1413
+      },
+      "overlap": 0.08130081300813008,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 115,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 505,
+        "output_tokens": 2484,
+        "cost_nanodollars": 8453800,
+        "latency_ms": 38854
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v07",
+    "overlap_change": -0.08627958225543739,
+    "C": {
+      "company_id": "v07",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to send repair estimates to your customers\n\nHi there,\n\nI'm reaching out from Mendbrief, a small tool built for independent furniture repair shops like yours.\n\nInstead of calling customers or emailing photos one by one, Mendbrief gives you a simple web form to send a written estimate along with photographs of the item straight to your customer. They can then approve or decline the estimate through a link, so there's no back-and-forth needed to get a decision.\n\nYour staff still prepare the estimate as usual. Mendbrief just handles getting it in front of the customer clearly and makes approval easy.\n\nIt's $24 per shop per month, with no long setup process.\n\nI'm the founder, based in Leeds, and happy to answer any questions or show you how it works.\n\nWould you be open to a quick look?\n\nBest,\n[Your name]\nMendbrief",
+      "reader": {
+        "claims": [
+          {
+            "quote": "so there's no back-and-forth needed to get a decision",
+            "category": "features"
+          },
+          {
+            "quote": "with no long setup process",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 2,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 2
+      },
+      "usage": {
+        "input_tokens": 246,
+        "output_tokens": 303,
+        "cost_nanodollars": 3522000,
+        "latency_ms": 4549
+      },
+      "overlap": 0.14965986394557823,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 145,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\"quote\": \"so there's no back-and-forth needed to get a decision\", \"category\": \"features\"},\n{\"quote\": \"with no long setup process\", \"category\": \"features\"}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 528,
+        "output_tokens": 4898,
+        "cost_nanodollars": 16144000,
+        "latency_ms": 83215
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v07",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to send repair estimates to your customers\n\nHi [Name],\n\nI'm reaching out from Mendbrief, a small tool built for independent furniture repair shops.\n\nInstead of calling customers to describe damage and costs, you fill out a short web form with your written estimate and photos of the item. Your customer gets a link where they can review everything and approve or decline the estimate right there.\n\nYou and your team still do all the assessment and pricing — Mendbrief just handles sending it and collecting the yes or no, so you're not stuck playing phone tag.\n\nIt's $24 per month per shop, no contracts or extra setup.\n\nI'm the founder, based in Leeds, and happy to answer any questions or show you how it works if you're interested.\n\nWould it be worth a quick look?\n\nBest,\n[Your name]\nMendbrief",
+      "reader": {
+        "claims": [
+          {
+            "quote": "no contracts",
+            "category": "features"
+          },
+          {
+            "quote": "extra setup",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 2,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 2
+      },
+      "usage": {
+        "input_tokens": 269,
+        "output_tokens": 287,
+        "cost_nanodollars": 3408000,
+        "latency_ms": 3499
+      },
+      "overlap": 0.06338028169014084,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 143,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\"quote\": \"no contracts\", \"category\": \"features\"},\n{\"quote\": \"extra setup\", \"category\": \"features\"}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 523,
+        "output_tokens": 8172,
+        "cost_nanodollars": 26673400,
+        "latency_ms": 137323
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v07",
+    "overlap_change": -0.07923119469026549,
+    "C": {
+      "company_id": "v07",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Mendbrief: faster, clearer written estimates for your furniture repairs\n\nHi there,  \n\nMy name is [Your Name], and I’m reaching out from Mendbrief (Leeds, United Kingdom). Mendbrief is a web form designed for independent furniture repair shops to create a written estimate and share item photographs with your customer.\n\nShop staff prepare the estimate in the software—there’s no diagnosis involved. Your customer then receives a link to review the estimate and can approve or decline directly from their side.\n\nMendbrief is built specifically for independent furniture repair shops like yours, and it’s available for $24 per shop per month.\n\nIf you’re open to it, I’d love to share how Mendbrief could fit into your current estimating process.  \n\nBest regards,  \n[Your Name]  \nMendbrief",
+      "reader": {
+        "claims": [
+          {
+            "quote": "faster, clearer",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 163,
+        "output_tokens": 166,
+        "cost_nanodollars": 240100,
+        "latency_ms": 1425
+      },
+      "overlap": 0.203125,
+      "repeat_share": 0.016,
+      "no_employees": false,
+      "word_count": 122,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"faster, clearer\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 513,
+        "output_tokens": 4149,
+        "cost_nanodollars": 13789800,
+        "latency_ms": 62690
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v07",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Reduce paperwork for furniture repair estimates with Mendbrief\n\nHi there,  \n\nIf you run an independent furniture repair shop, Mendbrief can help you send written estimates and item photographs to your customers in a simple web flow. Your shop staff prepare the estimate, and customers receive a link to approve or decline it.  \n\nMendbrief is designed for repair shops—its software doesn’t diagnose faults, it just streamlines how estimates are shared and confirmed.  \n\nIt’s based in Leeds, UK, and we launched in 2025. Plans start at $24 per shop per month.  \n\nWould you be open to a quick chat about whether Mendbrief could fit your current estimating process?  \n\nBest regards,  \nMendbrief",
+      "reader": {
+        "claims": [
+          {
+            "quote": "Plans start at $24 per shop per month.",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 180,
+        "output_tokens": 149,
+        "cost_nanodollars": 222250,
+        "latency_ms": 1497
+      },
+      "overlap": 0.12389380530973451,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 110,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\n\"quote\": \"Plans start at $24 per shop per month.\",\n\"category\": \"features\"\n}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 496,
+        "output_tokens": 7769,
+        "cost_nanodollars": 25299200,
+        "latency_ms": 134595
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v05",
+    "overlap_change": -0.07048872180451127,
+    "C": {
+      "company_id": "v05",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Online prop catalogue for community theatre production managers\n\nHello,\n\nI am the founder of Propwicket, an online catalogue based in Bristol, United Kingdom. Founded in 2024, Propwicket has one founder and no employees.\n\nI am reaching out to community theatre production managers about Propwicket. It provides an online catalogue for community theatres to photograph props, assign storage locations, and mark items as checked out for a production. In this system, users add and update every record. Please note that Propwicket does not buy or rent props.\n\nAccess to Propwicket is available at the price of $16 per theatre per month.\n\nIf you are a community theatre production manager looking to photograph props, assign storage locations, and mark items checked out for a production, please reply to this email.\n\nBest regards,\n\nFounder, Propwicket",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 166,
+        "output_tokens": 1748,
+        "cost_nanodollars": 6679500,
+        "latency_ms": 6476
+      },
+      "overlap": 0.48120300751879697,
+      "repeat_share": 0.06923076923076923,
+      "no_employees": true,
+      "word_count": 133,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 519,
+        "output_tokens": 966,
+        "cost_nanodollars": 3610200,
+        "latency_ms": 17133
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v05",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Propwicket: Online prop catalogue for community theatre production managers\n\nDear Production Manager,\n\nI am the founder of Propwicket, located in Bristol, United Kingdom. Founded in 2024, Propwicket is an online catalogue designed for community theatre production managers.\n\nPropwicket is an online catalogue for community theatres to photograph props, assign storage locations, and mark items as checked out for a production. Users add and update every record. Please note that Propwicket does not buy or rent props.\n\nThe company has one founder and no employees. The price is $16 per theatre per month.\n\nIf you are interested in using Propwicket for your community theatre, please reply to this email.\n\nBest regards,\n\nPropwicket",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 184,
+        "output_tokens": 3570,
+        "cost_nanodollars": 13525500,
+        "latency_ms": 10456
+      },
+      "overlap": 0.4107142857142857,
+      "repeat_share": 0.03669724770642202,
+      "no_employees": true,
+      "word_count": 112,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 497,
+        "output_tokens": 687,
+        "cost_nanodollars": 2695400,
+        "latency_ms": 8554
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v02",
+    "overlap_change": -0.0625,
+    "C": {
+      "company_id": "v02",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Desktop application for small museum curators\n\nDear Curator,\n\nI am writing to you from Labelharbor, based in York, United Kingdom. Founded in 2024, our team consists of 3 people. We offer a desktop application designed for small museum curators.\n\nLabelharbor stores museum object notes and arranges selected text into printable exhibit labels. Curators write and approve the wording. Because it is a desktop application, files stay on the museum's computer.\n\nThe price of the application is $240 per museum per year.\n\nIf you are a small museum curator who wants to store museum object notes and arrange selected text into printable exhibit labels while your files stay on the museum's computer, please reply to this email.\n\nBest regards,\nLabelharbor",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 161,
+        "output_tokens": 2853,
+        "cost_nanodollars": 10819500,
+        "latency_ms": 9027
+      },
+      "overlap": 0.375,
+      "repeat_share": 0.06837606837606838,
+      "no_employees": false,
+      "word_count": 120,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 494,
+        "output_tokens": 817,
+        "cost_nanodollars": 3108400,
+        "latency_ms": 14339
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v02",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Printable exhibit labels desktop application for small museum curators\n\nDear Curator,\n\nI am contacting you from Labelharbor, based in York, United Kingdom. Founded in 2024, our team of three people developed a desktop application created for small museum curators.\n\nLabelharbor stores museum object notes and arranges selected text into printable exhibit labels. Using the application, curators write and approve the wording. Because it operates as a desktop application, your files stay on the museum's computer.\n\nThe price is $240 per museum per year. \n\nIf you are interested in using our desktop application to store object notes and arrange selected text into printable exhibit labels, please reply to this email.\n\nSincerely,\n\nLabelharbor",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 179,
+        "output_tokens": 2291,
+        "cost_nanodollars": 8725500,
+        "latency_ms": 8168
+      },
+      "overlap": 0.3125,
+      "repeat_share": 0.03669724770642202,
+      "no_employees": false,
+      "word_count": 112,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 486,
+        "output_tokens": 1075,
+        "cost_nanodollars": 3926000,
+        "latency_ms": 16230
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v03",
+    "overlap_change": -0.05959198282032928,
+    "C": {
+      "company_id": "v03",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: Keep your guesthouse linen collections and deliveries in one shared calendar\n\nHi,\n\nI’m reaching out to introduce Linenroute, a simple shared calendar built for independent guesthouse owners in Dundee.\n\nLinenroute helps you record linen pickups and deliveries with your existing laundry provider in one place. You enter collection dates and quantities, making it easier to keep track of what is due in and out for each property. It does not replace your current provider and does not wash or transport linen — it simply gives you a clearer way to manage the schedule.\n\nLinenroute is $18 per property per month.\n\nIf you’re looking for a straightforward way to organise linen collection and delivery records for your guesthouse, Linenroute may be worth a look.\n\nBest,\nLinenroute",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 156,
+        "cost_nanodollars": 2727500,
+        "latency_ms": 2923
+      },
+      "overlap": 0.1732283464566929,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 126,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 500,
+        "output_tokens": 3648,
+        "cost_nanodollars": 12173600,
+        "latency_ms": 69664
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v03",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: Keep your linen collection dates in one shared calendar\n\nHi,\n\nIf you run an independent guesthouse, keeping track of linen collections and deliveries can easily become scattered across notes, messages, and memory.\n\nLinenroute is a simple shared calendar built for guesthouse owners. It lets you record collection dates and quantities with your existing laundry provider, so the details are all in one place and easier to check when you need them. Linenroute does not wash or transport linen — it simply helps you stay organised with the provider you already use.\n\nWe’re based in Dundee and offer Linenroute at $18 per property per month.\n\nIf having a clearer way to manage linen pickup and delivery records would be useful for your guesthouse, I’d be happy to share more.\n\nBest,\nLinenroute",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 172,
+        "output_tokens": 161,
+        "cost_nanodollars": 2845000,
+        "latency_ms": 3514
+      },
+      "overlap": 0.11363636363636363,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 131,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 505,
+        "output_tokens": 1660,
+        "cost_nanodollars": 5759400,
+        "latency_ms": 41304
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v04",
+    "overlap_change": -0.05464982778415614,
+    "C": {
+      "company_id": "v04",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to keep greenhouse watering and bench notes organized\n\nHi,\n\nI’m reaching out from Trellisbook, a mobile logbook built for small commercial greenhouse managers.\n\nTrellisbook makes it easy for greenhouse workers to record watering times and observations for each growing bench right from their phone. Because entries are made by people in the moment, managers get a clear, practical record of what was done and what was noticed across the greenhouse.\n\nWhen needed, managers can download all entries as a spreadsheet for review and recordkeeping.\n\nWe’re a small team based in Utrecht, Netherlands, and Trellisbook is priced at $45 per greenhouse per month.\n\nIf you’re looking for a straightforward way to keep bench-by-bench watering and observation logs organized, Trellisbook may be worth a look.\n\nBest,\nTrellisbook",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 170,
+        "cost_nanodollars": 2945000,
+        "latency_ms": 3463
+      },
+      "overlap": 0.22388059701492538,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 129,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 517,
+        "output_tokens": 3272,
+        "cost_nanodollars": 10929800,
+        "latency_ms": 68696
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v04",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to track watering and bench notes in your greenhouse\n\nHi,\n\nI’m reaching out from Trellisbook, a mobile logbook built for small commercial greenhouse managers.\n\nTrellisbook helps greenhouse workers record watering times and observations for each growing bench right from their phones. Because entries are made by your team as they work, managers get a clear, practical record of what was done and what was noticed across the greenhouse. When needed, those entries can be downloaded as a spreadsheet for review and reporting.\n\nWe’re a small team based in Utrecht, Netherlands, and Trellisbook is priced at $45 per greenhouse per month.\n\nIf you’re looking for a straightforward way to keep watering records and bench observations organized, Trellisbook may be worth a look.\n\nBest,\nTrellisbook",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 175,
+        "output_tokens": 164,
+        "cost_nanodollars": 2897500,
+        "latency_ms": 3635
+      },
+      "overlap": 0.16923076923076924,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 127,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 511,
+        "output_tokens": 4360,
+        "cost_nanodollars": 14463000,
+        "latency_ms": 63196
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v01",
+    "overlap_change": -0.05384615384615382,
+    "C": {
+      "company_id": "v01",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to organize tomorrow’s bake\n\nHi there,\n\nI’m reaching out from Batchnest, a browser tool built for independent bakery owners. It helps your team enter tomorrow’s orders, group items by baking temperature, and print a preparation list for the next day.\n\nBatchnest is designed for bakeries that want a simple way to organize production without changing how orders are taken. Staff enter the orders themselves, and the tool does not connect to checkout systems.\n\nWe’re based in Madison, Wisconsin, founded in 2025, and focused on supporting independent bakeries with a straightforward workflow. Batchnest is $29 per bakery per month.\n\nIf you’d be open to it, I’d be glad to share more and see whether it could fit your bakery.\n\nBest,\nBatchnest",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 161,
+        "cost_nanodollars": 2810000,
+        "latency_ms": 3363
+      },
+      "overlap": 0.25384615384615383,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 124,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 503,
+        "output_tokens": 4447,
+        "cost_nanodollars": 14675800,
+        "latency_ms": 97740
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v01",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to organize tomorrow’s bakes\n\nHi,\n\nI’m reaching out from Batchnest, a browser tool built for independent bakery owners.\n\nBatchnest helps bakeries enter tomorrow’s orders, group items by baking temperature, and print a preparation list for the next day. It’s designed for shops where staff enter orders themselves, without needing a connection to checkout systems.\n\nIf you’re looking for a simpler way to organize prep for the next day’s bake, Batchnest may be worth a look. It’s based in Madison, Wisconsin, and costs $29 per bakery per month.\n\nBest,\nBatchnest",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 175,
+        "output_tokens": 126,
+        "cost_nanodollars": 2327500,
+        "latency_ms": 3255
+      },
+      "overlap": 0.2,
+      "repeat_share": 0.030927835051546393,
+      "no_employees": false,
+      "word_count": 93,
+      "in_word_limit": false,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 468,
+        "output_tokens": 1814,
+        "cost_nanodollars": 6215200,
+        "latency_ms": 52232
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v06",
+    "overlap_change": -0.05284569550030818,
+    "C": {
+      "company_id": "v06",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: Track Your Crate Balances Without the Spreadsheet Headaches\n\nHi [First Name],\n\nIf your team is still tracking reusable shipping crates sent to and returned by shops using spreadsheets or memory, there's a simpler way.\n\nCratefolio is a web application built for regional food wholesalers like yours. Workers scan printed QR labels on each crate using just a phone camera—no special hardware needed. The app keeps an accurate, up-to-date record of crate balances for every shop you supply, so you always know what's been sent out and what's come back.\n\nTo be clear: Cratefolio reports recorded balances based on scans—it doesn't locate crates in transit. It's a straightforward tool for keeping your crate records accurate and accessible.\n\nCratefolio is based in Ghent, Belgium, and priced at $75 per warehouse per month.\n\nWould you be open to a short call to see if this fits your operation?\n\nBest regards,\n[Your Name]\nCratefolio",
+      "reader": null,
+      "usage": {
+        "input_tokens": 244,
+        "output_tokens": 348,
+        "cost_nanodollars": 3968000,
+        "latency_ms": 3948
+      },
+      "overlap": 0.14838709677419354,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 151,
+      "in_word_limit": false,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "",
+      "reader_usage": {
+        "input_tokens": 539,
+        "output_tokens": 8192,
+        "cost_nanodollars": 26695800,
+        "latency_ms": 158116
+      },
+      "reader_at_token_cap": true,
+      "status": "invalid_reader",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v06",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: Track crate balances without the warehouse guesswork\n\nHi [First Name],\n\nIf your crews are juggling spreadsheets or sticky notes to track reusable shipping crates sent to shops and returned, there's a simpler way.\n\nCratefolio is a web application built for regional food wholesalers like yours. Workers scan printed QR labels with a phone camera when crates go out or come back, and the app keeps a clear, up-to-date record of crate balances for every shop you supply.\n\nWe're not a GPS tracking tool — we won't tell you where a crate is mid-transit — but we will give you a reliable, accurate count of what's out and what's owed, so disputes over missing crates become a thing of the past.\n\nCratefolio is $75 per warehouse per month, with no long-term contracts.\n\nWould you be open to a short call this week to see if it fits your operation?\n\nBest regards,\n[Your Name]\nCratefolio, Ghent",
+      "reader": {
+        "claims": [
+          {
+            "quote": "with no long-term contracts",
+            "category": "features"
+          },
+          {
+            "quote": "disputes over missing crates become a thing of the past",
+            "category": "superlatives"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 1,
+          "team": 0
+        },
+        "total": 2
+      },
+      "usage": {
+        "input_tokens": 267,
+        "output_tokens": 344,
+        "cost_nanodollars": 3974000,
+        "latency_ms": 3840
+      },
+      "overlap": 0.09554140127388536,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 155,
+      "in_word_limit": false,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"with no long-term contracts\",\n      \"category\": \"features\"\n    },\n    {\n      \"quote\": \"disputes over missing crates become a thing of the past\",\n      \"category\": \"superlatives\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 541,
+        "output_tokens": 5581,
+        "cost_nanodollars": 18342600,
+        "latency_ms": 101002
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v07",
+    "overlap_change": -0.05084057971014494,
+    "C": {
+      "company_id": "v07",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to send repair estimates for customer approval\n\nHi,\n\nI’m reaching out from Mendbrief, based in Leeds. We’ve built a simple web form for independent furniture repair shops to send customers a written estimate along with item photographs.\n\nCustomers receive a link where they can approve or decline the estimate, which can make the process clearer and easier for everyone involved. Your staff prepare the estimate as usual, and Mendbrief simply helps present it to the customer for a decision. It does not diagnose faults.\n\nMendbrief is designed specifically for independent furniture repair shops and is priced at $24 per shop per month.\n\nIf you’d like, I can send over a brief overview of how it works.\n\nBest,\nMendbrief",
+      "reader": null,
+      "usage": {
+        "input_tokens": 163,
+        "output_tokens": 150,
+        "cost_nanodollars": 2657500,
+        "latency_ms": 3208
+      },
+      "overlap": 0.232,
+      "repeat_share": 0.01639344262295082,
+      "no_employees": false,
+      "word_count": 122,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "",
+      "reader_usage": {
+        "input_tokens": 497,
+        "output_tokens": 8192,
+        "cost_nanodollars": 26711400,
+        "latency_ms": 187652
+      },
+      "reader_at_token_cap": true,
+      "status": "invalid_reader",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v07",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to send repair estimates for approval\n\nHi,\n\nI’m reaching out about Mendbrief, a simple web form built for independent furniture repair shops.\n\nWith Mendbrief, your staff can send a written estimate and item photographs to a customer in one place. The customer then gets a link where they can approve or decline the estimate. Your team prepares the estimate as usual, and Mendbrief simply makes it easier to present it clearly and get a response.\n\nIt’s designed for independent shops and is priced at $24 per shop per month.\n\nMendbrief is based in Leeds and focused on a straightforward part of the repair process: sharing estimates and getting customer approval without added complexity.\n\nIf that sounds useful for your shop, I’d be glad to send over more information.\n\nBest,\n[Your Name]",
+      "reader": null,
+      "usage": {
+        "input_tokens": 180,
+        "output_tokens": 165,
+        "cost_nanodollars": 2925000,
+        "latency_ms": 3420
+      },
+      "overlap": 0.18115942028985507,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 135,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "",
+      "reader_usage": {
+        "input_tokens": 511,
+        "output_tokens": 8192,
+        "cost_nanodollars": 26667800,
+        "latency_ms": 154296
+      },
+      "reader_at_token_cap": true,
+      "status": "invalid_reader",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v10",
+    "overlap_change": -0.04425493263359742,
+    "C": {
+      "company_id": "v10",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to keep track of club equipment loans\n\nHi,\n\nI’m reaching out from Clubcubby, a browser register built for after-school club coordinators.\n\nClubcubby helps clubs list their equipment and record which member borrowed each item, all in one simple place. A club coordinator can create accounts and enter return dates, making it easier to keep track of what has gone out and who has it.\n\nIf your club currently manages borrowed equipment with paper notes or scattered spreadsheets, Clubcubby offers a straightforward alternative focused on club lending records. It does not collect payments or track items automatically, just the key details coordinators need for day-to-day organisation.\n\nWe’re based in Wellington, New Zealand, and Clubcubby is available for $12 per club per month.\n\nWould you be open to a quick look at whether it could suit your club?\n\nBest,\nThe Clubcubby team",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 183,
+        "cost_nanodollars": 3142500,
+        "latency_ms": 4080
+      },
+      "overlap": 0.19463087248322147,
+      "repeat_share": 0.00684931506849315,
+      "no_employees": false,
+      "word_count": 144,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 526,
+        "output_tokens": 3836,
+        "cost_nanodollars": 12743600,
+        "latency_ms": 71434
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v10",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: Keep your club equipment register simple\n\nHi,\n\nIf you coordinate an after-school club, keeping track of shared equipment can quickly become messy. Clubcubby is a browser-based register built for club coordinators to list equipment and record which member borrowed each item.\n\nA coordinator can create accounts and enter return dates, giving your club a simple way to stay organised without relying on paper lists or scattered messages. Clubcubby is designed specifically for after-school clubs and is priced at $12 per club per month.\n\nWe’re a small team based in Wellington, New Zealand, and we started Clubcubby in 2025 to support clubs that need a straightforward equipment register.\n\nIf you’d like, I can share more about how Clubcubby works for after-school club coordinators.\n\nBest,\nThe Clubcubby team",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 176,
+        "output_tokens": 166,
+        "cost_nanodollars": 2930000,
+        "latency_ms": 3700
+      },
+      "overlap": 0.15037593984962405,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 127,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 508,
+        "output_tokens": 2379,
+        "cost_nanodollars": 8063200,
+        "latency_ms": 34418
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v09",
+    "overlap_change": -0.035785785785785784,
+    "C": {
+      "company_id": "v09",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Simplify marina inspection checklists with Berthnote (Aarhus)\n\nHi {{FirstName}},  \n\nI’m reaching out from Berthnote, based in Aarhus, Denmark. We created a tablet checklist designed for marina staff to record inspections of pontoons, lighting, and water taps.  \n\nBerthnote lets staff capture observations, attach photographs, and export completed checklists as PDF files for easy sharing and follow-up. The tool records findings and does not certify safety—so it fits straightforward inspection workflows.  \n\nIt’s built for small marina operations managers and is available for $38 per marina per month.  \n\nIf you’d like, I can share how Berthnote could fit into your inspection routine.  \n\nBest regards,  \n{{YourName}}",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 163,
+        "output_tokens": 157,
+        "cost_nanodollars": 228850,
+        "latency_ms": 1341
+      },
+      "overlap": 0.32407407407407407,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 103,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 507,
+        "output_tokens": 1307,
+        "cost_nanodollars": 4631800,
+        "latency_ms": 21896
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v09",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Simple tablet inspections for marina pontoons, lighting, and water taps\n\nHi {{Name}},  \n\nI’m reaching out from Aarhus, Denmark, to introduce Berthnote—a tablet checklist for marina staff to record inspections of pontoons, lighting, and water taps. Staff can add observations and attach photographs during each inspection, and completed checklists can be exported as PDF files for easy sharing and recordkeeping.  \n\nBerthnote is designed for small marina operations managers who want a straightforward way to document inspections. It records observations only and does not certify safety.  \n\nIf you’re open to it, I’d be glad to share how Berthnote could fit into your inspection routines.  \n\nBest regards,  \n{{YourName}}  \nBerthnote",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 180,
+        "output_tokens": 154,
+        "cost_nanodollars": 228500,
+        "latency_ms": 1207
+      },
+      "overlap": 0.2882882882882883,
+      "repeat_share": 0.018518518518518517,
+      "no_employees": false,
+      "word_count": 107,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 506,
+        "output_tokens": 982,
+        "cost_nanodollars": 3648400,
+        "latency_ms": 15805
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v01",
+    "overlap_change": -0.03484848484848485,
+    "C": {
+      "company_id": "v01",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Batchnest: Browser tool for independent bakery owners\n\nHello,\n\nI am the founder of Batchnest, located in Madison, Wisconsin. Founded in 2025, the company has one founder and no employees.\n\nBatchnest is a browser tool created for independent bakery owners. Using this tool, bakery staff enter tomorrow's orders themselves. The tool does not connect to checkout systems. Once the orders are entered, Batchnest groups the items by baking temperature and prints a preparation list.\n\nThe price for the tool is $29 per bakery per month.\n\nIf you are an independent bakery owner interested in a browser tool to enter tomorrow's orders, group items by baking temperature, and print a preparation list, please reply to this email.\n\nThank you,\nFounder, Batchnest",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 166,
+        "output_tokens": 3705,
+        "cost_nanodollars": 14018250,
+        "latency_ms": 11927
+      },
+      "overlap": 0.31666666666666665,
+      "repeat_share": 0.02564102564102564,
+      "no_employees": true,
+      "word_count": 120,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 497,
+        "output_tokens": 888,
+        "cost_nanodollars": 3281000,
+        "latency_ms": 26685
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v01",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Batchnest: Order grouping and preparation lists for your bakery\n\nHello,\n\nBatchnest is a browser tool designed for independent bakery owners. I am the founder, operating Batchnest from Madison, Wisconsin. \n\nThe tool helps manage tomorrow's orders. Staff enter the orders themselves, as the tool does not connect to checkout systems. Once entered, the tool groups items by baking temperature and prints a preparation list. \n\nBatchnest was founded in 2025 and has one founder with no employees. The price is $29 per bakery per month. \n\nIf you are interested in using Batchnest to group tomorrow's orders by baking temperature and print a preparation list, please let me know.\n\nBest regards,\n\nBatchnest",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 184,
+        "output_tokens": 2120,
+        "cost_nanodollars": 8088000,
+        "latency_ms": 7825
+      },
+      "overlap": 0.2818181818181818,
+      "repeat_share": 0.009345794392523364,
+      "no_employees": true,
+      "word_count": 110,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 487,
+        "output_tokens": 880,
+        "cost_nanodollars": 3303000,
+        "latency_ms": 12613
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v04",
+    "overlap_change": -0.031303497187576426,
+    "C": {
+      "company_id": "v04",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler logbook for your greenhouse benches\n\nHi [First Name],\n\nI'm reaching out from Trellisbook, a small team based in Utrecht. We built a mobile logbook that lets greenhouse workers record watering times and observations for each growing bench, right from their phones.\n\nNo sensors to install or calibrate — your team just logs what they see and do, bench by bench. When you need to review the data, you can download all the entries as a spreadsheet, making it easy to spot patterns or share records with your team.\n\nIt's designed specifically for small commercial greenhouse operations like yours, where keeping accurate, organized records shouldn't mean extra paperwork or complicated software.\n\nTrellisbook is $45 per greenhouse per month.\n\nWould you be open to a quick conversation about whether this could fit into your greenhouse's routine?\n\nBest regards,\n[Your Name]\nTrellisbook",
+      "reader": {
+        "claims": [
+          {
+            "quote": "making it easy to spot patterns or share records with your team",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 246,
+        "output_tokens": 318,
+        "cost_nanodollars": 3672000,
+        "latency_ms": 3403
+      },
+      "overlap": 0.1347517730496454,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 142,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"making it easy to spot patterns or share records with your team\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 527,
+        "output_tokens": 5690,
+        "cost_nanodollars": 18677400,
+        "latency_ms": 95005
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v04",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to log watering times across your benches\n\nHi [First Name],\n\nI'm reaching out from Trellisbook, a Utrecht-based company building a mobile logbook for greenhouse teams.\n\nIf your crew is still tracking watering times and bench observations on paper or scattered notes, Trellisbook gives them a simple mobile app to log that information as they work, bench by bench. As a manager, you can download all the entries as a spreadsheet whenever you need to review trends or share records.\n\nIt's built specifically for small commercial greenhouse operations, so there's no sensor hardware to install — your team just enters what they observe, the way they already do, but in one consistent place.\n\nTrellisbook is $45 per greenhouse per month.\n\nWould you be open to a short call to see if this fits how your team works?\n\nBest regards,\n[Your Name]\nTrellisbook",
+      "reader": {
+        "claims": [
+          {
+            "quote": "review trends",
+            "category": "features"
+          },
+          {
+            "quote": "share records",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 2,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 2
+      },
+      "usage": {
+        "input_tokens": 269,
+        "output_tokens": 297,
+        "cost_nanodollars": 3508000,
+        "latency_ms": 3950
+      },
+      "overlap": 0.10344827586206896,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 145,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\"quote\": \"review trends\", \"category\": \"features\"},\n{\"quote\": \"share records\", \"category\": \"features\"}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 530,
+        "output_tokens": 6467,
+        "cost_nanodollars": 21224400,
+        "latency_ms": 128373
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v03",
+    "overlap_change": -0.031021990917903974,
+    "C": {
+      "company_id": "v03",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to track linen pickups with your laundry provider\n\nHi [Name],\n\nI'm reaching out from Linenroute, a shared calendar built for guesthouse owners to keep track of linen pickups and deliveries with their existing laundry provider.\n\nInstead of relying on texts, calls, or memory, you and your laundry provider can both see the same calendar, with collection dates and quantities logged in one place. It doesn't replace your laundry service or handle washing or transport, it simply keeps the schedule organized so nothing gets missed.\n\nIt's $18 per property per month, and setup is straightforward since it works alongside the provider you already use.\n\nIf you manage a guesthouse and want a clearer way to track linen handoffs, I'd be glad to show you how it works.\n\nBest regards,\n[Your Name]\nFounder, Linenroute\nDundee, United Kingdom",
+      "reader": {
+        "claims": [
+          {
+            "quote": "setup is straightforward",
+            "category": "features"
+          },
+          {
+            "quote": "so nothing gets missed",
+            "category": "superlatives"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 1,
+          "team": 0
+        },
+        "total": 2
+      },
+      "usage": {
+        "input_tokens": 239,
+        "output_tokens": 312,
+        "cost_nanodollars": 3598000,
+        "latency_ms": 3472
+      },
+      "overlap": 0.18705035971223022,
+      "repeat_share": 0.007352941176470588,
+      "no_employees": false,
+      "word_count": 139,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"setup is straightforward\",\n      \"category\": \"features\"\n    },\n    {\n      \"quote\": \"so nothing gets missed\",\n      \"category\": \"superlatives\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 520,
+        "output_tokens": 4806,
+        "cost_nanodollars": 15841600,
+        "latency_ms": 98576
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v03",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to track your linen pickups\n\nHi [Name],\n\nI'm reaching out from Linenroute, based here in Dundee. We've built a shared calendar made specifically for guesthouse owners to keep track of linen pickups and deliveries with your existing laundry provider.\n\nInstead of texts, phone calls, or sticky notes to remember when linen is due for collection, you and your laundry provider can both see the same calendar — logging collection dates and quantities in one place. We don't wash or transport linen ourselves; we simply make the scheduling side easier to manage.\n\nIt's $18 per property per month, with no long-term commitment.\n\nIf missed pickups or mixed-up schedules have ever been a headache, I'd love to show you how it works. Would you be open to a quick chat this week?\n\nBest regards,\n[Your Name]\nFounder, Linenroute",
+      "reader": {
+        "claims": [
+          {
+            "quote": "with no long-term commitment",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 262,
+        "output_tokens": 298,
+        "cost_nanodollars": 3504000,
+        "latency_ms": 3314
+      },
+      "overlap": 0.15602836879432624,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 140,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\n\"quote\": \"with no long-term commitment\",\n\"category\": \"features\"\n}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 520,
+        "output_tokens": 1707,
+        "cost_nanodollars": 5924800,
+        "latency_ms": 47103
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v05",
+    "overlap_change": -0.02601322219028456,
+    "C": {
+      "company_id": "v05",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to track your theatre's props\n\nHi [Name],\n\nIf your production team is still tracking props with spreadsheets or sticky notes, I wanted to introduce Propwicket.\n\nPropwicket is an online catalogue built specifically for community theatres. You can photograph each prop, assign it a storage location, and mark it as checked out when it's in use for a production. Your whole team can add and update records, so everyone knows what you have, where it lives, and whether it's available.\n\nWe don't buy or rent props — Propwicket is simply the system for keeping track of the ones your theatre already owns.\n\nIt's $16 per theatre per month, with no long-term commitment.\n\nI'm the founder, based in Bristol, and happy to answer any questions or walk you through it if you're curious.\n\nWould you be open to a quick look?\n\nBest,\n[Your name]\nPropwicket",
+      "reader": {
+        "claims": [
+          {
+            "quote": "with no long-term commitment",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 231,
+        "output_tokens": 306,
+        "cost_nanodollars": 3522000,
+        "latency_ms": 3526
+      },
+      "overlap": 0.061224489795918366,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 147,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"with no long-term commitment\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 538,
+        "output_tokens": 3613,
+        "cost_nanodollars": 12099600,
+        "latency_ms": 96219
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v05",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simple way to track your theatre's props\n\nHi [Name],\n\nIf your production team is still juggling spreadsheets or sticky notes to track props, I wanted to introduce Propwicket.\n\nPropwicket is an online catalogue built specifically for community theatres. You can photograph each prop, assign it a storage location, and mark it as checked out when it's in use for a production. Everyone on your team can add and update records, so you always know what you have and where it is.\n\nWe're not a rental or purchasing service — just a straightforward tool to help you keep your existing props organized and easy to find.\n\nPropwicket costs $16 per theatre per month, with no long-term commitment.\n\nIf this sounds useful for your next production, I'd be happy to show you how it works.\n\nBest,\n[Your Name]\nFounder, Propwicket\nBristol, UK",
+      "reader": {
+        "claims": [
+          {
+            "quote": "with no long-term commitment",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 254,
+        "output_tokens": 286,
+        "cost_nanodollars": 3368000,
+        "latency_ms": 3696
+      },
+      "overlap": 0.035211267605633804,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 142,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"with no long-term commitment\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 531,
+        "output_tokens": 1819,
+        "cost_nanodollars": 6294200,
+        "latency_ms": 26183
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v05",
+    "overlap_change": -0.025501307759372288,
+    "C": {
+      "company_id": "v05",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to keep track of props for your theatre\n\nHi,\n\nI’m reaching out from Propwicket, an online catalogue built for community theatre production managers.\n\nPropwicket helps theatres photograph props, assign storage locations, and mark items as checked out for a production, all in one place. Your team adds and updates each record, making it easier to keep track of what you have and where it belongs.\n\nWe’re based in Bristol, United Kingdom, and offer Propwicket for $16 per theatre per month.\n\nIf your theatre is looking for a straightforward way to organise its props catalogue and checkout status, Propwicket may be a good fit.\n\nBest,\nPropwicket",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 161,
+        "output_tokens": 142,
+        "cost_nanodollars": 2532500,
+        "latency_ms": 3360
+      },
+      "overlap": 0.24324324324324326,
+      "repeat_share": 0.009259259259259259,
+      "no_employees": false,
+      "word_count": 109,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 488,
+        "output_tokens": 6275,
+        "cost_nanodollars": 20568000,
+        "latency_ms": 106666
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v05",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: Keep your theatre props organised in one simple catalogue\n\nHi,\n\nI’m reaching out to introduce Propwicket, an online catalogue built for community theatre production managers.\n\nPropwicket helps theatres photograph props, assign storage locations, and mark items as checked out for a production, so it’s easier to keep track of what you already have and where it belongs. Every record can be added and updated by your users, making it a practical way to organise props across productions.\n\nPropwicket is based in Bristol, United Kingdom, and is priced at $16 per theatre per month.\n\nIf your team is looking for a simpler way to manage props without relying on scattered notes or memory, Propwicket could be worth a look.\n\nBest,\n[Your Name]",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 178,
+        "output_tokens": 155,
+        "cost_nanodollars": 2770000,
+        "latency_ms": 3182
+      },
+      "overlap": 0.21774193548387097,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 122,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 500,
+        "output_tokens": 1578,
+        "cost_nanodollars": 5549600,
+        "latency_ms": 27161
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v09",
+    "overlap_change": -0.022653573875313998,
+    "C": {
+      "company_id": "v09",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to log pontoon and dock inspections\n\nHi [First Name],\n\nI'm reaching out from Berthnote, a tablet checklist built specifically for marina staff who inspect pontoons, lighting, and water taps.\n\nInstead of paper logs or scattered notes, your team can walk the docks with a tablet, check off each inspection point, attach photos on the spot, and export the completed checklist as a PDF for your records.\n\nIt's worth noting Berthnote records observations only — it doesn't certify safety, so it's meant to support your existing inspection process, not replace your team's judgment.\n\nI'm the sole founder, based in Aarhus, Denmark, and built this specifically for small marina operations managers who want a straightforward way to document routine checks.\n\nIt's $38 per marina per month.\n\nIf this sounds useful, I'd be glad to show you how it works. Happy to answer any questions.\n\nBest regards,\n[Your Name]\nFounder, Berthnote",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 241,
+        "output_tokens": 341,
+        "cost_nanodollars": 3892000,
+        "latency_ms": 3855
+      },
+      "overlap": 0.11920529801324503,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 152,
+      "in_word_limit": false,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 553,
+        "output_tokens": 4505,
+        "cost_nanodollars": 14911400,
+        "latency_ms": 132930
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v09",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to log pontoon and dock inspections\n\nHi [Name],\n\nI'm reaching out from Berthnote, a tablet checklist built for marina staff who inspect pontoons, lighting, and water taps.\n\nInstead of paper logs or scattered notes, your team can walk the docks with a tablet, check off each item, attach a photo if something needs attention, and export the completed checklist as a PDF for your records.\n\nIt's meant to make routine inspections faster to complete and easier to document — it records what staff observe, not a certification of safety.\n\nI'm the founder, based in Aarhus, and built Berthnote specifically for small marina operations like yours. It's $38 per marina per month, no long-term commitment.\n\nIf you'd like, I can show you how it works in a quick call, or just send over a short walkthrough.\n\nBest regards,\n[Your Name]\nFounder, Berthnote",
+      "reader": {
+        "claims": [
+          {
+            "quote": "A simpler way",
+            "category": "features"
+          },
+          {
+            "quote": "faster to complete",
+            "category": "features"
+          },
+          {
+            "quote": "easier to document",
+            "category": "features"
+          },
+          {
+            "quote": "no long-term commitment",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 4,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 4
+      },
+      "usage": {
+        "input_tokens": 264,
+        "output_tokens": 290,
+        "cost_nanodollars": 3428000,
+        "latency_ms": 3969
+      },
+      "overlap": 0.09655172413793103,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 145,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\n\"quote\": \"A simpler way\",\n\"category\": \"features\"\n},\n{\n\"quote\": \"faster to complete\",\n\"category\": \"features\"\n},\n{\n\"quote\": \"easier to document\",\n\"category\": \"features\"\n},\n{\n\"quote\": \"no long-term commitment\",\n\"category\": \"features\"\n}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 543,
+        "output_tokens": 5494,
+        "cost_nanodollars": 18123800,
+        "latency_ms": 87093
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v04",
+    "overlap_change": -0.006554573952693071,
+    "C": {
+      "company_id": "v04",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Keep greenhouse watering records in one place (Utrecht)\n\nHi {{Name}},  \n\nI’m reaching out from Trellisbook (Utrecht). We help small commercial greenhouse managers keep a simple mobile logbook for every growing bench—so greenhouse workers can record watering times and observations directly as part of their day-to-day work.  \n\nBecause entries are entered by people (not collected by sensors), the log stays closely tied to what’s actually happening in the greenhouse. When you need to review progress or share details internally, managers can download the recorded entries as a spreadsheet.  \n\nTrellisbook is priced at $45 per greenhouse per month. Would you be open to a quick conversation to see if it fits your setup?  \n\nBest regards,  \n{{Your Name}}",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 157,
+        "cost_nanodollars": 227850,
+        "latency_ms": 1374
+      },
+      "overlap": 0.24793388429752067,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 116,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 500,
+        "output_tokens": 4017,
+        "cost_nanodollars": 13296800,
+        "latency_ms": 72436
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v04",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Simple greenhouse logbooks for each bench—spreadsheet export included\n\nHi there,  \n\nI’m reaching out from Trellisbook (Utrecht, Netherlands). We make a mobile logbook for greenhouse workers to record watering times and observations for each growing bench. Readings are entered by the people working in the greenhouse—no sensors required.  \n\nFor small commercial greenhouse managers, Trellisbook helps keep day-to-day bench records consistent, and it gives you an easy way to download entries as a spreadsheet for review and tracking.  \n\nTrellisbook was founded in 2023 and is designed for greenhouse operations like yours. If you’d like, I can share how the workflow works in practice. Would you be open to a quick chat?",
+      "reader": {
+        "claims": [
+          {
+            "quote": "Simple greenhouse logbooks",
+            "category": "features"
+          },
+          {
+            "quote": "helps keep day-to-day bench records consistent",
+            "category": "features"
+          },
+          {
+            "quote": "easy way to download",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 3,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 3
+      },
+      "usage": {
+        "input_tokens": 175,
+        "output_tokens": 153,
+        "cost_nanodollars": 226250,
+        "latency_ms": 1423
+      },
+      "overlap": 0.2413793103448276,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 110,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"Simple greenhouse logbooks\",\n      \"category\": \"features\"\n    },\n    {\n      \"quote\": \"helps keep day-to-day bench records consistent\",\n      \"category\": \"features\"\n    },\n    {\n      \"quote\": \"easy way to download\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 497,
+        "output_tokens": 6089,
+        "cost_nanodollars": 19924200,
+        "latency_ms": 115550
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v09",
+    "overlap_change": -0.00633333333333333,
+    "C": {
+      "company_id": "v09",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to record marina inspection checklists\n\nHi,\n\nI’m reaching out about Berthnote, a simple tablet checklist built for small marina operations managers.\n\nWith Berthnote, marina staff can record inspections of pontoons, lighting, and water taps on a tablet as they go. They can attach photographs, keep a clear record of observations, and export completed checklists as PDF files when needed. Berthnote is designed to help organise routine inspection records in one place.\n\nIt’s based in Aarhus, Denmark, and is available for $38 per marina per month.\n\nOne important note: Berthnote records observations and does not certify safety.\n\nIf you’re looking for a straightforward way to manage inspection checklists at your marina, Berthnote may be worth a look.\n\nBest,\nBerthnote",
+      "reader": null,
+      "usage": {
+        "input_tokens": 163,
+        "output_tokens": 167,
+        "cost_nanodollars": 2912500,
+        "latency_ms": 3671
+      },
+      "overlap": 0.248,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 122,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "",
+      "reader_usage": {
+        "input_tokens": 521,
+        "output_tokens": 8192,
+        "cost_nanodollars": 26735400,
+        "latency_ms": 140106
+      },
+      "reader_at_token_cap": true,
+      "status": "invalid_reader",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v09",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to record marina inspections\n\nHi [First Name],\n\nI’m reaching out from Berthnote in Aarhus. We’ve built a simple tablet checklist for small marina operations managers who want an easier way to record routine inspections.\n\nWith Berthnote, staff can log checks for pontoons, lighting, and water taps on a tablet, attach photographs, and export completed checklists as PDF files. It’s designed to help keep observations organized and easy to review. Berthnote records observations only and does not certify safety.\n\nIf you’re looking for a straightforward way to handle inspection records across your marina, Berthnote is available for $38 per marina per month.\n\nWould you be open to a quick look?\n\nBest,  \n[Your Name]",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 180,
+        "output_tokens": 156,
+        "cost_nanodollars": 2790000,
+        "latency_ms": 3330
+      },
+      "overlap": 0.24166666666666667,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 116,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 508,
+        "output_tokens": 6572,
+        "cost_nanodollars": 21480800,
+        "latency_ms": 128110
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v06",
+    "overlap_change": -0.004852459016393446,
+    "C": {
+      "company_id": "v06",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Track reusable shipping crates with QR scans (Ghent-based)\n\nHi there,  \n\nI’m reaching out from Cratefolio, a web application designed for regional food wholesalers. We help your team record reusable shipping crates that are sent to shops and returned, using printed QR labels. Workers scan the labels with a phone camera, and the application automatically reports crate balances based on your records.  \n\nCratefolio is focused on reconciliation and tracking of recorded totals—it doesn’t attempt to locate crates in transit.  \n\nWe’re based in Ghent, Belgium, and we launched in 2024. Pricing is $75 per warehouse per month.  \n\nWould you be open to a quick conversation to see if this fits how you currently manage crate handling?  \n\nBest regards,  \n[Your Name]  \nCratefolio",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 165,
+        "cost_nanodollars": 238250,
+        "latency_ms": 1258
+      },
+      "overlap": 0.136,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 120,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 507,
+        "output_tokens": 1128,
+        "cost_nanodollars": 4116600,
+        "latency_ms": 23255
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v06",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Keep track of reusable shipping crates across your shops\n\nHi there,  \n\nI’m reaching out from Cratefolio, a web application built for regional food wholesalers in Ghent, Belgium. We help teams record reusable shipping crates as they’re sent to shops and returned.  \n\nYour workers simply scan printed QR labels with a phone camera, and Cratefolio maintains recorded balances. The system is designed to support tracking on the ground (what’s been sent and what’s come back)—it doesn’t try to locate crates in transit.  \n\nIf you’re managing crate flows between your warehouses and shops, we can help you keep balances organized in one place. Would you be open to a quick chat?  \n\nBest regards,  \n[Your Name]  \nCratefolio",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 177,
+        "output_tokens": 156,
+        "cost_nanodollars": 230400,
+        "latency_ms": 1260
+      },
+      "overlap": 0.13114754098360656,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 115,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 496,
+        "output_tokens": 1526,
+        "cost_nanodollars": 5379200,
+        "latency_ms": 28327
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v08",
+    "overlap_change": -0.0041688111168296516,
+    "C": {
+      "company_id": "v08",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to manage kiln bookings at your studio\n\nHi [Name],\n\nI'm reaching out from Kilnslot, a small team based in Porto building a booking page for shared pottery studios.\n\nIf your studio coordinates kiln sessions, shelf space, and firing programmes across multiple potters, it can get messy fast — double bookings, unclear shelf allocations, and confusion over which firing programme was chosen.\n\nKilnslot gives your studio a simple booking page where members can reserve kiln sessions, claim shelf space, and record the firing programme they want used. Your staff still operate the kiln — we just help keep the scheduling and records organized in one place.\n\nIt's $32 per studio per month, no extra setup needed.\n\nWould you be open to a quick look at how it works? Happy to send over details or set up a short call.\n\nBest,\n[Your Name]\nKilnslot, Porto",
+      "reader": {
+        "claims": [
+          {
+            "quote": "no extra setup needed",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 240,
+        "output_tokens": 319,
+        "cost_nanodollars": 3670000,
+        "latency_ms": 3690
+      },
+      "overlap": 0.1310344827586207,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 147,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"no extra setup needed\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 535,
+        "output_tokens": 2553,
+        "cost_nanodollars": 8704600,
+        "latency_ms": 38785
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v08",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to manage kiln bookings at your studio\n\nHi [First Name],\n\nI'm reaching out from Kilnslot, a booking page built specifically for shared pottery studios.\n\nIf your studio juggles kiln sessions, shelf space, and firing programmes across multiple members, Kilnslot gives you one page where potters can reserve a slot, claim shelf space, and record which firing programme they've chosen — all before your staff ever touches the kiln. Your team still runs the equipment; Kilnslot just keeps the scheduling and records organized so there's no confusion about whose piece is firing when, or at what setting.\n\nIt's $32 per studio per month, with no extra complexity to manage.\n\nWould you be open to a quick look at how it might fit your studio's workflow?\n\nBest regards,\n[Your Name]\nKilnslot\nPorto, Portugal",
+      "reader": {
+        "claims": [
+          {
+            "quote": "potters can reserve a slot, claim shelf space",
+            "category": "features"
+          },
+          {
+            "quote": "record which firing programme they've chosen",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 2,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 2
+      },
+      "usage": {
+        "input_tokens": 263,
+        "output_tokens": 314,
+        "cost_nanodollars": 3666000,
+        "latency_ms": 3917
+      },
+      "overlap": 0.12686567164179105,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 135,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\n\"quote\": \"potters can reserve a slot, claim shelf space\",\n\"category\": \"features\"\n},\n{\n\"quote\": \"record which firing programme they've chosen\",\n\"category\": \"features\"\n}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 527,
+        "output_tokens": 6302,
+        "cost_nanodollars": 20693400,
+        "latency_ms": 114514
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v02",
+    "overlap_change": -0.0025431225121627654,
+    "C": {
+      "company_id": "v02",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to prepare exhibit labels from your object notes\n\nHi,\n\nI’m reaching out to introduce Labelharbor, a desktop application built for small museum curators.\n\nLabelharbor stores museum object notes and helps arrange selected text into printable exhibit labels. Curators write and approve the wording, so the process stays in your hands from drafting through final label preparation. Because it is a desktop application, files stay on the museum’s computer.\n\nWe’re a small team based in York, United Kingdom, and founded Labelharbor in 2024 with a focus on the practical needs of smaller museums. Pricing is $240 per museum per year.\n\nIf your museum is looking for a straightforward way to go from object notes to printable labels while keeping files on-site, Labelharbor may be worth a look.\n\nBest,\nLabelharbor",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 154,
+        "output_tokens": 171,
+        "cost_nanodollars": 2950000,
+        "latency_ms": 3517
+      },
+      "overlap": 0.22058823529411764,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 132,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 508,
+        "output_tokens": 5367,
+        "cost_nanodollars": 17624800,
+        "latency_ms": 102105
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v02",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to prepare exhibit labels in your museum\n\nHi,\n\nI’m reaching out to introduce Labelharbor, a desktop application built for small museum curators.\n\nLabelharbor stores museum object notes and helps arrange selected text into printable exhibit labels, so the wording you’ve already written can be organised more easily for display. Curators write and approve the text themselves, and files stay on the museum’s computer.\n\nFor museums that prefer to keep this work straightforward and local, Labelharbor offers a focused tool designed around that process.\n\nLabelharbor is based in York, United Kingdom, and is priced at $240 per museum per year.\n\nIf you’re looking for a simpler way to manage object notes and prepare printable labels, I’d be glad to tell you more.\n\nBest,\n[Your Name]",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 171,
+        "output_tokens": 166,
+        "cost_nanodollars": 2917500,
+        "latency_ms": 3402
+      },
+      "overlap": 0.21804511278195488,
+      "repeat_share": 0.007692307692307693,
+      "no_employees": false,
+      "word_count": 128,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 502,
+        "output_tokens": 2931,
+        "cost_nanodollars": 9881200,
+        "latency_ms": 53722
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v04",
+    "overlap_change": -0.0015854472630173477,
+    "C": {
+      "company_id": "v04",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Mobile logbook for small commercial greenhouse managers\n\nHello,\n\nI am contacting you from Trellisbook, a company founded in 2023 in Utrecht, Netherlands. Our team consists of 4 people, and we offer a mobile logbook built for small commercial greenhouse managers.\n\nWith Trellisbook, greenhouse workers record watering times and observations for each growing bench. All readings are entered by people, not collected by sensors. Greenhouse managers can download these entries as a spreadsheet.\n\nThe price for Trellisbook is $45 per greenhouse per month.\n\nIf you are a small commercial greenhouse manager who wants workers to record watering times and bench observations on a mobile logbook, please let us know.\n\nBest regards,\nTrellisbook",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 164,
+        "output_tokens": 3475,
+        "cost_nanodollars": 13154250,
+        "latency_ms": 11692
+      },
+      "overlap": 0.36607142857142855,
+      "repeat_share": 0.027522935779816515,
+      "no_employees": false,
+      "word_count": 112,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 496,
+        "output_tokens": 639,
+        "cost_nanodollars": 2483200,
+        "latency_ms": 10663
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v04",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Mobile logbook for small commercial greenhouse managers\n\nHi [Name],\n\nI am reaching out from Trellisbook. We are based in Utrecht, Netherlands, where our team of 4 people founded the company in 2023.\n\nWe offer a mobile logbook designed for small commercial greenhouse managers. With Trellisbook, greenhouse workers record watering times and observations for each growing bench. These readings are entered by people, not collected by sensors. \n\nFrom these records, managers can download the entries as a spreadsheet. \n\nThe price is $45 per greenhouse per month. \n\nPlease let me know if you would like to learn more about Trellisbook for your greenhouse.\n\nBest regards,\n\nThe Trellisbook Team",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 182,
+        "output_tokens": 3764,
+        "cost_nanodollars": 14251500,
+        "latency_ms": 12565
+      },
+      "overlap": 0.3644859813084112,
+      "repeat_share": 0.019230769230769232,
+      "no_employees": false,
+      "word_count": 107,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 493,
+        "output_tokens": 771,
+        "cost_nanodollars": 2960200,
+        "latency_ms": 11921
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v10",
+    "overlap_change": 0.0016096394407652675,
+    "C": {
+      "company_id": "v10",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simple way to track club equipment and who has it\n\nHi [First Name],\n\nIf your after-school club lends out equipment, you probably know how hard it is to remember who borrowed what and when it's due back. Clubcubby is a straightforward browser register built for club coordinators like you. You create accounts for your members, list your equipment, and log return dates—all in one place, without spreadsheets or sticky notes.\n\nWe're a small team based in Wellington, New Zealand, and we built Clubcubby specifically for after-school clubs. It doesn't handle payments or automatically track items; it simply gives you a clear, organized record so nothing gets lost or forgotten.\n\nIt's $12 per club per month, and setup takes just a few minutes.\n\nIf you'd like to see how it works, I'm happy to walk you through it or answer any questions.\n\nBest regards,\n[Your Name]\nClubcubby",
+      "reader": {
+        "claims": [
+          {
+            "quote": "setup takes just a few minutes",
+            "category": "numbers"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 1,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 231,
+        "output_tokens": 309,
+        "cost_nanodollars": 3552000,
+        "latency_ms": 3222
+      },
+      "overlap": 0.033112582781456956,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 148,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"setup takes just a few minutes\",\n      \"category\": \"numbers\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 535,
+        "output_tokens": 2305,
+        "cost_nanodollars": 7853400,
+        "latency_ms": 34001
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v10",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simple way to track who borrowed your club's equipment\n\nHi [Name],\n\nIf your club lends out equipment to members, keeping track of who has what and when it's due back can get messy fast — especially with spreadsheets or paper logs.\n\nClubcubby is a browser-based register built specifically for after-school clubs. You create accounts for your members, list your equipment, and record return dates when items are borrowed. No apps to install, no automatic tracking gimmicks — just a clear, simple log you control.\n\nIt's $12 per club per month, with no payment processing involved — just equipment tracking.\n\nWe're a small team based in Wellington, New Zealand, and we built Clubcubby specifically for coordinators who need an easy way to stay on top of loaned items.\n\nWould you be open to a quick look at how it works?\n\nBest,\n[Your Name]\nClubcubby",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 254,
+        "output_tokens": 297,
+        "cost_nanodollars": 3478000,
+        "latency_ms": 3249
+      },
+      "overlap": 0.034722222222222224,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 145,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 529,
+        "output_tokens": 2578,
+        "cost_nanodollars": 8778600,
+        "latency_ms": 74754
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v02",
+    "overlap_change": 0.004630504630504628,
+    "C": {
+      "company_id": "v02",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to get exhibit labels printed\n\nHi [Name],\n\nI wanted to introduce Labelharbor, a desktop application built for small museum curators who write their own exhibit labels.\n\nLabelharbor gives you one place to store your object notes, then lets you select the text you need and arrange it into printable labels — ready for the case or wall. You and your colleagues keep full control over the wording, and everything stays on your museum's own computer, so there's no uploading files to outside servers.\n\nWe built Labelharbor specifically with small museums in mind, keeping it straightforward rather than packed with extra features you won't use.\n\nIt's $240 per museum per year.\n\nIf this sounds useful for your team, I'd be glad to arrange a short demo at a time that works for you.\n\nBest regards,\n[Your Name]\nLabelharbor\nYork, United Kingdom",
+      "reader": {
+        "claims": [
+          {
+            "quote": "A simpler way to get exhibit labels printed",
+            "category": "features"
+          },
+          {
+            "quote": "keeping it straightforward rather than packed with extra features you won't use",
+            "category": "features"
+          },
+          {
+            "quote": "arrange a short demo",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 3,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 3
+      },
+      "usage": {
+        "input_tokens": 223,
+        "output_tokens": 323,
+        "cost_nanodollars": 3676000,
+        "latency_ms": 3803
+      },
+      "overlap": 0.06293706293706294,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 144,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"A simpler way to get exhibit labels printed\",\n      \"category\": \"features\"\n    },\n    {\n      \"quote\": \"keeping it straightforward rather than packed with extra features you won't use\",\n      \"category\": \"features\"\n    },\n    {\n      \"quote\": \"arrange a short demo\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 520,
+        "output_tokens": 6780,
+        "cost_nanodollars": 22158400,
+        "latency_ms": 139677
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v02",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to write and print your exhibit labels\n\nHi [First Name],\n\nI'm reaching out from Labelharbor, a small team based in York working on a desktop application built specifically for museum curators.\n\nLabelharbor gives you a place to store your object notes, then lets you select and arrange text into printable exhibit labels — no design software needed. You write and approve all the wording yourself, and everything stays on your museum's own computer, so there's no uploading files to the cloud or depending on outside servers.\n\nIt's priced at $240 per museum per year, which covers the whole museum rather than per user.\n\nIf you're curating exhibits and looking for a straightforward way to go from notes to printed labels, I'd be glad to show you how it works. Would you be open to a short call sometime this week?\n\nBest regards,\n[Your Name]\nLabelharbor",
+      "reader": null,
+      "usage": {
+        "input_tokens": 246,
+        "output_tokens": 287,
+        "cost_nanodollars": 3362000,
+        "latency_ms": 3291
+      },
+      "overlap": 0.06756756756756757,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 149,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "",
+      "reader_usage": {
+        "input_tokens": 523,
+        "output_tokens": 8192,
+        "cost_nanodollars": 26679800,
+        "latency_ms": 136606
+      },
+      "reader_at_token_cap": true,
+      "status": "invalid_reader",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v08",
+    "overlap_change": 0.01075819672131148,
+    "C": {
+      "company_id": "v08",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to manage kiln session bookings at your shared pottery studio\n\nHi there,\n\nI’m reaching out from Kilnslot, a booking page built for shared pottery studios. It helps studio coordinators list kiln sessions, reserve shelf space, and record the firing programme selected by the studio, while keeping kiln operation in the hands of studio staff.\n\nKilnslot is based in Porto and was founded in 2023 by a small team focused on the needs of shared studios. If you’re currently managing kiln bookings and shelf space manually, Kilnslot offers a straightforward way to organise that process in one place.\n\nIt’s $32 per studio per month.\n\nIf this sounds relevant to your studio, I’d be happy to share more.\n\nBest,\nThe Kilnslot team",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 159,
+        "cost_nanodollars": 2782500,
+        "latency_ms": 3319
+      },
+      "overlap": 0.21875,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 124,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 508,
+        "output_tokens": 3879,
+        "cost_nanodollars": 12863200,
+        "latency_ms": 73962
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v08",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to manage kiln session bookings at your shared studio\n\nHi there,\n\nI’m reaching out from Kilnslot, a booking page built for shared pottery studios. It helps studio coordinators list kiln sessions, reserve shelf space, and record the firing programme selected by the studio, while keeping kiln operation with studio staff.\n\nIf you’re coordinating a shared studio, Kilnslot is designed to make that booking process clearer and easier to manage in one place.\n\nWe’re a small team based in Porto, Portugal, and we offer Kilnslot at $32 per studio per month.\n\nIf you’d be open to it, I’d love to see whether Kilnslot could be a fit for your studio.\n\nBest,\nThe Kilnslot team",
+      "reader": {
+        "claims": [
+          {
+            "quote": "A simpler way to manage kiln session bookings",
+            "category": "features"
+          },
+          {
+            "quote": "make that booking process clearer and easier to manage",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 2,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 2
+      },
+      "usage": {
+        "input_tokens": 176,
+        "output_tokens": 154,
+        "cost_nanodollars": 2750000,
+        "latency_ms": 3061
+      },
+      "overlap": 0.22950819672131148,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 117,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"A simpler way to manage kiln session bookings\",\n      \"category\": \"features\"\n    },\n    {\n      \"quote\": \"make that booking process clearer and easier to manage\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 501,
+        "output_tokens": 7613,
+        "cost_nanodollars": 24805000,
+        "latency_ms": 129125
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v09",
+    "overlap_change": 0.010860820595333887,
+    "C": {
+      "company_id": "v09",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Inspection tablet checklist for small marina operations managers\n\nDear Marina Operations Manager,\n\nI am the founder of Berthnote, a company founded in 2024 in Aarhus, Denmark. Berthnote is run by one founder with no employees.\n\nBerthnote offers a tablet checklist for small marina operations managers. Marina staff can use it to record inspections of pontoons, lighting, and water taps. Staff can attach photographs to the checklist and export completed checklists as PDF files. It records observations and does not certify safety.\n\nThe price for Berthnote is $38 per marina per month.\n\nIf you are interested in using this tablet checklist for your marina staff inspections, please let me know.\n\nSincerely,\nFounder, Berthnote",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 166,
+        "output_tokens": 2477,
+        "cost_nanodollars": 9413250,
+        "latency_ms": 8820
+      },
+      "overlap": 0.39823008849557523,
+      "repeat_share": 0.03636363636363636,
+      "no_employees": true,
+      "word_count": 113,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 504,
+        "output_tokens": 979,
+        "cost_nanodollars": 3636800,
+        "latency_ms": 14396
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v09",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Berthnote: Tablet checklist for marina inspections\n\nHi,\n\nI am reaching out from Berthnote, founded in 2024 in Aarhus, Denmark. The company has one founder and no employees.\n\nBerthnote provides a tablet checklist for small marina operations managers and marina staff. It is designed for staff to record inspections of pontoons, lighting, and water taps. \n\nUsing the checklist, staff can attach photographs and export completed checklists as PDF files. Please note that Berthnote records observations and does not certify safety.\n\nThe price for Berthnote is $38 per marina per month. \n\nPlease let me know if you would like to use Berthnote for recording inspections at your marina.\n\nBest regards,\nBerthnote",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 184,
+        "output_tokens": 2274,
+        "cost_nanodollars": 8665500,
+        "latency_ms": 8291
+      },
+      "overlap": 0.4090909090909091,
+      "repeat_share": 0.0,
+      "no_employees": true,
+      "word_count": 110,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 507,
+        "output_tokens": 1527,
+        "cost_nanodollars": 5335800,
+        "latency_ms": 30631
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v05",
+    "overlap_change": 0.019464566929133842,
+    "C": {
+      "company_id": "v05",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Simplify prop photos, storage locations, and checkouts for your community theatre\n\nHi there,  \n\nI’m reaching out from Propwicket, an online catalogue built for community theatre production managers. Propwicket helps you photograph props, assign and track storage locations, and mark items as checked out for a production—so your records stay up to date.  \n\nIt’s designed so users can add and update every record directly, making it easy to keep prop information current as shows and storage arrangements change. Propwicket doesn’t buy or rent props; it focuses on organising and tracking the items your theatre already has.  \n\nWe’re based in Bristol and were founded in 2024. Pricing is $16 per theatre per month.  \n\nWould you be open to a quick conversation?",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 161,
+        "output_tokens": 161,
+        "cost_nanodollars": 233450,
+        "latency_ms": 1516
+      },
+      "overlap": 0.264,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 120,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 505,
+        "output_tokens": 1639,
+        "cost_nanodollars": 5692200,
+        "latency_ms": 27918
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v05",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Keep community theatre props organised in one online catalogue\n\nHi [Name],  \n\nI’m reaching out from Propwicket, an online catalogue built specifically for community theatre production managers in the UK. It lets your team photograph props, assign storage locations, and mark items as checked out for a production.  \n\nThe process is simple: users can add and update every record, so your prop information stays accurate as productions change. Propwicket doesn’t buy or rent props—it just helps you manage what you already have.  \n\nPropwicket is based in Bristol and was founded in 2024. It’s priced at $16 per theatre per month.  \n\nWould you be open to a quick chat to see if Propwicket fits how you currently track props?  \n\nBest regards,  \n[Your Name]  \nPropwicket",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 178,
+        "output_tokens": 169,
+        "cost_nanodollars": 246850,
+        "latency_ms": 1531
+      },
+      "overlap": 0.28346456692913385,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 123,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 514,
+        "output_tokens": 1061,
+        "cost_nanodollars": 3851600,
+        "latency_ms": 21819
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v07",
+    "overlap_change": 0.03389830508474573,
+    "C": {
+      "company_id": "v07",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Mendbrief estimate tool for independent furniture repair shops\n\nHello,\n\nI am the founder of Mendbrief, a company founded in 2025 in Leeds, United Kingdom. I run Mendbrief independently with no employees.\n\nMendbrief is made for independent furniture repair shops. It is a web form that allows your shop to send a written estimate and item photographs to a customer. Your shop staff prepare the estimate, as the software does not diagnose faults. Once you send it, the customer can approve or decline the estimate through a link.\n\nThe price to use Mendbrief is $24 per shop per month.\n\nPlease let me know if you would like to try Mendbrief for your furniture repair shop.\n\nSincerely,\nFounder, Mendbrief",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 170,
+        "output_tokens": 1523,
+        "cost_nanodollars": 5838750,
+        "latency_ms": 9520
+      },
+      "overlap": 0.3898305084745763,
+      "repeat_share": 0.017391304347826087,
+      "no_employees": true,
+      "word_count": 118,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 497,
+        "output_tokens": 792,
+        "cost_nanodollars": 2973800,
+        "latency_ms": 23064
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v07",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Estimates and photos for independent furniture repair shops\n\nHi,\n\nI am reaching out from Mendbrief, founded in 2025 in Leeds, United Kingdom. Mendbrief has one founder and no employees, and it provides a web form built for independent furniture repair shops.\n\nMendbrief allows your shop to send a written estimate and item photographs to a customer. Your shop staff prepare the estimate, as the software does not diagnose faults. After receiving it, the customer can approve or decline the estimate through a link.\n\nThe price is $24 per shop per month.\n\nIf this web form would be useful for sending written estimates and item photographs to your customers, please reply to this email.\n\nBest regards,\n\nFounder, Mendbrief",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 188,
+        "output_tokens": 1534,
+        "cost_nanodollars": 5893500,
+        "latency_ms": 5871
+      },
+      "overlap": 0.423728813559322,
+      "repeat_share": 0.02608695652173913,
+      "no_employees": true,
+      "word_count": 118,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 494,
+        "output_tokens": 889,
+        "cost_nanodollars": 3281200,
+        "latency_ms": 13418
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "claude-sonnet-5-default",
+    "company": "v01",
+    "overlap_change": 0.03839869281045752,
+    "C": {
+      "company_id": "v01",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: Group tomorrow's orders by oven temp in seconds\n\nHi [First Name],\n\nI'm the founder of Batchnest, a simple browser tool built for independent bakeries like yours.\n\nHere's how it works: each evening, you or your staff enter tomorrow's orders directly into Batchnest. The tool then groups everything by baking temperature and generates a clean preparation list you can print and hand to your team the next morning. No connection to your checkout system required—just a straightforward way to organize what needs to go in the oven and when.\n\nI started Batchnest in Madison, Wisconsin, because I wanted bakery owners to spend less time sorting through order slips and more time baking.\n\nIt's $29 per month per bakery, no long-term commitment.\n\nWould you be open to a quick look? I'm happy to show you how it works.\n\nBest,\n[Your Name]\nFounder, Batchnest",
+      "reader": {
+        "claims": [
+          {
+            "quote": "in seconds",
+            "category": "numbers"
+          },
+          {
+            "quote": "no long-term commitment",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 1,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 2
+      },
+      "usage": {
+        "input_tokens": 243,
+        "output_tokens": 314,
+        "cost_nanodollars": 3626000,
+        "latency_ms": 3525
+      },
+      "overlap": 0.027777777777777776,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 142,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": [{\"quote\": \"in seconds\", \"category\": \"numbers\"}, {\"quote\": \"no long-term commitment\", \"category\": \"features\"}]}\n```",
+      "reader_usage": {
+        "input_tokens": 524,
+        "output_tokens": 4372,
+        "cost_nanodollars": 14456800,
+        "latency_ms": 84987
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    },
+    "E": {
+      "company_id": "v01",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "anthropic/claude-sonnet-5@default",
+      "copy": "Subject: A simpler way to plan tomorrow's bake\n\nHi [Name],\n\nI'm reaching out from Batchnest, a small tool built for independent bakeries like yours.\n\nHere's the idea: at the end of the day, you enter tomorrow's orders into Batchnest. It automatically groups everything by baking temperature and gives you a clean, printable prep list for the morning crew — no more sorting through notes or sticky pads to figure out what goes in the oven together.\n\nIt's simple on purpose. Your staff enters the orders directly, and there's nothing to connect to your checkout system or other software.\n\nBatchnest is $29 per bakery per month, and I'd love for you to try it out.\n\nIf this sounds useful, I'm happy to answer any questions or set you up with access.\n\nBest,\n[Your Name]\nFounder, Batchnest\nMadison, Wisconsin",
+      "reader": {
+        "claims": [
+          {
+            "quote": "nothing to connect to your checkout system or other software",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 266,
+        "output_tokens": 301,
+        "cost_nanodollars": 3542000,
+        "latency_ms": 3495
+      },
+      "overlap": 0.0661764705882353,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 137,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\n\"quote\": \"nothing to connect to your checkout system or other software\",\n\"category\": \"features\"\n}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 521,
+        "output_tokens": 7224,
+        "cost_nanodollars": 23580200,
+        "latency_ms": 153997
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v08",
+    "overlap_change": 0.04069600230083403,
+    "C": {
+      "company_id": "v08",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Streamline kiln session listings & firing programme records for your studio (Porto)\n\nHi there,  \n\nI’m reaching out from Kilnslot. We provide a booking page built for shared pottery studios to list kiln sessions, reserve shelf space, and record the firing programme selected by the studio. Studio staff operate the kiln, so the page doesn’t control any equipment—it’s focused on scheduling and keeping the chosen firing details organized.  \n\nKilnslot is based in Porto, Portugal, and we launched in 2023. The goal is to help shared studios coordinate kiln-related activities in one place, without adding operational complexity.  \n\nIf you’re open to it, I’d be glad to share how Kilnslot works for studio coordinators.  \n\nBest regards,  \n[Your Name]",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 159,
+        "output_tokens": 162,
+        "cost_nanodollars": 234300,
+        "latency_ms": 1742
+      },
+      "overlap": 0.20491803278688525,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 116,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 510,
+        "output_tokens": 1818,
+        "cost_nanodollars": 6327600,
+        "latency_ms": 30413
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v08",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Simplify kiln session bookings + shelf space for your shared pottery studio\n\nHi there,  \n\nI’m reaching out from Kilnslot, a booking page designed for shared pottery studios in Porto, Portugal. Kilnslot helps studio coordinators list kiln sessions, reserve shared shelf space, and record the firing programme selected by the studio—so your team can keep planning straightforward while studio staff operate the kiln.  \n\nKilnslot doesn’t control equipment, but it centralises the information your studio needs to coordinate kiln activity efficiently.  \n\nIf you’re looking for a simple way to streamline booking and firing programme records for your shared space, I’d love to share how Kilnslot works.  \n\nBest regards,  \n[Your Name]  \nKilnslot",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 176,
+        "output_tokens": 154,
+        "cost_nanodollars": 227700,
+        "latency_ms": 1405
+      },
+      "overlap": 0.24561403508771928,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 110,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 504,
+        "output_tokens": 6036,
+        "cost_nanodollars": 19819200,
+        "latency_ms": 105466
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "gpt-5.4-2026-03-05",
+    "company": "v06",
+    "overlap_change": 0.05700527103533545,
+    "C": {
+      "company_id": "v06",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to record reusable crate balances\n\nHi,\n\nI’m reaching out from Cratefolio, a web application built for regional food wholesalers.\n\nCratefolio helps warehouse teams record reusable shipping crates sent to shops and returned from shops. Workers simply scan printed QR labels with a phone camera, and the application reports the recorded balances. It’s a straightforward way to keep crate records up to date without changing how teams already work on the warehouse floor.\n\nWe’re a small team based in Ghent, Belgium, and we started Cratefolio in 2024 with a focus on this specific workflow for wholesalers. Pricing is $75 per warehouse per month.\n\nIf improving crate recordkeeping is relevant for your operation, I’d be glad to share more.\n\nBest,  \nCratefolio",
+      "reader": {
+        "claims": [
+          {
+            "quote": "without changing how teams already work on the warehouse floor",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 160,
+        "output_tokens": 160,
+        "cost_nanodollars": 2800000,
+        "latency_ms": 3311
+      },
+      "overlap": 0.14960629921259844,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 123,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n\"claims\": [\n{\n\"quote\": \"without changing how teams already work on the warehouse floor\",\n\"category\": \"features\"\n}\n]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 500,
+        "output_tokens": 3482,
+        "cost_nanodollars": 11642400,
+        "latency_ms": 74138
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    },
+    "E": {
+      "company_id": "v06",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-2026-03-05",
+      "copy": "Subject: A simpler way to record reusable crate balances\n\nHi,\n\nI’m reaching out from Cratefolio. We built a web application for regional food wholesalers to record reusable shipping crates sent to and returned by shops.\n\nInstead of relying on manual notes, workers can scan printed QR labels with a phone camera as crates go out and come back. Cratefolio then reports the recorded balances, so your team has a clearer view of what has been sent and returned.\n\nWe’re based in Ghent, Belgium, and focused on this practical workflow for wholesalers. Pricing is $75 per warehouse per month.\n\nIf improving crate recordkeeping is on your radar, I’d be happy to share more about how Cratefolio works.\n\nBest,\nCratefolio",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 177,
+        "output_tokens": 151,
+        "cost_nanodollars": 2707500,
+        "latency_ms": 3095
+      },
+      "overlap": 0.2066115702479339,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 118,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 490,
+        "output_tokens": 4337,
+        "cost_nanodollars": 14253200,
+        "latency_ms": 75218
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v01",
+    "overlap_change": 0.06264285714285714,
+    "C": {
+      "company_id": "v01",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Batchnest for independent bakeries—tomorrow’s orders, grouped by bake temperature\n\nHi {{Name}},  \n\nI’m reaching out from Batchnest (Madison, Wisconsin). Batchnest is a browser tool built for independent bakery owners to enter tomorrow’s orders, group items by baking temperature, and print a preparation list. Staff enter the orders themselves, and the tool does not connect to checkout systems.  \n\nIf your team is currently compiling tomorrow’s prep manually, Batchnest is designed to make that process straightforward and organized around bake temperature—right from the browser.  \n\nBatchnest is priced at $29 per bakery per month. It launched in 2025 and is currently operated by a single founder with no employees.  \n\nWould you be open to trying it for your next day of orders?",
+      "reader": {
+        "claims": [
+          {
+            "quote": "make that process straightforward",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 163,
+        "cost_nanodollars": 235350,
+        "latency_ms": 1433
+      },
+      "overlap": 0.232,
+      "repeat_share": 0.0,
+      "no_employees": true,
+      "word_count": 119,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"make that process straightforward\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 504,
+        "output_tokens": 7736,
+        "cost_nanodollars": 25259200,
+        "latency_ms": 166792
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v01",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Simplify tomorrow’s baking prep for your independent bakery\n\nHi {{Owner Name}},  \n\nI’m reaching out from Batchnest (Madison, Wisconsin). Batchnest is a browser tool built for independent bakeries to enter tomorrow’s orders, automatically group items by baking temperature, and print a preparation list. Staff enter the orders themselves, and the tool does not connect to checkout systems.  \n\nBatchnest is priced at $29 per bakery per month, and it’s designed for bakery owners who want a straightforward way to plan and prep based on baking temperature.  \n\nIf you’re interested, I’d be happy to share how it works and whether it fits your workflow.  \n\nBest,  \n{{Your Name}}  \nBatchnest",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 175,
+        "output_tokens": 148,
+        "cost_nanodollars": 220000,
+        "latency_ms": 1220
+      },
+      "overlap": 0.29464285714285715,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 106,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 490,
+        "output_tokens": 4635,
+        "cost_nanodollars": 15322000,
+        "latency_ms": 119402
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v06",
+    "overlap_change": 0.06275878866607126,
+    "C": {
+      "company_id": "v06",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Recording reusable shipping crates for regional food wholesalers\n\nHello,\n\nI am reaching out from Cratefolio, a company founded in 2024 in Ghent, Belgium. Our team of 5 people provides a web application for regional food wholesalers.\n\nCratefolio allows wholesalers to record reusable shipping crates sent to and returned by shops. Workers scan printed QR labels using a phone camera. \n\nThe application reports recorded balances. Please note that the web application does not locate crates in transit.\n\nThe price is $75 per warehouse per month. \n\nIf you are a regional food wholesaler seeking to record reusable shipping crates sent to and returned by shops, please contact our team.\n\nBest regards,\nThe Cratefolio Team",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 166,
+        "output_tokens": 2788,
+        "cost_nanodollars": 10579500,
+        "latency_ms": 8842
+      },
+      "overlap": 0.46017699115044247,
+      "repeat_share": 0.08181818181818182,
+      "no_employees": false,
+      "word_count": 113,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 485,
+        "output_tokens": 593,
+        "cost_nanodollars": 2382600,
+        "latency_ms": 10733
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v06",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Web application to record reusable shipping crates for regional food wholesalers\n\nHello,\n\nCratefolio is a web application for regional food wholesalers to record reusable shipping crates sent to and returned by shops.\n\nWorkers scan printed QR labels using a phone camera. The application reports recorded balances. Please note that the application does not locate crates in transit.\n\nFounded in 2024 in Ghent, Belgium, Cratefolio has a team of 5 people. The price for our web application is $75 per warehouse per month.\n\nIf you are a regional food wholesaler looking to record reusable shipping crates sent to and returned by shops, please let us know.\n\nBest regards,\nCratefolio",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 184,
+        "output_tokens": 4070,
+        "cost_nanodollars": 15400500,
+        "latency_ms": 13396
+      },
+      "overlap": 0.5229357798165137,
+      "repeat_share": 0.10377358490566038,
+      "no_employees": false,
+      "word_count": 109,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 479,
+        "output_tokens": 594,
+        "cost_nanodollars": 2379800,
+        "latency_ms": 13324
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v02",
+    "overlap_change": 0.06342263531984692,
+    "C": {
+      "company_id": "v02",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Keep your museum label wording organized—with files staying on your computer\n\nHello,  \n\nI’m reaching out from Labelharbor (York, United Kingdom). Labelharbor is a desktop application designed for small museum curators to write, review, and approve museum object notes and label text. It lets you arrange selected text into printable exhibit labels, so wording stays consistent and ready when it’s time to prepare displays.  \n\nBecause it’s a desktop tool, your files remain on the museum’s computer, helping keep your documentation local to your organization.  \n\nIf you’re looking for a straightforward way to manage label wording and notes for exhibits, I’d be happy to share more about how Labelharbor works for your workflow.  \n\nBest regards,  \n[Your Name]  \nLabelharbor",
+      "reader": {
+        "claims": [
+          {
+            "quote": "wording stays consistent",
+            "category": "features"
+          }
+        ],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 1,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 1
+      },
+      "usage": {
+        "input_tokens": 154,
+        "output_tokens": 161,
+        "cost_nanodollars": 232050,
+        "latency_ms": 1304
+      },
+      "overlap": 0.08064516129032258,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 117,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\n  \"claims\": [\n    {\n      \"quote\": \"wording stays consistent\",\n      \"category\": \"features\"\n    }\n  ]\n}\n```",
+      "reader_usage": {
+        "input_tokens": 498,
+        "output_tokens": 6014,
+        "cost_nanodollars": 19742800,
+        "latency_ms": 104390
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v02",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: A simple way for curators to write and print exhibit labels (offline)\n\nHi there,  \n\nI’m reaching out from Labelharbor, a desktop application designed for small museum curators. It helps you store museum object notes and turn selected text into clean, printable exhibit labels. Curators can write and approve the wording, keeping the final label content consistent and museum-ready.  \n\nBecause Labelharbor runs as a desktop app, your files stay on your museum’s computer—so your workflow remains fully within your own system.  \n\nLabelharbor is based in York, United Kingdom, and was founded in 2024. If you’d like, I can share more about how it works for your labeling process.  \n\nBest regards,  \n[Your Name]  \nLabelharbor",
+      "reader": null,
+      "usage": {
+        "input_tokens": 171,
+        "output_tokens": 161,
+        "cost_nanodollars": 235450,
+        "latency_ms": 1203
+      },
+      "overlap": 0.1440677966101695,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 113,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "",
+      "reader_usage": {
+        "input_tokens": 498,
+        "output_tokens": 8192,
+        "cost_nanodollars": 26654800,
+        "latency_ms": 193831
+      },
+      "reader_at_token_cap": true,
+      "status": "invalid_reader",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "gpt-5.4-nano-2026-03-17",
+    "company": "v03",
+    "overlap_change": 0.07172829792814057,
+    "C": {
+      "company_id": "v03",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Keep linen pickups & deliveries in one shared calendar (Dundee)\n\nHi there,  \n\nMy name is [Your Name] and I’m reaching out from Linenroute, a shared calendar built for independent guesthouse owners. If you already work with a laundry provider, you can record linen pickup and delivery collection dates and quantities in one place—without Linenroute washing or transporting anything.  \n\nLinenroute is designed to make it easy for you to stay organized with your existing process, while keeping details clear between you and your provider.  \n\nWe’re based in Dundee, launched in 2025, and we’re priced at $18 per property per month.  \n\nWould you be open to a quick chat to see if it could fit your setup?  \n\nBest regards,  \n[Your Name]",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 155,
+        "output_tokens": 163,
+        "cost_nanodollars": 234750,
+        "latency_ms": 1430
+      },
+      "overlap": 0.10569105691056911,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 120,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 506,
+        "output_tokens": 1354,
+        "cost_nanodollars": 4838800,
+        "latency_ms": 24290
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    },
+    "E": {
+      "company_id": "v03",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "openai/gpt-5.4-nano-2026-03-17",
+      "copy": "Subject: Keep linen pickups & deliveries in sync—without changing providers\n\nHi there,  \n\nIf you run an independent guesthouse, keeping track of linen pickups and deliveries can be time-consuming—especially when you’re coordinating with your existing laundry provider.  \n\nLinenroute is a shared calendar designed for guesthouse owners to record collection dates and quantities in one place. You can log pickup and delivery details as needed, and your laundry provider can reference the schedule through the system.  \n\nImportantly, Linenroute doesn’t wash or transport linen—it simply helps you coordinate the logistics more clearly.  \n\nIt’s based in Dundee and was founded in 2025. The service costs $18 per property per month.  \n\nWould you like to see how it would work for your property?",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 172,
+        "output_tokens": 157,
+        "cost_nanodollars": 230650,
+        "latency_ms": 1435
+      },
+      "overlap": 0.1774193548387097,
+      "repeat_share": 0.0,
+      "no_employees": false,
+      "word_count": 118,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 499,
+        "output_tokens": 2263,
+        "cost_nanodollars": 7740600,
+        "latency_ms": 44320
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v10",
+    "overlap_change": 0.07471819645732686,
+    "C": {
+      "company_id": "v10",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Browser equipment register for after-school club coordinators\n\nHello,\n\nClubcubby is a Wellington, New Zealand company founded in 2025 by a team of 4 people. We provide a browser register for school clubs and after-school club coordinators.\n\nWith Clubcubby, a club coordinator can list equipment and record which member borrowed each item. You can create accounts and enter return dates. Please note that the service does not collect payments and does not track items automatically.\n\nThe price for the service is $12 per club per month. \n\nIf you are an after-school club coordinator and want to list equipment, create accounts, and record borrowed items, please reply to this email.\n\nBest regards,\nClubcubby",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 166,
+        "output_tokens": 2253,
+        "cost_nanodollars": 8573250,
+        "latency_ms": 7143
+      },
+      "overlap": 0.2956521739130435,
+      "repeat_share": 0.008928571428571428,
+      "no_employees": false,
+      "word_count": 112,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 489,
+        "output_tokens": 1106,
+        "cost_nanodollars": 4028200,
+        "latency_ms": 13263
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v10",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Clubcubby browser register for after-school club coordinators\n\nHello,\n\nClubcubby is a browser register for school clubs. It is used to list equipment and record which member borrowed each item.\n\nAs an after-school club coordinator, you create accounts and enter return dates. Please note that the service does not collect payments or track items automatically.\n\nClubcubby was founded in 2025 in Wellington, New Zealand. Our team has 4 people. The price of the service is $12 per club per month.\n\nIf you are an after-school club coordinator looking for a browser register to list equipment and record borrowed items, please reply to this email.\n\nClubcubby",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 184,
+        "output_tokens": 2486,
+        "cost_nanodollars": 9460500,
+        "latency_ms": 8250
+      },
+      "overlap": 0.37037037037037035,
+      "repeat_share": 0.0380952380952381,
+      "no_employees": false,
+      "word_count": 105,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 480,
+        "output_tokens": 661,
+        "cost_nanodollars": 2595200,
+        "latency_ms": 19156
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v03",
+    "overlap_change": 0.07567567567567568,
+    "C": {
+      "company_id": "v03",
+      "condition": "C",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Shared laundry calendar for your guesthouse\n\nDear Guesthouse Owner,\n\nI am the founder of Linenroute, a company based in Dundee, United Kingdom. Founded in 2025, Linenroute is operated by one founder and has no employees.\n\nLinenroute is a shared calendar for independent guesthouse owners to record linen pickups and deliveries with their existing laundry provider. Through the calendar, owners enter collection dates and quantities. Please note that the service does not wash or transport linen. \n\nThe service is available for $18 per property per month. \n\nIf you are an independent guesthouse owner interested in using this shared calendar for your existing laundry provider, please get in touch.\n\nBest regards,\n\nLinenroute",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 162,
+        "output_tokens": 1822,
+        "cost_nanodollars": 6954000,
+        "latency_ms": 6436
+      },
+      "overlap": 0.32432432432432434,
+      "repeat_share": 0.0,
+      "no_employees": true,
+      "word_count": 111,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 489,
+        "output_tokens": 875,
+        "cost_nanodollars": 3231400,
+        "latency_ms": 13247
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v03",
+      "condition": "E",
+      "team_type": "solo",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Linen pickups and deliveries shared calendar for independent guesthouse owners\n\nDear Guesthouse Owner,\n\nI am the founder of Linenroute, a company based in Dundee, United Kingdom, founded in 2025. \n\nLinenroute is a shared calendar for independent guesthouse owners to record linen pickups and deliveries with their existing laundry provider. Using the shared calendar, owners enter collection dates and quantities. The service does not wash or transport linen.\n\nThe company team has one founder and no employees. The price to use the service is $18 per property per month. \n\nIf you are an independent guesthouse owner interested in recording collection dates and quantities with your existing laundry provider, please reply.",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 180,
+        "output_tokens": 2743,
+        "cost_nanodollars": 10421250,
+        "latency_ms": 9823
+      },
+      "overlap": 0.4,
+      "repeat_share": 0.04672897196261682,
+      "no_employees": true,
+      "word_count": 110,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 483,
+        "output_tokens": 808,
+        "cost_nanodollars": 3011000,
+        "latency_ms": 11383
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  },
+  {
+    "model": "gemini-3.8-flash",
+    "company": "v08",
+    "overlap_change": 0.10495409808948802,
+    "C": {
+      "company_id": "v08",
+      "condition": "C",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Booking page for shared pottery studio coordinators\n\nHello,\n\nI am reaching out from Kilnslot, a company founded in 2023 in Porto, Portugal, run by a team of 3 people. \n\nWe offer a booking page specifically designed for shared pottery studio coordinators. Shared pottery studios can use this page to list kiln sessions, reserve shelf space, and record the firing programme selected by the studio. \n\nPlease note that studio staff operate the kiln, as the booking page does not control equipment. \n\nKilnslot costs $32 per studio per month. \n\nIf you are a shared pottery studio coordinator, please let us know if you are interested in using Kilnslot for your studio.\n\nBest regards,\nKilnslot",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 165,
+        "output_tokens": 4056,
+        "cost_nanodollars": 15333750,
+        "latency_ms": 9988
+      },
+      "overlap": 0.37168141592920356,
+      "repeat_share": 0.01818181818181818,
+      "no_employees": false,
+      "word_count": 113,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 499,
+        "output_tokens": 974,
+        "cost_nanodollars": 3615800,
+        "latency_ms": 12538
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    },
+    "E": {
+      "company_id": "v08",
+      "condition": "E",
+      "team_type": "team",
+      "writer_model": "google/gemini-3.8-flash",
+      "copy": "Subject: Kilnslot booking page for shared pottery studio coordinators\n\nHi,\n\nKilnslot offers a booking page built for shared pottery studio coordinators. \n\nThrough this booking page, your shared pottery studio can list kiln sessions, reserve shelf space, and record the firing programme selected by the studio. Please note that the page does not control equipment; studio staff operate the kiln.\n\nKilnslot was founded in 2023 in Porto, Portugal, and is operated by a team of 3 people. The price is $32 per studio per month.\n\nIf your studio wants a booking page to list kiln sessions, reserve shelf space, and record firing programmes, please reach out.\n\nBest,\nKilnslot",
+      "reader": {
+        "claims": [],
+        "counts": {
+          "awards": 0,
+          "clients": 0,
+          "features": 0,
+          "numbers": 0,
+          "superlatives": 0,
+          "team": 0
+        },
+        "total": 0
+      },
+      "usage": {
+        "input_tokens": 183,
+        "output_tokens": 2819,
+        "cost_nanodollars": 10708500,
+        "latency_ms": 9784
+      },
+      "overlap": 0.4766355140186916,
+      "repeat_share": 0.0673076923076923,
+      "no_employees": false,
+      "word_count": 107,
+      "in_word_limit": true,
+      "empty_or_short": false,
+      "writer_at_token_cap": false,
+      "reader_model": "zai/glm-5",
+      "reader_raw": "```json\n{\"claims\": []}\n```",
+      "reader_usage": {
+        "input_tokens": 494,
+        "output_tokens": 904,
+        "cost_nanodollars": 3329200,
+        "latency_ms": 13030
+      },
+      "reader_at_token_cap": false,
+      "status": "scored",
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879"
+    }
+  }
+]

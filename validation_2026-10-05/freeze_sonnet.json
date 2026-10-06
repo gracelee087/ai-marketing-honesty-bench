@@ -1,0 +1,9 @@
+{
+  "frozen_at_utc": "2026-10-05T20:01:50.644012+00:00",
+  "reason": "Kaggle maps claude-sonnet-5-default to anthropic/claude-sonnet-5@default. The exact-suffix registration guard skipped run 4198882 before any writer or reader call. Its result archive has no results.jsonl and a 0.000203-second duration. That registration-only zero is excluded, not a study result.",
+  "change": "Normalize @ to - in the model eligibility guard. Distinct private task; only Sonnet is scheduled. Prompt, briefs, random schedule, reader, caps and analysis are identical to the frozen main study.",
+  "parent_freeze_sha256": "f554170eb71ebb5cf8fe58634d1da585882b0d792b86b84091134ec50ffde1af",
+  "task_file": "writer_task_sonnet.py",
+  "task_sha256": "4707a192e9b3476bb32328b92399ed2a1715398e0dfabe32576c86e5aa3dc13d",
+  "human_validation": false
+}

@@ -1,0 +1,181 @@
+{
+  "human_validation": false,
+  "recorded": 120,
+  "planned": 120,
+  "generated": 120,
+  "read": 109,
+  "cost_usd": 2.2413678,
+  "controls_recorded": 30,
+  "conditions": [
+    {
+      "condition": "A",
+      "planned": 40,
+      "recorded": 40,
+      "generated": 40,
+      "read": 35,
+      "clean_n": 6,
+      "clean_share": 0.17142857142857143,
+      "mean_overlap": 0.07901726937994161,
+      "mean_repeat_share": 0.0007330907534246576,
+      "solo_generated": 20,
+      "says_no_employees": 0,
+      "cost_usd": 0.8260835500000001
+    },
+    {
+      "condition": "C",
+      "planned": 40,
+      "recorded": 40,
+      "generated": 40,
+      "read": 37,
+      "clean_n": 25,
+      "clean_share": 0.6756756756756757,
+      "mean_overlap": 0.22439055551169634,
+      "mean_repeat_share": 0.010232731732372186,
+      "solo_generated": 20,
+      "says_no_employees": 6,
+      "cost_usd": 0.62769605
+    },
+    {
+      "condition": "E",
+      "planned": 40,
+      "recorded": 40,
+      "generated": 40,
+      "read": 37,
+      "clean_n": 26,
+      "clean_share": 0.7027027027027027,
+      "mean_overlap": 0.21892418576330036,
+      "mean_repeat_share": 0.0110275541022864,
+      "solo_generated": 20,
+      "says_no_employees": 5,
+      "cost_usd": 0.6529073999999999
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast": "C-A",
+      "measure": "clean",
+      "n_pairs": 32,
+      "companies": 10,
+      "difference": 0.4375,
+      "lo": 0.25,
+      "hi": 0.6216216216216216,
+      "coverage": "descriptive"
+    },
+    {
+      "contrast": "C-A",
+      "measure": "claims",
+      "n_pairs": 32,
+      "companies": 10,
+      "difference": -1.34375,
+      "lo": -2.09375,
+      "hi": -0.8285714285714286,
+      "coverage": "descriptive"
+    },
+    {
+      "contrast": "C-A",
+      "measure": "overlap",
+      "n_pairs": 40,
+      "companies": 10,
+      "difference": 0.14537328613175476,
+      "lo": 0.12551163266936932,
+      "hi": 0.16378327039450297,
+      "coverage": "complete-enough"
+    },
+    {
+      "contrast": "C-A",
+      "measure": "repeat_share",
+      "n_pairs": 40,
+      "companies": 10,
+      "difference": 0.009499640978947529,
+      "lo": 0.0054594647256115255,
+      "hi": 0.013842214926483284,
+      "coverage": "complete-enough"
+    },
+    {
+      "contrast": "C-A",
+      "measure": "no_employees",
+      "n_pairs": 20,
+      "companies": 5,
+      "difference": 0.3,
+      "lo": 0.25,
+      "hi": 0.4,
+      "coverage": "descriptive"
+    },
+    {
+      "contrast": "E-C",
+      "measure": "clean",
+      "n_pairs": 35,
+      "companies": 10,
+      "difference": 0.0,
+      "lo": -0.1388888888888889,
+      "hi": 0.13513513513513514,
+      "coverage": "complete-enough"
+    },
+    {
+      "contrast": "E-C",
+      "measure": "claims",
+      "n_pairs": 35,
+      "companies": 10,
+      "difference": 0.17142857142857143,
+      "lo": -0.17647058823529413,
+      "hi": 0.5556372549019596,
+      "coverage": "complete-enough"
+    },
+    {
+      "contrast": "E-C",
+      "measure": "overlap",
+      "n_pairs": 40,
+      "companies": 10,
+      "difference": -0.005466369748395974,
+      "lo": -0.019739830725877483,
+      "hi": 0.008943696649272723,
+      "coverage": "complete-enough"
+    },
+    {
+      "contrast": "E-C",
+      "measure": "repeat_share",
+      "n_pairs": 40,
+      "companies": 10,
+      "difference": 0.0007948223699142127,
+      "lo": -0.0035814318328881993,
+      "hi": 0.0052637398866232825,
+      "coverage": "complete-enough"
+    },
+    {
+      "contrast": "E-C",
+      "measure": "no_employees",
+      "n_pairs": 20,
+      "companies": 5,
+      "difference": -0.05,
+      "lo": -0.15,
+      "hi": 0.0,
+      "coverage": "descriptive"
+    }
+  ],
+  "runs": [
+    {
+      "model": "gemini-3.8-flash",
+      "run_id": "4198879",
+      "sha256": "ce49b34ef9e50d7df8a8fbea97481355277f4f092db0aaeb31290489cd28e232",
+      "file": "downloads\\writer\\marketing-facts-selective-validation\\2\\gemini-3.8-flash\\4198879\\results.jsonl"
+    },
+    {
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "4198877",
+      "sha256": "2135dcacb23e65be60486ccddc43d89b7fef21c1262d60a1e7daa2addf6c049f",
+      "file": "downloads\\writer\\marketing-facts-selective-validation\\2\\gpt-5.4-2026-03-05\\4198877\\results.jsonl"
+    },
+    {
+      "model": "gpt-5.4-nano-2026-03-17",
+      "run_id": "4198878",
+      "sha256": "cf931da4ff45525b00d1834a2865da9a59e52b6cc3e886d51caada50f8ba4203",
+      "file": "downloads\\writer\\marketing-facts-selective-validation\\2\\gpt-5.4-nano-2026-03-17\\4198878\\results.jsonl"
+    },
+    {
+      "model": "claude-sonnet-5-default",
+      "run_id": "4199401",
+      "sha256": "72186e6df41e49124b5f22185415ab942ba63481e06d20a47332cc83e45d4187",
+      "file": "downloads\\writer\\marketing-facts-selective-validation-sonnet\\1\\claude-sonnet-5-default\\4199401\\results.jsonl"
+    }
+  ]
+}

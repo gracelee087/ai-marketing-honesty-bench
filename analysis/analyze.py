@@ -24,7 +24,8 @@ VERSION = "4"
 SEED = 20260928
 RESAMPLES = 10_000
 CONDITIONS = ["A_none", "B_ban", "C_whitelist", "D_reinject"]
-COND_LABEL = {"A_none": "A none", "B_ban": "B ban", "C_whitelist": "C whitelist", "D_reinject": "D repeat facts"}
+COND_LABEL = {"A_none": "A no instruction", "B_ban": "B number ban", "C_whitelist": "C facts only",
+              "D_reinject": "D facts only + facts repeated"}
 SHARED = ["numbers", "team", "clients", "awards", "superlatives"]  # categories both scorers can see
 READER_CATS = SHARED + ["features"]
 H1_THRESHOLD = 0.05
@@ -32,6 +33,7 @@ STOCK_MIN_COMPANIES = 3
 H5_PAIRS = [("gpt-5.4-nano", "gpt-5.4"), ("gpt-oss-20b", "gpt-oss-120b"), ("gemini-3.1-flash-lite", "gemini-3.8-flash")]
 H5_CAVEAT = {("gemini-3.1-flash-lite", "gemini-3.8-flash"): "confounded by generation"}
 CORE_PAIRS = 6  # Addendum 2: comparisons between models use pairs 1-6
+MIN_RANKED = 30  # Addendum 4: read first-repeat copies in pairs 1-6 needed to be ranked against other models
 
 
 def display_name(slug: str) -> str:
@@ -41,16 +43,29 @@ def display_name(slug: str) -> str:
 
 # ---------------------------------------------------------------- loading
 
-def load(version: str = VERSION):
-    items, missing, notes = [], collections.Counter(), []
+def read_count(run: Path) -> int:
+    return sum(bool(json.loads(line).get("reader")) for line in open(run / "results.jsonl", encoding="utf-8"))
+
+
+def chosen_runs(version: str = VERSION):
+    """(model, run folder, note) per model. Addenda 3 and 4: with several runs, the one with the most
+    copies read by the reader is reported; on a tie, the later run."""
     for model_dir in sorted((RUNS / version).iterdir()):
         runs = sorted(p for p in model_dir.iterdir() if (p / "results.jsonl").exists())
         if not runs:
             continue
-        if len(runs) > 1:
-            notes.append(f"{model_dir.name}: {len(runs)} runs found, using {runs[-1].name}")
-        model = display_name(model_dir.name)
-        for line in open(runs[-1] / "results.jsonl", encoding="utf-8"):
+        run = max(runs, key=lambda p: (read_count(p), p.name))
+        note = (f"{model_dir.name}: {len(runs)} runs found, using {run.name} "
+                f"({read_count(run)} copies read, the most)") if len(runs) > 1 else ""
+        yield display_name(model_dir.name), run, note
+
+
+def load(version: str = VERSION):
+    items, missing, notes = [], collections.Counter(), []
+    for model, run, note in chosen_runs(version):
+        if note:
+            notes.append(note)
+        for line in open(run / "results.jsonl", encoding="utf-8"):
             r = json.loads(line)
             if "not_measured" in r:
                 missing[model] += 1
@@ -91,6 +106,10 @@ def boot(values: pd.Series, companies: pd.Series, seed: int = SEED):
     sums, counts = g.sum().to_numpy(), g.count().to_numpy()
     if counts.sum() == 0:
         return np.nan, np.nan, np.nan, 0
+    if (counts > 0).sum() < 2:
+        # Resampling one company only repeats that company; it cannot estimate
+        # between-company uncertainty. Retain its descriptive mean and count.
+        return sums.sum() / counts.sum(), np.nan, np.nan, int(counts.sum())
     rng = np.random.default_rng(seed)
     idx = rng.integers(0, len(sums), size=(RESAMPLES, len(sums)))
     stats = sums[idx].sum(axis=1) / counts[idx].sum(axis=1)
@@ -100,7 +119,7 @@ def boot(values: pd.Series, companies: pd.Series, seed: int = SEED):
 
 def verdict(lo, hi, predicted: int) -> str:
     if np.isnan(lo):
-        return "no data"
+        return "inconclusive"
     if (predicted < 0 and hi < 0) or (predicted > 0 and lo > 0):
         return "supported"
     if (predicted < 0 and lo > 0) or (predicted > 0 and hi < 0):
@@ -180,9 +199,27 @@ def compare(df, a, b, cols, predicted, name):
     for scope, d in scopes(df):
         p = paired(d, a, b, cols)
         est, lo, hi, n = boot(p["diff"], p["company"]) if len(p) else (np.nan,) * 3 + (0,)
-        rows.append({"test": name, "scope": scope, "n_pairs": n, "diff": est, "lo": lo, "hi": hi,
-                     "verdict": verdict(lo, hi, predicted)})
+        rows.append({"test": name, "scope": scope, "n_pairs": n, "n_companies": p.company.nunique(),
+                     "diff": est, "lo": lo, "hi": hi,
+                     "verdict": verdict(lo, hi, predicted) if n else "no data"})
     return pd.DataFrame(rows)
+
+
+def h2_verdict(numbers, others):
+    """A non-significant decrease does not establish no decrease.
+
+    No equivalence/non-inferiority margin was specified, so an interval spanning
+    zero for other claims cannot support relocation. A clear increase can.
+    """
+    if not numbers["n_pairs"] or not others["n_pairs"]:
+        return "no data"
+    if not all(np.isfinite(x) for x in (numbers["lo"], numbers["hi"], others["lo"], others["hi"])):
+        return "inconclusive"
+    if others["hi"] < 0 or numbers["lo"] > 0:
+        return "falsified"
+    if numbers["hi"] < 0 and others["lo"] > 0:
+        return "supported"
+    return "inconclusive"
 
 
 def h2(df):
@@ -191,15 +228,9 @@ def h2(df):
     oth = compare(df, "A_none", "B_ban", [f"rd_{c}" for c in others], -1, "other categories B-A")
     rows = []
     for (_, n), (_, o) in zip(num.iterrows(), oth.iterrows()):
-        if n.verdict == "no data":
-            v = "no data"
-        elif o.hi < 0:
-            v = "falsified"  # the ban reduced non-number claims too
-        elif n.hi < 0:
-            v = "supported"  # numbers dropped, the rest did not
-        else:
-            v = "inconclusive"
-        rows.append({"scope": n.scope, "n_pairs": n.n_pairs, "numbers_diff": n["diff"], "numbers_lo": n.lo,
+        v = h2_verdict(n, o)
+        rows.append({"scope": n.scope, "n_pairs": n.n_pairs, "n_companies": n.n_companies,
+                     "numbers_diff": n["diff"], "numbers_lo": n.lo,
                      "numbers_hi": n.hi, "others_diff": o["diff"], "others_lo": o.lo, "others_hi": o.hi, "verdict": v})
     per_cat = pd.concat([compare(df, "A_none", "B_ban", f"rd_{c}", -1 if c == "numbers" else 0, c)
                          .query("scope == 'all models'") for c in READER_CATS])
@@ -307,15 +338,16 @@ def charts(df, rank, by_cond, pooled, top, cost_table):
 
     # 1. ranking
     r = rank.iloc[::-1]
-    fig, ax = plt.subplots(figsize=(8, 0.45 * len(r) + 1.4))
-    ax.barh(r.model, r.reader_clean, color=SERIES[0], height=0.55)
-    ax.errorbar(r.reader_clean, r.model, xerr=[r.reader_clean - r.lo, r.hi - r.reader_clean],
+    names = [f"{m} (n={n})" for m, n in zip(r.model, r.n)]
+    fig, ax = plt.subplots(figsize=(8, 0.45 * len(r) + 1.6))
+    ax.barh(names, r.reader_clean, color=SERIES[0], height=0.55)
+    ax.errorbar(r.reader_clean, names, xerr=[r.reader_clean - r.lo, r.hi - r.reader_clean],
                 fmt="none", ecolor=INK2, elinewidth=1, capsize=3)
     for y, (v, hi) in enumerate(zip(r.reader_clean, r.hi)):
         ax.text(hi + 0.02, y, f"{v:.0%}", va="center", color=INK2)
     ax.set_xlim(0, 1.12); ax.xaxis.set_major_formatter(pct); ax.grid(axis="y", visible=False)
-    ax.set_title(f"Copies with no invented claim (careful reader, all conditions, pairs 1–{CORE_PAIRS})")
-    ax.set_xlabel("share of copies, 95% CI over companies")
+    ax.set_title(f"Texts where the checker found nothing added\npairs 1–{CORE_PAIRS}, all four prompts")
+    ax.set_xlabel("share of texts, 95% CI over companies; n = texts read by the checker")
     made.append(_save(fig, "1_ranking.png"))
 
     # 2. A -> D per model, small multiples
@@ -326,13 +358,14 @@ def charts(df, rank, by_cond, pooled, top, cost_table):
     pool = pooled.set_index("condition").reindex(CONDITIONS).reader_clean
     for ax, m in zip(axes.flat, models):
         s = by_cond[by_cond.model == m].set_index("condition").reindex(CONDITIONS).reader_clean
-        ax.plot(x, pool, color=GRID, linewidth=2, label="all models")
-        ax.plot(x, s, color=SERIES[0], linewidth=2, marker="o", markersize=6, label=m)
+        ax.plot(x, pool, color=INK2, linewidth=1.5, linestyle="--", label="all models")
+        ax.plot(x, s, color=SERIES[0], linewidth=2, marker="o", markersize=6, label=m, clip_on=False)
         ax.set_title(m, fontsize=10); ax.set_xticks(list(x), ["A", "B", "C", "D"])
         ax.set_ylim(0, 1.05); ax.yaxis.set_major_formatter(pct)
     for ax in list(axes.flat)[len(models):]:
         ax.axis("off")
-    fig.suptitle("Share of clean copies by condition\nA none · B ban · C whitelist · D repeat facts · gray = all models",
+    fig.suptitle("Share of texts with nothing added, by prompt\n"
+                 "A no instruction · B number ban · C facts only · D facts only + facts repeated · dashed = all models",
                  x=0.01, ha="left", fontsize=11, fontweight="bold")
     made.append(_save(fig, "2_conditions.png"))
 
@@ -348,7 +381,8 @@ def charts(df, rank, by_cond, pooled, top, cost_table):
         left += v
     ax.invert_yaxis(); ax.grid(axis="y", visible=False)
     ax.legend(ncol=3, loc="upper left", bbox_to_anchor=(0, -0.15), frameon=False, fontsize=9)
-    ax.set_title("Number ban: invented claims per copy, by kind")
+    ax.set_title("Number ban: added claims per text, by kind")
+    ax.set_xlabel("claims per text (checker)")
     made.append(_save(fig, "3_categories_A_vs_B.png"))
 
     # 4. detector vs reader
@@ -356,12 +390,13 @@ def charts(df, rank, by_cond, pooled, top, cost_table):
     fig, ax = plt.subplots(figsize=(8, 0.45 * len(r) + 1.8))
     y = np.arange(len(r))
     ax.hlines(y, r.reader_clean, r.detector_clean, color=GRID, linewidth=2)
-    ax.plot(r.detector_clean, y, "o", color=SERIES[1], markersize=8, label="keyword detector")
-    ax.plot(r.reader_clean, y, "o", color=SERIES[0], markersize=8, label="careful reader")
+    ax.plot(r.detector_clean, y, "o", color=SERIES[1], markersize=8, label="rule-based detector")
+    ax.plot(r.reader_clean, y, "o", color=SERIES[0], markersize=8, label="LLM checker")
     ax.set_yticks(y, r.model); ax.set_xlim(0, 1.02); ax.xaxis.set_major_formatter(pct)
     ax.grid(axis="y", visible=False)
-    ax.legend(ncol=2, loc="upper left", bbox_to_anchor=(0, -0.12), frameon=False)
-    ax.set_title("Same copies, two scorers: share judged clean")
+    ax.legend(ncol=2, loc="upper left", bbox_to_anchor=(0, -0.16), frameon=False)
+    ax.set_title("Same texts, two scorers: share with nothing flagged")
+    ax.set_xlabel(f"share of texts, pairs 1–{CORE_PAIRS}")
     made.append(_save(fig, "4_detector_vs_reader.png"))
 
     # 5. stock claims
@@ -370,7 +405,7 @@ def charts(df, rank, by_cond, pooled, top, cost_table):
         fig, ax = plt.subplots(figsize=(7, 0.3 * len(t) + 1.2))
         ax.barh(t.bigram, t.claims, color=SERIES[0], height=0.6)
         ax.grid(axis="y", visible=False)
-        ax.set_title(f"Stock phrases in invented claims\n(seen for ≥ {STOCK_MIN_COMPANIES} companies)")
+        ax.set_title(f"Recurring phrases in reader-flagged claims\n(seen for ≥ {STOCK_MIN_COMPANIES} companies)")
         ax.set_xlabel("number of claims containing the phrase")
         made.append(_save(fig, "5_stock_claims.png"))
 
@@ -385,8 +420,9 @@ def charts(df, rank, by_cond, pooled, top, cost_table):
         ax.set_xscale("log"); ax.set_ylim(0, 1.05); ax.margins(x=0.25)
         ax.xaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
         ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"${v:g}")); ax.yaxis.set_major_formatter(pct)
-        ax.set_xlabel("writer cost per copy (USD, log scale)")
-        ax.set_title(f"Does paying more buy honesty? (clean share, first repeat, pairs 1–{CORE_PAIRS})")
+        ax.set_xlabel("writer cost per text (USD, log scale)")
+        ax.set_ylabel("texts with nothing added")
+        ax.set_title(f"Writer cost and texts with nothing added\nranked models, pairs 1–{CORE_PAIRS}")
         made.append(_save(fig, "6_cost_vs_honesty.png"))
     return made
 
@@ -427,14 +463,18 @@ def main():
     t3 = compare(df, "B_ban", "C_whitelist", "rd_total", -1, "H3 C-B")
     t4 = compare(df, "C_whitelist", "D_reinject", "rd_total", -1, "H4 D-C")
     t5 = h5(df)
-    t6, rho = h6(df)
     g_all, g_model, g_cond, top, n_claims = gravity(df)
     stab = stability(df)
     money = spend(df)
-    core =df[df.pair <= CORE_PAIRS]
+    core = df[df.pair <= CORE_PAIRS]
     rank_c = headline(core)[1]
+    # Addendum 4: models with too few read copies in pairs 1-6 are listed, not ranked or charted as ranked.
+    unranked = rank_c[rank_c.n < MIN_RANKED]
+    is_ranked = lambda t: ~t.model.isin(unranked.model)
+    rank_c, rank = rank_c[is_ranked(rank_c)], rank[is_ranked(rank)]
     t5_c = h5(core)
-    t6_c, rho_c = h6(core)
+    t6, rho = h6(df[is_ranked(df)])
+    t6_c, rho_c = h6(core[is_ranked(core)])
     made = charts(df, rank_c, by_cond, pooled, top, t6_c)
 
     df.drop(columns="claims").to_csv(OUT / "items.csv", index=False)
@@ -459,8 +499,10 @@ def main():
     def spearman(r, k):
         return f"{r[k]:.2f}" if not np.isnan(r[k]) else "needs ≥ 3 models"
 
+    not_ranked = ("\nNot ranked (Addendum 4, fewer than " + f"{MIN_RANKED} read first-repeat copies in pairs 1–{CORE_PAIRS}): "
+                  + (", ".join(f"{r.model} (n={r.n}, {r.reader_clean:.1%})" for r in unranked.itertuples()) or "none") + "\n")
     s = [f"# Analysis — Kaggle task version {VERSION}\n",
-         "Generated by `analysis/analyze.py` following HYPOTHESES.md Addenda 1 and 2. "
+         "Generated by `analysis/analyze.py` following HYPOTHESES.md Addenda 1 to 4. "
          f"Bootstrap: {RESAMPLES:,} company resamples, seed {SEED}. First-repeat copies only unless noted; "
          "copies the reader could not read are excluded.\n"]
     s += [f"- note: {n}\n" for n in notes]
@@ -468,7 +510,7 @@ def main():
     s += ["\n## Spend — tokens and USD per model (all items and repeats; failed writer calls record no usage)\n",
           md_table(money, num_cols=["writer_cost", "reader_cost", "total_cost"])]
     s += [f"\n## Headline — share of clean copies (reader), per model, pairs 1–{CORE_PAIRS} (Addendum 2, primary)\n",
-          md_table(rank_c, P, N)]
+          md_table(rank_c, P, N), not_ranked]
     s += ["\n## Headline — per model, all 20 companies (secondary)\n", md_table(rank, P, N)]
     s += ["\n## Headline by condition, all models\n", md_table(pooled, P, N)]
     s += ["\n## Headline by model × condition\n", md_table(by_cond, P, N)]
@@ -479,6 +521,9 @@ def main():
     s += [f"\n## H1 — claims with no instruction (false if < {H1_THRESHOLD:.0%}); team claims on solo companies\n",
           md_table(t1, P, N)]
     s += ["\n## H2 — number ban (B − A): numbers should drop, other kinds should not\n", md_table(t2, P, N),
+          "\nAn interval spanning zero for other claims is inconclusive, not evidence that they did not fall. "
+          "No equivalence margin was specified. One-company comparisons retain their descriptive mean but have no bootstrap interval. "
+          "Company counts are shown; intervals based on very few companies are fragile.\n",
           "\nPer category, all models (B − A):\n", md_table(t2_cat.drop(columns=["verdict"]), *D)]
     s += ["\n## H3 — whitelist vs ban (C − B, total claims)\n", md_table(t3, *D)]
     s += ["\n## H4 — repeating the facts vs whitelist (D − C, total claims)\n", md_table(t4, *D)]

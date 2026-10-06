@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-05T20:32:37.751830+00:00",
+  "task": "marketing-facts-selective-validation-sonnet",
+  "version": 1,
+  "creation_state": "COMPLETED",
+  "creation_error": "",
+  "public": false,
+  "quota_remaining_usd": 2.9824297,
+  "runs": [
+    {
+      "id": 4199401,
+      "model": "claude-sonnet-5-default",
+      "state": "COMPLETED",
+      "started": "2026-10-05 20:04:44.353000",
+      "ended": "2026-10-05 20:31:29.969000"
+    },
+    {
+      "id": 4199285,
+      "model": "gemini-3.7-flash",
+      "state": "COMPLETED",
+      "started": "2026-10-05 20:02:46.727000",
+      "ended": "2026-10-05 20:02:46.727000"
+    }
+  ]
+}

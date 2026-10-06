@@ -1,0 +1,14 @@
+model,run_id,reader_scored,generated,selected
+claude-sonnet-4-5,3993424,266,288,True
+claude-sonnet-5,3998395,203,288,True
+gemini-2.5-flash,3931893,288,288,True
+gemini-3.1-flash-lite,3695365,239,288,True
+gemini-3.7-flash,3488558,248,248,True
+gemini-3.8-flash,4040709,288,288,True
+gemma-4-31b,3881272,288,288,True
+gpt-5.4,4041865,22,28,False
+gpt-5.4,4106234,286,288,True
+gpt-5.4-nano,3488563,288,288,True
+gpt-oss-120b,3866186,77,77,True
+gpt-oss-20b,3695366,194,269,True
+gpt-oss-120b,4046443,23,23,False

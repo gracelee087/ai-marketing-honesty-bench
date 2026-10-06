@@ -1,0 +1,22 @@
+[
+  {
+    "file": "downloads/writer/marketing-facts-selective-validation/2/gemini-3.8-flash/4198879/results.jsonl",
+    "sha256": "ce49b34ef9e50d7df8a8fbea97481355277f4f092db0aaeb31290489cd28e232"
+  },
+  {
+    "file": "downloads/writer/marketing-facts-selective-validation/2/gpt-5.4-2026-03-05/4198877/results.jsonl",
+    "sha256": "2135dcacb23e65be60486ccddc43d89b7fef21c1262d60a1e7daa2addf6c049f"
+  },
+  {
+    "file": "downloads/writer/marketing-facts-selective-validation/2/gpt-5.4-nano-2026-03-17/4198878/results.jsonl",
+    "sha256": "cf931da4ff45525b00d1834a2865da9a59e52b6cc3e886d51caada50f8ba4203"
+  },
+  {
+    "file": "downloads/writer/marketing-facts-selective-validation-sonnet/1/claude-sonnet-5-default/4199401/results.jsonl",
+    "sha256": "72186e6df41e49124b5f22185415ab942ba63481e06d20a47332cc83e45d4187"
+  },
+  {
+    "file": "downloads/controls/marketing-reader-synthetic-controls/1/glm-5/4198895/results.jsonl",
+    "sha256": "7347550da1729eae8f66b209ba52968f273aa2a1be705fa2750084734c50c1a9"
+  }
+]

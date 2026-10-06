@@ -1,0 +1,136 @@
+{
+  "task_version": "4",
+  "selection": "Most reader-scored items including repeats; tie: later run ID. Never merge runs.",
+  "transform": "Allowlisted record fields; usage fields allowlisted; error text omitted; not_measured normalized to true.",
+  "files": [
+    {
+      "model": "claude-sonnet-4-5",
+      "run_id": "3993424",
+      "file": "results/selected_runs/4/claude-sonnet-4-5-20250929/3993424/results.jsonl",
+      "sha256": "5d8e95dedaf6aab7b63b91820a0d6fce3c06d01f264ea9c958c2e6b62b324149",
+      "source_sha256": "d0c3c2ec5380f2924e4dfd7ac8677c3102941a8b2290042a8d3f127b11de804b",
+      "rows": 288,
+      "generated": 288,
+      "read": 266
+    },
+    {
+      "model": "claude-sonnet-5",
+      "run_id": "3998395",
+      "file": "results/selected_runs/4/claude-sonnet-5-default/3998395/results.jsonl",
+      "sha256": "beac141d0f8ad996d4330248053b8d1c64090e55b553c46b294a8ad0b7ae4f8d",
+      "source_sha256": "9f8e2b24192f27df3a8089798abc5e0a4f399de515837a5fd1e7946aabba1412",
+      "rows": 288,
+      "generated": 288,
+      "read": 203
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "run_id": "3931893",
+      "file": "results/selected_runs/4/gemini-2.5-flash/3931893/results.jsonl",
+      "sha256": "64c7f932f6e9a3fa9c4fdb358b84bdd0d9975043dbc11bbf4af7760dd2283d82",
+      "source_sha256": "30126e8149d2faba9ff935c87eaeaa58e336aad55010b8bba6abfb8c8b5ae1eb",
+      "rows": 288,
+      "generated": 288,
+      "read": 288
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "run_id": "3695365",
+      "file": "results/selected_runs/4/gemini-3.1-flash-lite-preview/3695365/results.jsonl",
+      "sha256": "c36c4afad9dc46dff7ce6b035331b38ccb5061b5d0c3180453555a3a712266ed",
+      "source_sha256": "a03cdaaff46b2ddca90a1e8b15d05e82d6928cdfa7adc78bb8133ec01b2dd268",
+      "rows": 288,
+      "generated": 288,
+      "read": 239
+    },
+    {
+      "model": "gemini-3.7-flash",
+      "run_id": "3488558",
+      "file": "results/selected_runs/4/gemini-3.7-flash/3488558/results.jsonl",
+      "sha256": "f9a0c524f41eb7c31728b2acc78311e84fb72222007c7ffda009e46d4cd85b97",
+      "source_sha256": "1bfd503e7a320dbaf5915b84f44b1874a96bb896b84c10b6e573013d1b907b6d",
+      "rows": 288,
+      "generated": 248,
+      "read": 248
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "run_id": "4040709",
+      "file": "results/selected_runs/4/gemini-3.8-flash/4040709/results.jsonl",
+      "sha256": "7a7952a92092bcc4479f99e3ec7db8392c7d5365362e432878ccb71155329b9b",
+      "source_sha256": "b67193d0c78d76c5246a78074ae0bc340b820af51c2312edf6668d3ec0fefa1f",
+      "rows": 288,
+      "generated": 288,
+      "read": 288
+    },
+    {
+      "model": "gemma-4-31b",
+      "run_id": "3881272",
+      "file": "results/selected_runs/4/gemma-4-31b-it/3881272/results.jsonl",
+      "sha256": "27bba5c7b2affd80615da285163fba273841f3614559c980196c926a5ef2027b",
+      "source_sha256": "0b548d71f6225f31211d2b10619a895d2310a6bc81108519e5c4ca39f2fe599c",
+      "rows": 288,
+      "generated": 288,
+      "read": 288
+    },
+    {
+      "model": "gpt-5.4",
+      "run_id": "4106234",
+      "file": "results/selected_runs/4/gpt-5.4-2026-03-05/4106234/results.jsonl",
+      "sha256": "d4bb14a43b8cf4be375934b196c210c3aca60e67dd5274206c698680a569c21c",
+      "source_sha256": "ed0b115ade8b73afff05c62a2e34eddcb5510082ee566a7d8f21c48af7fdeb4b",
+      "rows": 288,
+      "generated": 288,
+      "read": 286
+    },
+    {
+      "model": "gpt-5.4-nano",
+      "run_id": "3488563",
+      "file": "results/selected_runs/4/gpt-5.4-nano-2026-03-17/3488563/results.jsonl",
+      "sha256": "7c13f271f263401b44e0c32c9cb434965e648b6a811e032c9ee9b3f871dc5f52",
+      "source_sha256": "bfff4aeb62b679ff357d06058c61ad99670892f2052038644e3636de1756069e",
+      "rows": 288,
+      "generated": 288,
+      "read": 288
+    },
+    {
+      "model": "gpt-oss-120b",
+      "run_id": "3866186",
+      "file": "results/selected_runs/4/gpt-oss-120b/3866186/results.jsonl",
+      "sha256": "efc16088664c0469ee429c73716c9d602e0b6a73ad19f5137ffdd712c3bf67a6",
+      "source_sha256": "ec88e3befb4eedfed0e5dcb388d4c1140bdebaa70189ae7c5664bba7129ed46f",
+      "rows": 288,
+      "generated": 77,
+      "read": 77
+    },
+    {
+      "model": "gpt-oss-20b",
+      "run_id": "3695366",
+      "file": "results/selected_runs/4/gpt-oss-20b/3695366/results.jsonl",
+      "sha256": "d5b3cdb254c4888f3707c1136e457ed838d5f5e9548e5a881c2facbb7427d025",
+      "source_sha256": "bb573c80a1f1ca7aa262cfecba7f1b9be8afa781211002f5ef9818fe2393726a",
+      "rows": 288,
+      "generated": 269,
+      "read": 194
+    }
+  ],
+  "inputs": [
+    {
+      "file": "data/companies.json",
+      "sha256": "c8f63faae3126399ba9f3efc063603ca9c9dedb7e694e894aa0ba84acc99f950"
+    },
+    {
+      "file": "benchmark/marketing_honesty.py",
+      "sha256": "eafa37c771423c034dc2ec1f21800cdc49f2d889696cdbe833d0d4d84dcd9032"
+    },
+    {
+      "file": "HYPOTHESES.md",
+      "sha256": "1f988120f97bfeca443aaf22fbbd37c9c4159e7f4e633241aba61950566d22fe"
+    },
+    {
+      "file": "results/run_selection.csv",
+      "sha256": "1bc3a927989f1e8ee742268dfc1c2ed32820fbf11d396a6aef7e849f44337152"
+    }
+  ],
+  "run_selection_scope": "All version-4 result files available in local runs and runs_unused; earlier attempts without saved files are not reconstructed."
+}
