@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 
 import analyze
+import contract_promises
 import extra
 from reproduce import verify_bundle
 
@@ -21,6 +22,7 @@ def main():
     conditions = collections.defaultdict(collections.Counter)
     texts = []
     quote_sources = []
+    contract_sources = {}
     for entry in manifest["files"]:
         rows = [json.loads(s) for s in (analyze.ROOT / entry["file"]).read_text(encoding="utf-8").splitlines()]
         keys = [(r["company_id"], r["copy_type"], r["condition"], r["repeat"]) for r in rows]
@@ -59,6 +61,8 @@ def main():
                 q["says_no_employees"] += bool(re.search(r"no employees|zero employees|no[- ‑]employee|without employees|0 employees", r["copy"], re.I))
             if entry["model"] == "gemini-3.8-flash" and r["company_id"] == "p04-solo" and r["copy_type"] == "cold_email" and r["repeat"] == 0 and r["condition"] in ("A_none", "C_whitelist"):
                 quote_sources.append(r)
+            if entry["model"] == "claude-sonnet-5" and r["company_id"] == "p02-team" and r["copy_type"] == "cold_email" and r["repeat"] == 0:
+                contract_sources[r["condition"]] = r
         assert sum(bool(r.get("reader")) for r in rows) == entry["read"]
         assert sum(bool(r.get("copy")) for r in rows) == entry["generated"]
     assert totals == {"generated": 2898, "read": 2665}
@@ -74,10 +78,37 @@ def main():
     rank = pd.read_csv(analyze.ROOT / "results" / "analysis" / "headline_ranking_core.csv")
     for r in rank.itertuples():
         assert f"| {r.model} | {r.reader_clean:.1%} | {r.n} |" in article
-    for quote in re.findall(r"^> (.+)$", article, re.M):
-        assert any(quote in r["copy"] for r in quote_sources), f"Quote not in illustrative source: {quote}"
+    quotes = re.findall(r"^> (.+)$", article, re.M)
+    for quote in quotes:
+        assert any(quote in r["copy"] for r in [*quote_sources, *contract_sources.values()]), f"Quote not in illustrative source: {quote}"
     assert len(quote_sources) == 2
     assert sorted(r["reader"]["total"] for r in quote_sources) == [0, 2]
+    assert set(contract_sources) == set(analyze.CONDITIONS)
+    contract_sentences = (
+        ("A_none", "A: no extra rule", "It's $79 per truck per month, flat rate, no contracts."),
+        ("B_ban", "B: don't invent numbers", "It's $79 per truck per month, flat — no hidden fees, no long-term contract."),
+        ("C_whitelist", "C: facts only", "It's $79 per truck per month, no long-term contracts or hidden fees."),
+        ("D_reinject", "D: facts repeated", "It's $79 per truck per month, with no long-term contracts."),
+    )
+    for condition, label, sentence in contract_sentences:
+        row = contract_sources[condition]
+        assert sentence in row["copy"] and f"| {label} | {sentence} |" in article
+        assert any(contract_promises.PATTERN.search(c["quote"]) for c in row["reader"]["claims"])
+    for company_id in ("p02-team", "p04-solo"):
+        brief = "\n".join(f"{k}: {v}" for k, v in companies[company_id]["facts"].items())
+        assert f"```text\n{brief}\n```" in article
+    assert not re.search(r"contract|commitment|cancel|hidden\s+fee", " ".join(companies["p02-team"]["facts"].values()), re.I)
+    contract_followup = [r for r in contract_promises.load()
+                         if r["study"] == "followup" and r["model"] == "claude-sonnet-5-default"
+                         and r["condition"] in ("C", "E")]
+    assert len(contract_followup) == 20
+    matches = [r for r in contract_followup if contract_promises.PATTERN.search(r["copy"])]
+    assert len(matches) == 7 and len({r["company_id"] for r in matches}) == 6
+    for row in matches:
+        assert not re.search(r"contract|commitment|cancel|hidden\s+fee", " ".join(row["facts"].values()), re.I)
+        assert any(contract_promises.PATTERN.search(c["quote"]) for c in row["reader"]["claims"])
+    assert "20 emails under the two facts-only instructions, seven emails across six companies" in article
+    print("Contract examples PASS: 4 original sentences and reader flags; 7 of 20 follow-up emails across 6 companies; complete quoted briefs.")
     assert not re.search(r"KAGGLE_BENCHMARK_URL|TODO|TBD|\[INSERT", article)
     for path in re.findall(r"!\[[^\]]*\]\(([^)]+)\)", article):
         assert (analyze.ROOT / "post" / path).is_file(), path
@@ -140,7 +171,7 @@ def main():
     controls = pd.read_csv(followup / "out" / "controls.csv")
     assert len(controls) == 30 and controls["pass"].all()
     print("Follow-up PASS: 120 generated, 109 scored, 30 controls; frozen sources and saved-response hashes; article counts and paired overlap intervals.")
-    print(f"PASS: {len(manifest['files'])} complete 288-key grids; scorer arithmetic; {sum(v['read'] for v in conditions.values())} first-repeat scores; article numerators and six style frequencies; 11 model rows; 3 exact quotes; image paths; input hashes.")
+    print(f"PASS: {len(manifest['files'])} complete 288-key grids; scorer arithmetic; {sum(v['read'] for v in conditions.values())} first-repeat scores; article numerators and six style frequencies; 11 model rows; {len(quotes)} exact quotes; image paths; input hashes.")
 
 
 if __name__ == "__main__":
